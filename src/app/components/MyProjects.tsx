@@ -31,7 +31,7 @@ const MyProjects = () => {
   }, []);
 
   return (
-    <div data-aos="fade-up" className="container mx-auto">
+    <div data-aos="fade-up" data-aos-duration="1500" className="container mx-auto">
       <div className="mb-8">
         <h2 className="text-5xl font-bold text-center">My Project</h2>
       </div>
