@@ -6,8 +6,175 @@ const MyExperiences = () => {
     <div className="bg-base-200">
       <div className="container mx-auto flex flex-col justify-center items-center py-10 sm:py-20">
         <h2 className="text-3xl text-center">My Experiences</h2>
-        
-        <div className="capitalize space-y-6 my-6">
+        <div className="my-10">
+          <ul className="timeline timeline-vertical xl:timeline-horizontal px-2 sm:px-0 text-sm">
+            <li>
+              <div className="timeline-start timeline-box text-balance">
+                Start studying <br /> software engineering
+              </div>
+              <div className="timeline-middle">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 20 20"
+                  fill="currentColor"
+                  className="text-blue-600 h-5 w-5"
+                >
+                  <path
+                    fillRule="evenodd"
+                    d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z"
+                    clipRule="evenodd"
+                  />
+                </svg>
+              </div>
+              <div className="timeline-end">
+                <p className="">5 July 2021</p>
+              </div>
+              <hr className="bg-blue-600" />
+            </li>
+            <li>
+              <hr className="bg-blue-600" />
+              <div className="timeline-start">
+                <p className="">21 June 2023</p>
+              </div>
+              <div className="timeline-middle">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 20 20"
+                  fill="currentColor"
+                  className="text-blue-600 h-5 w-5"
+                >
+                  <path
+                    fillRule="evenodd"
+                    d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z"
+                    clipRule="evenodd"
+                  />
+                </svg>
+              </div>
+              <div className="timeline-end timeline-box text-balance">
+                Practice ReactJS <br /> on my own using ViteJS
+              </div>
+              <hr className="bg-blue-600" />
+            </li>
+            <li>
+              <hr className="bg-blue-600" />
+              <div className="timeline-start timeline-box text-balance">
+                Learn Tailwind CSS Framework <br /> on my own
+              </div>
+              <div className="timeline-middle">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 20 20"
+                  fill="currentColor"
+                  className="text-blue-600 h-5 w-5"
+                >
+                  <path
+                    fillRule="evenodd"
+                    d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z"
+                    clipRule="evenodd"
+                  />
+                </svg>
+              </div>
+              <div className="timeline-end">
+                <p className="">21 October 2023</p>
+              </div>
+              <hr className="bg-blue-600"/>
+            </li>
+            <li>
+              <hr className="bg-blue-600"/>
+              <div className="timeline-start">
+                <p className="">4 November 2023</p>
+              </div>
+              <div className="timeline-middle">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 20 20"
+                  fill="currentColor"
+                  className="text-blue-600 h-5 w-5"
+                >
+                  <path
+                    fillRule="evenodd"
+                    d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z"
+                    clipRule="evenodd"
+                  />
+                </svg>
+              </div>
+              <div className="timeline-end timeline-box text-balance">
+                Learn MongoDB on my own
+              </div>
+              <hr className="bg-blue-600"/>
+            </li>
+            <li>
+              <hr className="bg-blue-600"/>
+              <div className="timeline-start timeline-box text-balance">
+                Doing Senior Project
+                <br /> as a Front-end Developer
+              </div>
+              <div className="timeline-middle">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 20 20"
+                  fill="currentColor"
+                  className="text-blue-600 h-5 w-5"
+                >
+                  <path
+                    fillRule="evenodd"
+                    d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z"
+                    clipRule="evenodd"
+                  />
+                </svg>
+              </div>
+              <div className="timeline-end">
+                <p className="">21 December 2023</p>
+              </div>
+              <hr className="bg-blue-600"/>
+            </li>
+            <li>
+              <hr className="bg-blue-600"/>
+              <div className="timeline-start">
+                <p className="">2 December 2024</p>
+              </div>
+              <div className="timeline-middle">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 20 20"
+                  fill="currentColor"
+                  className="text-blue-600 h-5 w-5"
+                >
+                  <path
+                    fillRule="evenodd"
+                    d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z"
+                    clipRule="evenodd"
+                  />
+                </svg>
+              </div>
+              <div className="timeline-end timeline-box text-balance">
+                Internship at Eventtech.ai
+              </div>
+              <hr className="bg-blue-600"/>
+            </li>
+            <li>
+              <hr />
+              <div className="timeline-start timeline-box text-balance">
+              Start working
+              </div>
+              <div className="timeline-middle">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 20 20"
+                  className="h-5 w-5 fill-[#aaaaaa]"
+                >
+                  <path
+                    fillRule="evenodd"
+                    d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z"
+                    clipRule="evenodd"
+                  />
+                </svg>
+              </div>
+              <div className="timeline-end "></div>
+            </li>
+          </ul>
+        </div>
+        <div className="capitalize space-y-6">
           <div className="bg-white w-[800px] flex flex-col justify-center items-center rounded-2xl py-4">
             <p className="text-xl mb-2">Work with TGP Eventtech.ai</p>
             <ul className="list-disc list-inside">
