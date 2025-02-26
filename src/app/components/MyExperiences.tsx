@@ -150,7 +150,7 @@ const MyExperiences = () => {
               <div className="timeline-end timeline-box text-balance">
                 Internship at Eventtech.ai
               </div>
-              <hr className="bg-blue-600"/>
+              <hr className="bg-gradient-to-b xl:bg-gradient-to-r from-blue-600 to-oklch(92.4169% .00108 197.138 / 1)"/>
             </li>
             <li>
               <hr />
@@ -174,10 +174,10 @@ const MyExperiences = () => {
             </li>
           </ul>
         </div>
-        <div className="capitalize space-y-6">
-          <div className="bg-white w-[800px] flex flex-col justify-center items-center rounded-2xl py-4">
-            <p className="text-xl mb-2">Work with TGP Eventtech.ai</p>
-            <ul className="list-disc list-inside">
+        <div className="capitalize space-y-6 px-4">
+          <div className="bg-white w-full flex flex-col justify-center items-center rounded-2xl py-4">
+            <p className="text-xl mb-4 sm:mb-2">Work with TGP Eventtech.ai</p>
+            <ul className="list-disc list-inside px-4 sm:px-16 lg:px-36 text-balance space-y-4 sm:space-y-0 text-center sm:text-left">
               <li>wordpress for Koh Mak</li>
               <li>bepeerapat 20th</li>
               <li>
@@ -233,9 +233,9 @@ const MyExperiences = () => {
               </li>
             </ul>
           </div>
-          <div className="bg-white w-[800px] flex flex-col justify-center items-center rounded-2xl py-4">
-            <p className="text-xl mb-2">Previously developed projects</p>
-            <ul className="list-disc list-inside">
+          <div className="bg-white w-full flex flex-col justify-center items-center rounded-2xl py-4">
+            <p className="text-xl mb-4 sm:mb-2">Previously developed projects</p>
+            <ul className="list-disc list-inside px-4 sm:px-16 lg:px-36 text-balance space-y-4 sm:space-y-0 text-center sm:text-left">
               <li>
                 TechVibe: an Academic Weblog Platform{" "}
                 <Link
