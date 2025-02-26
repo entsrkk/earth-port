@@ -1,4 +1,4 @@
-import { FaHtml5, FaCss3, FaJs, FaReact, FaWordpress } from "react-icons/fa";
+import { FaReact, FaWordpress } from "react-icons/fa";
 import {
   SiVite,
   SiTypescript,
