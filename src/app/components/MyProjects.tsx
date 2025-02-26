@@ -31,15 +31,19 @@ const MyProjects = () => {
   }, []);
 
   return (
-    <div data-aos="fade-up" data-aos-duration="1500" className="container mx-auto">
+    <div
+      data-aos="fade-up"
+      data-aos-duration="1500"
+      className="container mx-auto"
+    >
       <div className="mb-8">
-        <h2 className="text-5xl font-bold text-center">My Project</h2>
+        <h2 className="text-4xl text-center">My Project</h2>
       </div>
-      <div  className="flex justify-center items-center">
+      <div className="flex justify-center items-center">
         <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 xl:grid-cols-3">
           {projects.map((project) => (
             <div key={project.project_id}>
-              <div className="card bg-base-200 w-80 lg:w-96 shadow-xl border ">
+              <div className="card bg-base-200 w-80 lg:w-96 shadow-xl border hover:scale-[1.02] duration-300">
                 <figure>
                   <Image
                     width={500}
@@ -50,12 +54,12 @@ const MyProjects = () => {
                   />
                 </figure>
                 <div className="card-body">
+                  <div className="badge bg-base-300 text-sm py-3 capitalize">
+                    {project.project_tag}
+                  </div>
                   <h2 className="card-title capitalize">
                     {project.project_name}
                   </h2>
-                  <div className="badge badge-neutral px-4 py-3 capitalize">
-                    {project.project_tag}
-                  </div>
                 </div>
               </div>
             </div>

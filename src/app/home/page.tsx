@@ -4,6 +4,7 @@ import Image from "next/image";
 import { TypeAnimation } from "react-type-animation";
 import TechStackCarousel from "../components/TechStackCarousel";
 import MyProjects from "../components/MyProjects";
+import MyExperiences from "../components/MyExperiences";
 
 const Homepage = () => {
   return (
@@ -40,6 +41,9 @@ const Homepage = () => {
       </div>
       <div className="container mx-auto my-10 sm:my-20">
         <MyProjects />
+      </div>
+      <div>
+        <MyExperiences />
       </div>
     </>
   );

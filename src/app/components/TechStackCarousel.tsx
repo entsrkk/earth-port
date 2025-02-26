@@ -14,26 +14,15 @@ import Image from "next/image";
 
 const TechStackCarousel: React.FC = () => {
   return (
-    <div className="bg-gradient-to-r from-blue-600 to-sky-600">
-      <div className="container mx-auto flex justify-center items-center py-10">
-        <div className="flex flex-wrap justify-center items-center gap-8 sm:gap-10 lg:px-28 xl:px-44">
+    <div className="bg-gradient-to-r from-blue-600 to-sky-600 ">
+      <div className="container mx-auto flex flex-col justify-center items-center py-12">
+        <h2 className="text-3xl text-white text-center">Technologies I use</h2>
+        <div className="flex flex-wrap justify-center items-center gap-6 sm:gap-8 lg:px-28 xl:px-40  sm:mt-2 ">
           <div>
-            <FaHtml5 className="text-4xl sm:text-6xl text-white" />
+            <FaReact className="text-3xl sm:text-5xl text-white hover:scale-[1.4] duration-300" />
           </div>
           <div>
-            <FaCss3 className="text-4xl sm:text-6xl text-white" />
-          </div>
-          <div>
-            <FaJs className="text-4xl sm:text-6xl text-white" />
-          </div>
-          <div>
-            <SiTypescript className="text-4xl sm:text-6xl text-white" />
-          </div>
-          <div>
-            <FaReact className="text-4xl sm:text-6xl text-white" />
-          </div>
-          <div>
-            <SiVite className="text-4xl sm:text-6xl text-white" />
+            <SiVite className="text-3xl sm:text-5xl text-white hover:scale-[1.4] duration-300" />
           </div>
           <div>
             <Image
@@ -41,32 +30,35 @@ const TechStackCarousel: React.FC = () => {
               alt="Next.js"
               width={96}
               height={96}
-              className="sm:w-24 sm:h-24 select-none"
+              className="w-20 h-20 sm:w-24 sm:h-24 select-none hover:scale-[1.4] duration-300"
             />
           </div>
           <div>
-            <FaWordpress className="text-4xl sm:text-6xl text-white" />
+            <FaWordpress className="text-3xl sm:text-5xl text-white hover:scale-[1.4] duration-300" />
           </div>
           <div>
-            <SiTailwindcss className="text-4xl sm:text-6xl text-white" />
+            <SiTailwindcss className="text-3xl sm:text-5xl text-white hover:scale-[1.4] duration-300" />
           </div>
           <div>
-            <SiMantine className="text-4xl sm:text-6xl text-white" />
+            <SiMantine className="text-3xl sm:text-5xl text-white hover:scale-[1.4] duration-300" />
           </div>
           <div>
-            <SiNextui className="text-4xl sm:text-6xl text-white" />
+            <SiNextui className="text-3xl sm:text-5xl text-white hover:scale-[1.4] duration-300" />
           </div>
           <div>
-            <SiRedux className="text-4xl sm:text-6xl text-white" />
+            <SiRedux className="text-3xl sm:text-5xl text-white hover:scale-[1.4] duration-300" />
           </div>
           <div>
-            <SiMysql className="text-4xl sm:text-6xl text-white" />
+            <SiTypescript className="text-3xl sm:text-5xl text-white hover:scale-[1.4] duration-300" />
           </div>
           <div>
-            <SiPostgresql className="text-4xl sm:text-6xl text-white" />
+            <SiMysql className="text-3xl sm:text-5xl text-white hover:scale-[1.4] duration-300" />
           </div>
           <div>
-            <SiMongodb className="text-4xl sm:text-6xl text-white" />
+            <SiPostgresql className="text-3xl sm:text-5xl text-white hover:scale-[1.4] duration-300" />
+          </div>
+          <div>
+            <SiMongodb className="text-3xl sm:text-5xl text-white hover:scale-[1.4] duration-300" />
           </div>
         </div>
       </div>

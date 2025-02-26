@@ -11,14 +11,8 @@ const Navbar: React.FC = () => {
               Home
             </Link>
             <Link href="/resume" className="sm:px-4">Resume</Link>
-            <Link href="/" className="sm:px-4">Services</Link>
           </div>
         </div>
-        {/* <div>
-          <a className="btn" href="/">
-            Contact
-          </a>
-        </div> */}
       </div>
     </div>
   );
