@@ -28,5 +28,11 @@
         "project_name": "shop eventtech",
         "project_image": "/img/shop-eventtech-homepage.png",
         "project_tag": "wordpress"
+    },
+    {
+        "project_id": "6",
+        "project_name": "Blockchain for buy Pokemon",
+        "project_image": "/img/blockchain-beige.png",
+        "project_tag": ["NextJS", "Solidity", "e-commerce"]
     }
 ]

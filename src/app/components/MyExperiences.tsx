@@ -176,7 +176,7 @@ const MyExperiences = () => {
         </div>
         <div className="capitalize space-y-6 px-4">
           <div className="bg-white w-full flex flex-col justify-center items-center rounded-2xl py-4">
-            <p className="text-xl mb-4 sm:mb-2">Work with TGP Eventtech.ai</p>
+            <p className="text-xl font-semibold mb-4 sm:mb-4 sm:mt-2">Work with TGP Eventtech.ai</p>
             <ul className="list-disc list-inside px-4 sm:px-16 lg:px-36 text-balance space-y-4 sm:space-y-0 text-center sm:text-left">
               <li>wordpress for Koh Mak</li>
               <li>bepeerapat 20th</li>
@@ -234,10 +234,10 @@ const MyExperiences = () => {
             </ul>
           </div>
           <div className="bg-white w-full flex flex-col justify-center items-center rounded-2xl py-4">
-            <p className="text-xl mb-4 sm:mb-2">Previously developed projects</p>
+            <p className="text-xl font-semibold mb-4 sm:mb-4 sm:mt-2">Previously developed projects</p>
             <ul className="list-disc list-inside px-4 sm:px-16 lg:px-36 text-balance space-y-4 sm:space-y-0 text-center sm:text-left">
               <li>
-                TechVibe: an Academic Weblog Platform{" "}
+                TechVibe: an Academic Weblog Platform :{" "}
                 <Link
                   className="text-blue-600"
                   href={"https://github.com/msssrp/tech-vibe.git"}

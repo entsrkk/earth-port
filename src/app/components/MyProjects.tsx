@@ -10,7 +10,7 @@ interface Project {
   project_id: number;
   project_name: string;
   project_image: string;
-  project_tag: string;
+  project_tag: string[];
 }
 
 const MyProjects = () => {
@@ -20,8 +20,14 @@ const MyProjects = () => {
     axios // ใช้ axios เพื่อเรียกข้อมูลจากไฟล์ project.json
       .get("/data/project.json")
       .then((response) => {
-        setProjects(response.data); // กำหนดข้อมูลที่ได้รับเข้ามาให้กับ projects
-        console.log(response.data); // แสดงข้อมูลที่ได้รับเข้ามาใน console
+        const normalizedData = response.data.map((project: any) => ({
+          ...project,
+          project_tag: Array.isArray(project.project_tag)
+            ? project.project_tag
+            : [project.project_tag],
+        }));
+        setProjects(normalizedData); // กำหนดข้อมูลที่ได้รับเข้ามาให้กับ projects
+        console.log(normalizedData); // แสดงข้อมูลที่ได้รับเข้ามาใน console
       })
       .catch((error) => {
         console.error("Error fetching the projects data", error);
@@ -51,11 +57,16 @@ const MyProjects = () => {
                     src={project.project_image}
                     alt=""
                     className="w-full h-96 object-cover object-top"
+                    loading = 'lazy'
                   />
                 </figure>
                 <div className="card-body">
-                  <div className="badge bg-base-300 text-sm py-3 capitalize">
-                    {project.project_tag}
+                  <div className="">
+                    {project.project_tag.map((tag, tagIndex) => (
+                      <div key={tagIndex} className="badge bg-base-300 text-sm py-3 capitalize ">
+                        {tag}
+                      </div>
+                    ))}
                   </div>
                   <h2 className="card-title capitalize">
                     {project.project_name}

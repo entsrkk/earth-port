@@ -10,7 +10,8 @@ const Navbar: React.FC = () => {
             <Link href="/" className="sm:px-4">
               Home
             </Link>
-            <Link href="/resume" className="sm:px-4">Resume</Link>
+            <Link href="https://drive.google.com/file/d/11gA4GHJmztFCUyLlp4RhFYi8OvwKmFPO/view?usp=sharing" target="_blank" className="sm:px-4">Resume</Link>
+            <Link href="/contact" className="sm:px-4">Contact Us</Link>
           </div>
         </div>
       </div>
