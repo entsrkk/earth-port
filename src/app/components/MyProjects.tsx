@@ -20,7 +20,7 @@ const MyProjects = () => {
     axios // ใช้ axios เพื่อเรียกข้อมูลจากไฟล์ project.json
       .get("/data/project.json")
       .then((response) => {
-        const normalizedData = response.data.map((project: any) => ({
+        const normalizedData = response.data.map((project: Project) => ({
           ...project,
           project_tag: Array.isArray(project.project_tag)
             ? project.project_tag

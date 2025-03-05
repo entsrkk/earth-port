@@ -13,8 +13,8 @@ import {
 
 const Contactpage: React.FC = () => {
   return (
-    <div className="container mx-auto py-24">
-      <div className="flex justify-center gap-14">
+    <div className="container mx-auto py-24 h-screen">
+      <div className="flex justify-center gap-14 ">
         <div>
           <Image
             width={480}
