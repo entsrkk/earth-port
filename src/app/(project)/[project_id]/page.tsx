@@ -1,7 +1,6 @@
 "use client";
 import axios from "axios";
 import Image from "next/image";
-import Link from "next/link";
 import { useSearchParams } from "next/navigation";
 import React, { useEffect, useState } from "react";
 
