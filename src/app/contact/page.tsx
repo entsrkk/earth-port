@@ -13,7 +13,7 @@ import {
 
 const Contactpage: React.FC = () => {
   return (
-    <div className="container mx-auto py-24 h-screen">
+    <div className="container mx-auto h-screen flex justify-center items-center">
       <div className="flex justify-center gap-14 ">
         <div>
           <Image
@@ -25,7 +25,7 @@ const Contactpage: React.FC = () => {
           />
         </div>
         <div>
-          <h2 className="text-4xl font-bold uppercase ">Contact Us</h2>
+          <h2 className="text-4xl font-black uppercase ">Contact Us</h2>
           <div className="mt-8 space-y-4">
             <div className="flex items-center gap-3">
               <FaFacebook className="w-12 h-12 fill-blue-500 " /> :{" "}

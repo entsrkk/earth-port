@@ -14,25 +14,26 @@ interface Project {
 }
 
 const MyProjects = () => {
-  const [projects, setProjects] = useState<Project[]>([]); // ระบุประเภทข้อมูลของ projects เป็น Project[]
+  const [projects, setProjects] = useState<Project[]>([]);
 
   useEffect(() => {
-    axios // ใช้ axios เพื่อเรียกข้อมูลจากไฟล์ project.json
-      .get("/data/project.json")
-      .then((response) => {
+    const fetchProjects = async () => {
+      try {
+        const response = await axios.get("/data/project.json");
         const normalizedData = response.data.map((project: Project) => ({
           ...project,
           project_tag: Array.isArray(project.project_tag)
             ? project.project_tag
             : [project.project_tag],
         }));
-        setProjects(normalizedData); // กำหนดข้อมูลที่ได้รับเข้ามาให้กับ projects
-        console.log(normalizedData); // แสดงข้อมูลที่ได้รับเข้ามาใน console
-      })
-      .catch((error) => {
-        console.error("Error fetching the projects data", error);
-      });
 
+        setProjects((prev) => (prev.length === 0 ? normalizedData : prev)); // ป้องกันการโหลดซ้ำ
+      } catch (error) {
+        console.error("Error fetching the projects data", error);
+      }
+    };
+
+    fetchProjects();
     AOS.init();
   }, []);
 
@@ -43,7 +44,7 @@ const MyProjects = () => {
       className="container mx-auto"
     >
       <div className="mb-8">
-        <h2 className="text-4xl text-center">My Project</h2>
+        <h2 className="text-4xl text-center">My Projects</h2>
       </div>
       <div className="flex justify-center items-center">
         <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 xl:grid-cols-3">
@@ -55,20 +56,23 @@ const MyProjects = () => {
                     width={500}
                     height={500}
                     src={project.project_image}
-                    alt=""
+                    alt={project.project_name}
                     className="w-full h-96 object-cover object-top"
-                    loading = 'lazy'
+                    loading="lazy"
                   />
                 </figure>
                 <div className="card-body">
-                  <div className="">
-                    {project.project_tag.map((tag, tagIndex) => (
-                      <div key={tagIndex} className="badge bg-base-300 text-sm py-3 capitalize ">
+                  <div className="space-x-1 flex flex-wrap">
+                    {project.project_tag.map((tag) => (
+                      <div
+                        key={tag}
+                        className="badge bg-base-300 text-sm py-3 capitalize"
+                      >
                         {tag}
                       </div>
                     ))}
                   </div>
-                  <h2 className="card-title capitalize">
+                  <h2 className="card-title capitalize line-clamp-1 cursor-default">
                     {project.project_name}
                   </h2>
                 </div>

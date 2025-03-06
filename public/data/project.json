@@ -1,38 +1,39 @@
 [
     {
         "project_id": "1",
-        "project_name": "koh mak",
-        "project_image": "/img/khomak.png",
-        "project_tag": "wordpress"
+        "project_name": "TechVibe: an Academic Weblog Platform",
+        "project_image": "/img/TechVibe.png",
+        "project_tag": ["NextJS", "TailwindCSS", "supabase"]
     },
+    
     {
         "project_id": "2",
+        "project_name": "Blockchain for buy Pokemon",
+        "project_image": "/img/blockchain-beige.png",
+        "project_tag": ["NextJS", "Solidity", "e-commerce"]
+    },
+    {
+        "project_id": "3",
         "project_name": "contact form - eventtech ",
         "project_image": "/img/inquiry-eventtech-ai.png",
         "project_tag": "wordpress"
     },
     {
-        "project_id": "3",
+        "project_id": "4",
         "project_name": "bepeerapat 20th",
         "project_image": "/img/bepeerapat20th.png",
         "project_tag": "wordpress"
     },
     {
-        "project_id": "4",
+        "project_id": "5",
         "project_name": "ticket protect",
         "project_image": "/img/ticketprotect-eventtech-ai.png",
         "project_tag": "wordpress"
     },
     {
-        "project_id": "5",
+        "project_id": "6",
         "project_name": "shop eventtech",
         "project_image": "/img/shop-eventtech-homepage.png",
         "project_tag": "wordpress"
-    },
-    {
-        "project_id": "6",
-        "project_name": "Blockchain for buy Pokemon",
-        "project_image": "/img/blockchain-beige.png",
-        "project_tag": ["NextJS", "Solidity", "e-commerce"]
     }
 ]
