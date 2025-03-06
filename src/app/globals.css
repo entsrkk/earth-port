@@ -2,7 +2,9 @@
 @tailwind components;
 @tailwind utilities;
 
-
+.text-gradient{
+   @apply bg-gradient-to-r from-blue-600 to-sky-600 text-transparent bg-clip-text;
+}
 
 
 

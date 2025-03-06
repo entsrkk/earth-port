@@ -15,9 +15,10 @@ const Homepage = () => {
             data-aos-duration="3000"
             src="/img/profile-earth-remove-bg.png"
             alt="Niti Surakongka"
-            width={500}
-            height={500}
+            width={450}
+            height={450}
             loading="lazy"
+            loader={({ src }) => src}
             className="w-[500px] h-[340px] sm:h-[440px] object-cover drop-shadow-lg "
           />
           <div className="space-y-2 sm:space-y-6  text-center lg:text-left">
@@ -25,7 +26,7 @@ const Homepage = () => {
               sequence={["Niti Surakongka"]}
               wrapper="h1"
               speed={40}
-              className="text-3xl sm:text-6xl font-extrabold tracking-wide uppercase bg-gradient-to-r from-blue-600 to-sky-600 text-transparent bg-clip-text"
+              className="text-3xl sm:text-6xl font-extrabold tracking-wide uppercase text-gradient"
             />
             <p className="mx-auto text-base text-balance md:text-xl lg:text-2xl lg:w-[740px]">
               Hello! My name is Earth, or Mr. Niti Surakongka, a Junior Frontend

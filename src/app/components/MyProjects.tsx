@@ -4,6 +4,7 @@ import React, { useEffect, useState } from "react";
 import Image from "next/image";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import { useRouter } from "next/navigation";
 
 // สร้าง interface สำหรับข้อมูลโปรเจค
 interface Project {
@@ -15,6 +16,7 @@ interface Project {
 
 const MyProjects = () => {
   const [projects, setProjects] = useState<Project[]>([]);
+  const router = useRouter()
 
   useEffect(() => {
     const fetchProjects = async () => {
@@ -53,8 +55,8 @@ const MyProjects = () => {
               <div className="card bg-base-200 w-80 lg:w-96 shadow-xl border hover:scale-[1.02] duration-300">
                 <figure>
                   <Image
-                    width={500}
-                    height={500}
+                    width={450}
+                    height={450}
                     src={project.project_image}
                     alt={project.project_name}
                     className="w-full h-96 object-cover object-top"
@@ -72,7 +74,8 @@ const MyProjects = () => {
                       </div>
                     ))}
                   </div>
-                  <h2 className="card-title capitalize line-clamp-1 cursor-default">
+                  <h2 className="card-title capitalize line-clamp-1 cursor-pointer hover:text-blue-500 transition" 
+                  onClick={() => router.push(`/project?project_id=${project.project_id}`)}>
                     {project.project_name}
                   </h2>
                 </div>
