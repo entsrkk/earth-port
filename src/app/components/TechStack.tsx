@@ -12,14 +12,15 @@ import {
 } from "react-icons/si";
 import Image from "next/image";
 
+
 const TechStackCarousel: React.FC = () => {
   return (
     <div className="bg-gradient-to-r from-blue-600 to-sky-600 ">
       <div className="container mx-auto flex flex-col justify-center items-center py-12">
         <h2 className="text-3xl text-white text-center">Technologies I use</h2>
-        <div className="flex flex-wrap justify-center items-center gap-6 sm:gap-8 lg:px-28 xl:px-40  sm:mt-2 ">
+        <div className="flex flex-wrap justify-center items-center gap-6 sm:gap-8 lg:px-28 xl:px-40 sm:mt-2 ">
           <div>
-            <FaReact className="text-3xl sm:text-5xl text-white hover:scale-[1.4] duration-300" />
+            <FaReact className="text-3xl sm:text-5xl text-white hover:scale-[1.4] duration-300 " />
           </div>
           <div>
             <SiVite className="text-3xl sm:text-5xl text-white hover:scale-[1.4] duration-300" />
