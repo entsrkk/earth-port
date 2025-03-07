@@ -12,6 +12,33 @@
     -ms-overflow-style: none; /* IE and Edge */
     scrollbar-width: none; /* Firefox */
   }
+  .hover-drop-shadow {
+    @apply hover:drop-shadow-[0px_0px_4px_rgba(255,255,255,0.75)];
+  }
+  .animated-underline {
+    position: relative;
+  }
+  .animated-underline::before,
+  .animated-underline::after {
+    content: "";
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    border-top-width: 2px;
+    border-top-color: #ffffff;
+  }
+  .animated-underline::before {
+    border-top-style: none;
+    width: 100%;
+  }
+  .animated-underline::after {
+    border-top-style: solid;
+    width: 0;
+    transition: width 0.5s ease-in;
+  }
+  .animated-underline:hover::after {
+    width: 100%;
+  }
 }
 
 .text-gradient {
@@ -22,7 +49,6 @@
   padding: 0 !important;
 }
 
-.m_54c44539{
-  @apply no-scrollbar 
+.m_54c44539 {
+  @apply no-scrollbar;
 }
-
