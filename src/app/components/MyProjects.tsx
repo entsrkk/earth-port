@@ -63,12 +63,12 @@ const MyProjects = () => {
                     loading="lazy"
                   />
                 </figure>
-                <div className="card-body">
+                <div className="card-body p-6 lg:p-8">
                   <div className="space-x-1 flex flex-wrap">
                     {project.project_tag.map((tag) => (
                       <div
                         key={tag}
-                        className="badge bg-base-300 text-sm py-3 capitalize"
+                        className="badge bg-base-300 text-sm py-3 capitalize opacity-70"
                       >
                         {tag}
                       </div>

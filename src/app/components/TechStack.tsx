@@ -20,10 +20,10 @@ const TechStackCarousel: React.FC = () => {
         <h2 className="text-3xl text-white text-center">Technologies I use</h2>
         <div className="flex flex-wrap justify-center items-center gap-6 sm:gap-8 lg:px-28 xl:px-40 sm:mt-2 ">
           <div>
-            <FaReact className="text-3xl sm:text-5xl text-white hover:scale-[1.4] hover-drop-shadow duration-300 " />
+            <FaReact className="text-3xl sm:text-5xl text-white hover:scale-[1.4] lg:hover-drop-shadow duration-300 " />
           </div>
           <div>
-            <SiVite className="text-3xl sm:text-5xl text-white hover:scale-[1.4] hover-drop-shadow duration-300" />
+            <SiVite className="text-3xl sm:text-5xl text-white hover:scale-[1.4] lg:hover-drop-shadow duration-300" />
           </div>
           <div>
             <Image
@@ -31,35 +31,35 @@ const TechStackCarousel: React.FC = () => {
               alt="Next.js"
               width={96}
               height={96}
-              className="w-20 h-20 sm:w-24 sm:h-24 select-none hover:scale-[1.4] hover-drop-shadow duration-300"
+              className="w-20 h-20 sm:w-24 sm:h-24 select-none hover:scale-[1.4] lg:hover-drop-shadow duration-300"
             />
           </div>
           <div>
-            <FaWordpress className="text-3xl sm:text-5xl text-white hover:scale-[1.4] hover-drop-shadow duration-300" />
+            <FaWordpress className="text-3xl sm:text-5xl text-white hover:scale-[1.4] lg:hover-drop-shadow duration-300" />
           </div>
           <div>
-            <SiTailwindcss className="text-3xl sm:text-5xl text-white hover:scale-[1.4] hover-drop-shadow duration-300" />
+            <SiTailwindcss className="text-3xl sm:text-5xl text-white hover:scale-[1.4] lg:hover-drop-shadow duration-300" />
           </div>
           <div>
-            <SiMantine className="text-3xl sm:text-5xl text-white hover:scale-[1.4] hover-drop-shadow duration-300" />
+            <SiMantine className="text-3xl sm:text-5xl text-white hover:scale-[1.4] lg:hover-drop-shadow duration-300" />
           </div>
           <div>
-            <SiNextui className="text-3xl sm:text-5xl text-white hover:scale-[1.4] hover-drop-shadow duration-300" />
+            <SiNextui className="text-3xl sm:text-5xl text-white hover:scale-[1.4] lg:hover-drop-shadow duration-300" />
           </div>
           <div>
-            <SiRedux className="text-3xl sm:text-5xl text-white hover:scale-[1.4] hover-drop-shadow duration-300" />
+            <SiRedux className="text-3xl sm:text-5xl text-white hover:scale-[1.4] lg:hover-drop-shadow duration-300" />
           </div>
           <div>
-            <SiTypescript className="text-3xl sm:text-5xl text-white hover:scale-[1.4] hover-drop-shadow duration-300" />
+            <SiTypescript className="text-3xl sm:text-5xl text-white hover:scale-[1.4] lg:hover-drop-shadow duration-300" />
           </div>
           <div>
-            <SiMysql className="text-3xl sm:text-5xl text-white hover:scale-[1.4] hover-drop-shadow duration-300" />
+            <SiMysql className="text-3xl sm:text-5xl text-white hover:scale-[1.4] lg:hover-drop-shadow duration-300" />
           </div>
           <div>
-            <SiPostgresql className="text-3xl sm:text-5xl text-white hover:scale-[1.4] hover-drop-shadow duration-300" />
+            <SiPostgresql className="text-3xl sm:text-5xl text-white hover:scale-[1.4] lg:hover-drop-shadow duration-300" />
           </div>
           <div>
-            <SiMongodb className="text-3xl sm:text-5xl text-white hover:scale-[1.4] hover-drop-shadow duration-300" />
+            <SiMongodb className="text-3xl sm:text-5xl text-white hover:scale-[1.4] lg:hover-drop-shadow duration-300" />
           </div>
         </div>
       </div>

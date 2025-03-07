@@ -63,7 +63,7 @@ const ProjectDetailPage = () => {
 
 
   return (
-    <div className="container mx-auto py-14">
+    <div className="container mx-auto py-10 lg:py-14">
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-10">
         <div className="flex justify-center items-center order-2 lg:order-1 px-4 lg:px-0 ">
           <Image
@@ -95,7 +95,7 @@ const ProjectDetailPage = () => {
             />
           </Modal>
         </div>
-        <div className="px-4 lg:px-0 space-y-6 order-1 lg:order-2">
+        <div className="px-4 lg:px-0 space-y-4 md:space-y-6 order-1 lg:order-2">
           <div className="space-y-2">
             <p className="text-3xl md:text-4xl capitalize font-semibold ">
               {project.project_name}
