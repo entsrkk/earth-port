@@ -3,7 +3,7 @@ import React, { useEffect, useState } from "react";
 import axios from "axios";
 import Image from "next/image";
 import { useSearchParams } from "next/navigation";
-import { Modal, ScrollArea  } from "@mantine/core";
+import { Modal  } from "@mantine/core";
 import { useDisclosure } from "@mantine/hooks";
 
 interface Project {
