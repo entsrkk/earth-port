@@ -12,6 +12,7 @@
     "@mantine/core": "^7.17.1",
     "@mantine/hooks": "^7.17.1",
     "@tailwindcss/postcss": "^4.0.9",
+    "@vercel/speed-insights": "^1.2.0",
     "aos": "^2.3.4",
     "axios": "^1.7.9",
     "next": "15.1.7",

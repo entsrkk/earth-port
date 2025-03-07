@@ -1,9 +1,11 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
-import "./globals.css";
-import "@mantine/core/styles.css";
+import { SpeedInsights } from "@vercel/speed-insights/next"
 import { MantineProvider } from "@mantine/core";
 import Navbar from "./components/Navbar";
+import "./globals.css";
+import "@mantine/core/styles.css";
+
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
@@ -22,6 +24,7 @@ export default function RootLayout({
         <MantineProvider>
           <Navbar />
           {children}
+          <SpeedInsights />
         </MantineProvider>
       </body>
     </html>
