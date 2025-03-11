@@ -19,7 +19,7 @@ const Contactpage: React.FC = () => {
           <Image
             width={480}
             height={480}
-            src={"/img/profile-earth.jpg"}
+            src={"/img/profile-earth.webp"}
             alt=""
             className="rounded-full w-72 sm:w-[450px] lg:w-[504px] h-72 sm:h-[450px] lg:h-[504px] object-cover "
           />

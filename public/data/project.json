@@ -5,14 +5,15 @@
     "project_image": "/img/TechVibe.png",
     "project_tag": ["NextJS", "TailwindCSS", "supabase"],
     "project_description": "Developed a comprehensive online academic weblog platform to facilitate the sharing of scholarly articles,research papers, and academic discussionsamong students, professors, and general users. The platform included user authentication, article management, complaints management, usermanagement, and system configuration.",
-    "project_responsibilities": "Front-end Developed",
+    "project_responsibilities": ["Front-end Developed"],
     "keyResponsibilities": [
       "Designed and developed a responsive user interface using Next.js and TypeScript",
       "Created components optimized for SSR, CSR, and SSG for SEO",
       "Utilized Mantine React Library for modern, consistent UI components",
       "Styled the interface with Tailwind CSS for a beautiful and modern design",
-      "Ensured a clean and user-friendly interface"
+      "Designed a clean and user-friendly interface"
     ],
+
     "technologies_used": [
       "Next.js, Typescript, Tailwind CSS, Zustand, Mantine, TinyMCE",
       "Supabase, PostgreSQL",
@@ -25,8 +26,12 @@
     "project_name": "Blockchain for buy Pokemon",
     "project_image": "/img/blockchain-beige.png",
     "project_tag": ["NextJS", "Solidity", "e-commerce"],
-    "project_responsibilities": "Front-end Developed",
-    "keyResponsibilities": [],
+    "project_responsibilities": ["Front-end Developed"],
+    "keyResponsibilities": [
+      "Designed and developed a responsive user interface using Vite React.js",
+      "Styled the interface with Tailwind CSS for a beautiful and modern design",
+      "Designed a clean and user-friendly interface"
+    ],
     "technologies_used": [
       "Next.js, JavaScript, Tailwind CSS, daisyui",
       "Solidity",
@@ -39,7 +44,11 @@
     "project_image": "/img/inquiry-eventtech-ai.png",
     "project_tag": "wordpress",
     "project_responsibilities": "Front-end Developed",
-    "keyResponsibilities": [],
+    "keyResponsibilities": [
+      "Designed and developed a responsive user interface using Word Press",
+      "Designed a clean and user-friendly interface",
+      "Designed the website to support a Language Switcher"
+    ],
     "technologies_used": ["Wordpress"]
   },
   {
@@ -48,7 +57,10 @@
     "project_image": "/img/bepeerapat20th.png",
     "project_tag": "wordpress",
     "project_responsibilities": "Front-end Developed",
-    "keyResponsibilities": [],
+    "keyResponsibilities": [
+      "Designed and developed a responsive user interface using Word Press",
+      "Designed a clean and user-friendly interface"
+    ],
     "technologies_used": ["Wordpress"]
   },
   {
@@ -57,7 +69,12 @@
     "project_image": "/img/ticketprotect-eventtech-ai.png",
     "project_tag": "wordpress",
     "project_responsibilities": "Front-end Developed",
-    "keyResponsibilities": [],
+    "keyResponsibilities": [
+      "Designed and developed a responsive user interface using Word Press",
+      "Designed the website based on Figma",
+      "Designed a clean and user-friendly interface",
+      "Designed the website to support a Language Switcher"
+    ],
     "technologies_used": ["Wordpress"]
   },
   {
@@ -66,7 +83,11 @@
     "project_image": "/img/shop-eventtech-homepage.png",
     "project_tag": "wordpress",
     "project_responsibilities": "Front-end Developed",
-    "keyResponsibilities": [],
+    "keyResponsibilities": [
+      "Designed and developed a responsive user interface using Word Press",
+      "Designed a clean and user-friendly interface",
+      "Designed the website to support a Language Switcher"
+    ],
     "technologies_used": ["Wordpress"]
   }
 ]
