@@ -95,8 +95,8 @@ const ProjectDetailPage = () => {
             />
           </Modal>
         </div>
-        <div className="px-4 lg:px-0 space-y-4 md:space-y-6 order-1 lg:order-2">
-          <div className="space-y-2">
+        <div className="px-4 lg:px-0 space-y-3 md:space-y-6 order-1 lg:order-2">
+          <div className="space-y-1 sm:space-y-3">
             <p className="text-2xl md:text-4xl capitalize font-semibold ">
               {project.project_name}
             </p>
@@ -104,7 +104,7 @@ const ProjectDetailPage = () => {
               {project.project_tag.map((tag) => (
                 <span
                   key={tag}
-                  className="badge bg-base-300 text-sm py-3 capitalize opacity-60"
+                  className="badge bg-base-300 text-xs sm:text-sm py-2 sm:py-3 capitalize opacity-60"
                 >
                   {tag}
                 </span>

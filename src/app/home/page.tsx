@@ -9,7 +9,7 @@ import MyExperiences from "../components/MyExperiences";
 const Homepage = () => {
   return (
     <>
-      <div className="container mx-auto px-6">
+      <div className="container mx-auto px-2 sm:px-6">
         <div className="flex flex-col lg:flex-row items-center justify-center gap-10 sm:gap-20 my-10 sm:my-20">
           <Image
             data-aos-duration="3000"

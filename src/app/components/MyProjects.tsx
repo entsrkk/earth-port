@@ -68,7 +68,7 @@ const MyProjects = () => {
                     {project.project_tag.map((tag) => (
                       <div
                         key={tag}
-                        className="badge bg-base-300 text-sm py-3 capitalize opacity-70"
+                        className="badge bg-base-300 text-xs sm:text-sm py-2 sm:py-3 capitalize opacity-70"
                       >
                         {tag}
                       </div>
