@@ -46,7 +46,7 @@ const MyProjects = () => {
       className="container mx-auto"
     >
       <div className="mb-8">
-        <h2 className="text-4xl text-center">My Projects</h2>
+        <h2 className="text-2xl sm:text-4xl text-center">My Projects</h2>
       </div>
       <div className="flex justify-center items-center">
         <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 xl:grid-cols-3">
@@ -74,7 +74,7 @@ const MyProjects = () => {
                       </div>
                     ))}
                   </div>
-                  <h2 className="card-title capitalize line-clamp-1 cursor-pointer hover:text-blue-500 transition" 
+                  <h2 className="card-title text-base sm:text-xl capitalize line-clamp-1 cursor-pointer hover:text-blue-500 transition" 
                   onClick={() => router.push(`/project?project_id=${project.project_id}`)}>
                     {project.project_name}
                   </h2>

@@ -26,7 +26,7 @@ const Homepage = () => {
               sequence={["Niti Surakongka"]}
               wrapper="h1"
               speed={40}
-              className="text-2xl sm:text-6xl font-extrabold tracking-wide uppercase text-gradient "
+              className="text-3xl sm:text-6xl font-extrabold tracking-wide uppercase text-gradient "
             />
             <p className="mx-auto text-base text-balance md:text-xl lg:text-2xl lg:w-[740px] ">
               Hello! My name is Earth, or Mr. Niti Surakongka, a Junior Frontend

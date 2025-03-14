@@ -97,7 +97,7 @@ const ProjectDetailPage = () => {
         </div>
         <div className="px-4 lg:px-0 space-y-4 md:space-y-6 order-1 lg:order-2">
           <div className="space-y-2">
-            <p className="text-3xl md:text-4xl capitalize font-semibold ">
+            <p className="text-2xl md:text-4xl capitalize font-semibold ">
               {project.project_name}
             </p>
             <div className="flex space-x-2">

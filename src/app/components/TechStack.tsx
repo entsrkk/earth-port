@@ -17,7 +17,7 @@ const TechStackCarousel: React.FC = () => {
   return (
     <div className="bg-gradient-to-r from-blue-600 to-sky-600 ">
       <div className="container mx-auto flex flex-col justify-center items-center py-8 sm:py-12">
-        <h2 className="text-3xl text-white text-center">Technologies I use</h2>
+        <h2 className="text-2xl sm:text-3xl text-white text-center">Technologies I use</h2>
         <div className="flex flex-wrap justify-center items-center gap-4 sm:gap-8 lg:px-28 xl:px-40 sm:mt-2 ">
           <div>
             <FaReact className="text-3xl sm:text-5xl text-white hover:scale-[1.4] lg:hover-drop-shadow duration-300 " />
