@@ -52,3 +52,8 @@
 .m_54c44539 {
   @apply no-scrollbar;
 }
+
+.mask-image-gradient {
+  -webkit-mask-image: linear-gradient(to top, rgba(0, 0, 0, 0) 0%, black 10%);
+  mask-image: linear-gradient(to top, rgba(255, 255, 255, 0) 0%, black 10%);
+}

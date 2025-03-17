@@ -12,14 +12,13 @@ const Homepage = () => {
       <div className="container mx-auto px-2 sm:px-6">
         <div className="flex flex-col lg:flex-row items-center justify-center gap-10 sm:gap-20 my-10 sm:my-20">
           <Image
-            data-aos-duration="3000"
-            src="/img/profile-earth-remove-bg.png"
+            src="/img/profile-earth-remove-bg.jpg"
             alt="Niti Surakongka"
             width={450}
             height={450}
             loading="lazy"
             loader={({ src }) => src}
-            className="w-[500px] h-[330px] sm:h-[440px] object-cover drop-shadow-lg "
+            className="w-[500px] h-[330px] sm:h-[440px] object-cover drop-shadow-lg mask-image-gradient"
           />
           <div className="space-y-2 sm:space-y-6 text-center lg:text-left">
             <TypeAnimation
@@ -29,10 +28,10 @@ const Homepage = () => {
               className="text-3xl sm:text-6xl font-extrabold tracking-wide uppercase text-gradient "
             />
             <p className="mx-auto text-base text-balance md:text-xl lg:text-2xl lg:w-[740px] ">
-              Hello! My name is Earth, or Mr. Niti Surakongka, a Junior Frontend
-              Developer. I have a foundation in web development with knowledge
-              of modern front-end technologies, and a growing interest in Full
-              Stack Development.
+              Hello! I&apos;m Earth, also known as Mr. Niti Surakongka, a Junior
+              Frontend Developer. I have a strong foundation in web development,
+              with expertise in modern front-end technologies and a growing
+              interest in Full Stack Development.
             </p>
           </div>
         </div>

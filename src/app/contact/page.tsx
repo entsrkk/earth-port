@@ -1,4 +1,4 @@
-import Image from "next/image";
+"use client"
 import Link from "next/link";
 import React from "react";
 import {
@@ -10,28 +10,25 @@ import {
   FaLinkedin,
   FaMedium,
 } from "react-icons/fa";
+import { TypeAnimation } from "react-type-animation";
 
 const Contactpage: React.FC = () => {
   return (
-    <div className="container mx-auto py-10 lg:h-screen flex justify-center items-center">
-      <div className="grid grid-cols-1 xl:grid-cols-2 gap-12 sm:gap-20">
-        <div>
-          <Image
-            width={480}
-            height={480}
-            src={"/img/profile-earth.webp"}
-            alt=""
-            className="rounded-full w-72 sm:w-[450px] lg:w-[504px] h-72 sm:h-[450px] lg:h-[504px] object-cover "
+    <div className="container mx-auto py-20 sm:py-10 sm:h-screen flex justify-center items-center">
+      <div className="px-2">
+        <div className="flex flex-col md:flex-row gap-12 md:gap-44 justify-center items-center">
+          <TypeAnimation
+            sequence={["Contact Us"]}
+            wrapper="h2"
+            speed={40}
+            className="text-4xl sm:text-5xl font-bold sm:font-black uppercase text-center lg:text-start text-gradient"
           />
-        </div>
-        <div>
-          <h2 className="text-4xl font-bold sm:font-black uppercase text-center lg:text-start">Contact Us</h2>
-          <div className="mt-5 sm:mt-8 space-y-3 sm:space-y-4">
+          <div className="space-y-3 sm:space-y-4">
             <div className="flex items-center gap-2 sm:gap-3">
               <FaFacebook className="w-12 h-12 fill-blue-500 " /> :{" "}
               <Link
                 href="https://www.facebook.com/niti.surakongka"
-                className="text-lg hover:font-semibold hover:text-blue-600" 
+                className="text-lg hover:text-blue-600"
               >
                 Niti Surakongka
               </Link>
@@ -40,7 +37,7 @@ const Contactpage: React.FC = () => {
               <FaInstagram className="w-12 h-12 fill-blue-500" /> :{" "}
               <Link
                 href="https://www.instagram.com/eearth_nt/"
-                className="text-lg hover:font-semibold hover:text-blue-600" 
+                className="text-lg hover:text-blue-600"
               >
                 eearth_nt
               </Link>
@@ -49,7 +46,7 @@ const Contactpage: React.FC = () => {
               <FaLine className="w-12 h-12 fill-blue-500" /> :{" "}
               <Link
                 href="https://line.me/ti/p/8XgcLYn8Cg"
-                className="text-lg hover:font-semibold hover:text-blue-600" 
+                className="text-lg hover:text-blue-600"
               >
                 091-758-2874
               </Link>
@@ -58,7 +55,7 @@ const Contactpage: React.FC = () => {
               <FaPhone className="w-12 h-12 fill-blue-500" /> :{" "}
               <Link
                 href="tel:0917582874"
-                className="text-lg hover:font-semibold hover:text-blue-600" 
+                className="text-lg hover:text-blue-600"
               >
                 091-758-2874
               </Link>
@@ -67,7 +64,7 @@ const Contactpage: React.FC = () => {
               <FaGithub className="w-12 h-12 fill-blue-500" /> :{" "}
               <Link
                 href="https://github.com/entsrkk"
-                className="text-lg hover:font-semibold hover:text-blue-600" 
+                className="text-lg hover:text-blue-600"
               >
                 entsrkk
               </Link>
@@ -76,7 +73,7 @@ const Contactpage: React.FC = () => {
               <FaLinkedin className="w-12 h-12 fill-blue-500" /> :{" "}
               <Link
                 href="https://www.linkedin.com/in/nitisurakongka/"
-                className="text-lg hover:font-semibold hover:text-blue-600" 
+                className="text-lg hover:text-blue-600"
               >
                 Niti Surakongka
               </Link>
@@ -85,7 +82,7 @@ const Contactpage: React.FC = () => {
               <FaMedium className="w-12 h-12 fill-blue-500" /> :{" "}
               <Link
                 href="https://medium.com/@niti2003s"
-                className="text-lg hover:font-semibold hover:text-blue-600" 
+                className="text-lg hover:text-blue-600"
               >
                 @niti2003s
               </Link>

@@ -1,93 +1,91 @@
 [
   {
     "project_id": "1",
-    "project_name": "TechVibe: an Academic Weblog Platform",
+    "project_name": "TechVibe: An Academic Weblog Platform",
     "project_image": "/img/TechVibe.png",
-    "project_tag": ["NextJS", "TailwindCSS", "supabase"],
-    "project_description": "Developed a comprehensive online academic weblog platform to facilitate the sharing of scholarly articles,research papers, and academic discussionsamong students, professors, and general users. The platform included user authentication, article management, complaints management, usermanagement, and system configuration.",
-    "project_responsibilities": ["Front-end Developed"],
+    "project_tag": ["Next.js", "Tailwind CSS", "Supabase"],
+    "project_description": "Developed a comprehensive online academic weblog platform to facilitate the sharing of scholarly articles, research papers, and academic discussions among students, professors, and general users. The platform includes user authentication, article management, complaint management, user management, and system configuration.",
+    "project_responsibilities": ["Front-end"],
     "keyResponsibilities": [
       "Designed and developed a responsive user interface using Next.js and TypeScript",
       "Created components optimized for SSR, CSR, and SSG for SEO",
-      "Utilized Mantine React Library for modern, consistent UI components",
-      "Styled the interface with Tailwind CSS for a beautiful and modern design",
+      "Utilized the Mantine React library for modern, consistent UI components",
+      "Styled the interface with Tailwind CSS for a modern and visually appealing design",
       "Designed a clean and user-friendly interface"
     ],
-
     "technologies_used": [
-      "Next.js, Typescript, Tailwind CSS, Zustand, Mantine, TinyMCE",
+      "Next.js, TypeScript, Tailwind CSS, Zustand, Mantine, TinyMCE",
       "Supabase, PostgreSQL",
-      "Git, Github, Git Flow"
+      "Git, GitHub, Git Flow"
     ]
   },
-
   {
     "project_id": "2",
-    "project_name": "Blockchain for buy Pokemon",
+    "project_name": "Blockchain for Buying Pokémon",
     "project_image": "/img/blockchain-beige.png",
-    "project_tag": ["NextJS", "Solidity", "e-commerce"],
-    "project_responsibilities": ["Front-end Developed"],
+    "project_tag": ["Next.js", "Solidity", "E-commerce"],
+    "project_responsibilities": ["Front-end"],
     "keyResponsibilities": [
-      "Designed and developed a responsive user interface using Vite React.js",
-      "Styled the interface with Tailwind CSS for a beautiful and modern design",
+      "Designed and developed a responsive user interface using Next.js and Solidity",
+      "Styled the interface with Tailwind CSS for a modern and visually appealing design",
       "Designed a clean and user-friendly interface"
     ],
     "technologies_used": [
-      "Next.js, JavaScript, Tailwind CSS, daisyui",
+      "Next.js, JavaScript, Tailwind CSS, DaisyUI",
       "Solidity",
-      "Git, Github, Git Flow"
+      "Git, GitHub, Git Flow"
     ]
   },
   {
     "project_id": "3",
-    "project_name": "contact form - eventtech ",
+    "project_name": "Contact Form - EventTech",
     "project_image": "/img/inquiry-eventtech-ai.png",
-    "project_tag": "wordpress",
-    "project_responsibilities": "Front-end Developed",
+    "project_tag": ["WordPress"],
+    "project_responsibilities": ["Front-end"],
     "keyResponsibilities": [
-      "Designed and developed a responsive user interface using Word Press",
+      "Designed and developed a responsive user interface using WordPress",
       "Designed a clean and user-friendly interface",
-      "Designed the website to support a Language Switcher"
+      "Implemented a language switcher for multilingual support"
     ],
-    "technologies_used": ["Wordpress"]
+    "technologies_used": ["WordPress"]
   },
   {
     "project_id": "4",
-    "project_name": "bepeerapat 20th",
+    "project_name": "Bepeerapat 20th",
     "project_image": "/img/bepeerapat20th.png",
-    "project_tag": "wordpress",
-    "project_responsibilities": "Front-end Developed",
+    "project_tag": ["WordPress"],
+    "project_responsibilities": ["Front-end"],
     "keyResponsibilities": [
-      "Designed and developed a responsive user interface using Word Press",
+      "Designed and developed a responsive user interface using WordPress",
       "Designed a clean and user-friendly interface"
     ],
-    "technologies_used": ["Wordpress"]
+    "technologies_used": ["WordPress"]
   },
   {
     "project_id": "5",
-    "project_name": "ticket protect",
+    "project_name": "Ticket Protect",
     "project_image": "/img/ticketprotect-eventtech-ai.png",
-    "project_tag": "wordpress",
-    "project_responsibilities": "Front-end Developed",
+    "project_tag": ["WordPress"],
+    "project_responsibilities": ["Front-end"],
     "keyResponsibilities": [
-      "Designed and developed a responsive user interface using Word Press",
+      "Designed and developed a responsive user interface using WordPress",
       "Designed the website based on Figma",
       "Designed a clean and user-friendly interface",
-      "Designed the website to support a Language Switcher"
+      "Implemented a language switcher for multilingual support"
     ],
-    "technologies_used": ["Wordpress"]
+    "technologies_used": ["WordPress"]
   },
   {
     "project_id": "6",
-    "project_name": "shop eventtech",
+    "project_name": "Shop EventTech",
     "project_image": "/img/shop-eventtech-homepage.png",
-    "project_tag": "wordpress",
-    "project_responsibilities": "Front-end Developed",
+    "project_tag": ["WordPress"],
+    "project_responsibilities": ["Front-end"],
     "keyResponsibilities": [
-      "Designed and developed a responsive user interface using Word Press",
+      "Designed and developed a responsive user interface using WordPress",
       "Designed a clean and user-friendly interface",
-      "Designed the website to support a Language Switcher"
+      "Implemented a language switcher for multilingual support"
     ],
-    "technologies_used": ["Wordpress"]
+    "technologies_used": ["WordPress"]
   }
 ]

@@ -5,7 +5,7 @@ const MyExperiences = () => {
   return (
     <div className="bg-base-200">
       <div className="container mx-auto flex flex-col justify-center items-center py-10 sm:py-20">
-        <h2 className="text-3xl text-center">My Experiences</h2>
+        <h2 className="text-2xl sm:text-4xl text-center">My Experiences</h2>
         <div className="my-10">
           <ul className="timeline timeline-vertical xl:timeline-horizontal px-2 sm:px-0 text-sm">
             <li>
