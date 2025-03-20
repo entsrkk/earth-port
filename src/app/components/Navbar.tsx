@@ -10,7 +10,7 @@ const Navbar: React.FC = () => {
             <Link href="/" className="sm:px-4 lg:animated-underline">
               Home
             </Link>
-            <Link href="https://drive.google.com/file/d/11gA4GHJmztFCUyLlp4RhFYi8OvwKmFPO/view?usp=sharing" target="_blank" className="sm:px-4 lg:animated-underline">Resume</Link>
+            <Link href="https://drive.google.com/file/d/1F0OMptXmxmqkTgqKjJGaN85mDWKroW6T/view?usp=sharing" target="_blank" className="sm:px-4 lg:animated-underline">Resume</Link>
             <Link href="/contact" className="sm:px-4 lg:animated-underline">Contact Us</Link>
           </div>
         </div>
