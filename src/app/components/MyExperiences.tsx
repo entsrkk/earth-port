@@ -1,18 +1,25 @@
+"use client";
+import React, { useEffect } from "react";
 import Link from "next/link";
-import React from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
+
 
 const MyExperiences = () => {
+    useEffect(() => {
+      AOS.init();
+    }, []);
   return (
     <div className="bg-base-200">
       <div className="container mx-auto flex flex-col justify-center items-center py-10 sm:py-20">
-        <h2 className="text-2xl sm:text-4xl text-center">My Experiences</h2>
+        <h2 data-aos="fade-up" data-aos-anchor-placement="bottom-center" data-aos-delay="300" data-aos-duration="1000" data-aos-easing="ease-out" className="text-2xl sm:text-4xl text-center">My Experiences</h2>
         <div className="my-10">
           <ul className="timeline timeline-vertical xl:timeline-horizontal px-2 sm:px-0 text-sm">
             <li>
-              <div className="timeline-start timeline-box text-balance">
+              <div data-aos="fade-right" data-aos-delay="300" data-aos-duration="1000" data-aos-easing="ease-out" data-aos-anchor-placement="bottom-center" className="timeline-start timeline-box text-balance">
                 Start studying <br /> software engineering
               </div>
-              <div className="timeline-middle">
+              <div  className="timeline-middle">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 20 20"
@@ -26,14 +33,14 @@ const MyExperiences = () => {
                   />
                 </svg>
               </div>
-              <div className="timeline-end">
+              <div data-aos="fade-left" data-aos-delay="300" data-aos-duration="1000" data-aos-easing="ease-out" data-aos-anchor-placement="bottom-center" className="timeline-end">
                 <p className="">5 July 2021</p>
               </div>
               <hr className="bg-blue-600" />
             </li>
             <li>
               <hr className="bg-blue-600" />
-              <div className="timeline-start">
+              <div data-aos="fade-left" data-aos-delay="500" data-aos-duration="1000" data-aos-easing="ease-out" data-aos-anchor-placement="bottom-center" className="timeline-start">
                 <p className="">21 June 2023</p>
               </div>
               <div className="timeline-middle">
@@ -50,14 +57,14 @@ const MyExperiences = () => {
                   />
                 </svg>
               </div>
-              <div className="timeline-end timeline-box text-balance">
+              <div data-aos="fade-right" data-aos-delay="500" data-aos-duration="1000" data-aos-easing="ease-out" data-aos-anchor-placement="bottom-center" className="timeline-end timeline-box text-balance">
                 Practice ReactJS <br /> on my own using ViteJS
               </div>
               <hr className="bg-blue-600" />
             </li>
             <li>
               <hr className="bg-blue-600" />
-              <div className="timeline-start timeline-box text-balance">
+              <div data-aos="fade-right" data-aos-delay="700" data-aos-duration="1000" data-aos-easing="ease-out" data-aos-anchor-placement="bottom-center" className="timeline-start timeline-box text-balance">
                 Learn Tailwind CSS Framework <br /> on my own
               </div>
               <div className="timeline-middle">
@@ -74,14 +81,14 @@ const MyExperiences = () => {
                   />
                 </svg>
               </div>
-              <div className="timeline-end">
+              <div data-aos="fade-left" data-aos-delay="700" data-aos-duration="1000" data-aos-easing="ease-out" data-aos-anchor-placement="bottom-center" className="timeline-end">
                 <p className="">21 October 2023</p>
               </div>
               <hr className="bg-blue-600"/>
             </li>
             <li>
               <hr className="bg-blue-600"/>
-              <div className="timeline-start">
+              <div data-aos="fade-left" data-aos-delay="900" data-aos-duration="1000" data-aos-easing="ease-out" data-aos-anchor-placement="bottom-center" className="timeline-start">
                 <p className="">4 November 2023</p>
               </div>
               <div className="timeline-middle">
@@ -98,14 +105,14 @@ const MyExperiences = () => {
                   />
                 </svg>
               </div>
-              <div className="timeline-end timeline-box text-balance">
+              <div data-aos="fade-right" data-aos-delay="900" data-aos-duration="1000" data-aos-easing="ease-out" data-aos-anchor-placement="bottom-center" className="timeline-end timeline-box text-balance">
                 Learn MongoDB on my own
               </div>
               <hr className="bg-blue-600"/>
             </li>
             <li>
               <hr className="bg-blue-600"/>
-              <div className="timeline-start timeline-box text-balance">
+              <div data-aos="fade-right" data-aos-delay="1100" data-aos-duration="1000" data-aos-easing="ease-out" data-aos-anchor-placement="bottom-center" className="timeline-start timeline-box text-balance">
                 Doing Senior Project
                 <br /> as a Front-end Developer
               </div>
@@ -123,14 +130,14 @@ const MyExperiences = () => {
                   />
                 </svg>
               </div>
-              <div className="timeline-end">
+              <div data-aos="fade-left" data-aos-delay="1100" data-aos-duration="1000" data-aos-easing="ease-out" data-aos-anchor-placement="bottom-center" className="timeline-end">
                 <p className="">21 December 2023</p>
               </div>
               <hr className="bg-blue-600"/>
             </li>
             <li>
               <hr className="bg-blue-600"/>
-              <div className="timeline-start">
+              <div data-aos="fade-left" data-aos-delay="1300" data-aos-duration="1000" data-aos-easing="ease-out" data-aos-anchor-placement="bottom-center" className="timeline-start">
                 <p className="">2 December 2024</p>
               </div>
               <div className="timeline-middle">
@@ -147,14 +154,14 @@ const MyExperiences = () => {
                   />
                 </svg>
               </div>
-              <div className="timeline-end timeline-box text-balance">
+              <div data-aos="fade-right" data-aos-delay="1300" data-aos-duration="1000" data-aos-easing="ease-out" data-aos-anchor-placement="bottom-center" className="timeline-end timeline-box text-balance">
                 Internship at Eventtech.ai
               </div>
               <hr className="bg-gradient-to-b xl:bg-gradient-to-r from-blue-600 to-oklch(92.4169% .00108 197.138 / 1)"/>
             </li>
             <li>
               <hr />
-              <div className="timeline-start timeline-box text-balance">
+              <div data-aos="fade-right" data-aos-delay="1500" data-aos-duration="1000" data-aos-easing="ease-out" data-aos-anchor-placement="bottom-center" className="timeline-start timeline-box text-balance">
               Start working
               </div>
               <div className="timeline-middle">
@@ -170,12 +177,11 @@ const MyExperiences = () => {
                   />
                 </svg>
               </div>
-              <div className="timeline-end "></div>
             </li>
           </ul>
         </div>
         <div className="capitalize space-y-6 px-4">
-          <div className="bg-white w-full flex flex-col justify-center items-center rounded-2xl py-4">
+          <div data-aos="fade-right" data-aos-delay="400" data-aos-duration="1500" data-aos-anchor-placement="bottom-center" className="bg-white w-full flex flex-col justify-center items-center rounded-2xl py-4">
             <p className="text-xl font-semibold mb-4 sm:mb-4 sm:mt-2">Work with TGP Eventtech.ai</p>
             <ul className="list-disc list-inside px-4 sm:px-16 lg:px-36 text-balance space-y-4 sm:space-y-0 text-center sm:text-left">
               <li>wordpress for Koh Mak</li>
@@ -233,7 +239,7 @@ const MyExperiences = () => {
               </li>
             </ul>
           </div>
-          <div className="bg-white w-full flex flex-col justify-center items-center rounded-2xl py-4">
+          <div  data-aos="fade-left" data-aos-delay="400" data-aos-duration="1500" data-aos-anchor-placement="center-center" className="bg-white w-full flex flex-col justify-center items-center rounded-2xl py-4">
             <p className="text-xl font-semibold mb-4 sm:mb-4 sm:mt-2">Previously developed projects</p>
             <ul className="list-disc list-inside px-4 sm:px-16 lg:px-36 text-balance space-y-4 sm:space-y-0 text-center sm:text-left">
               <li>

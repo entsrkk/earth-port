@@ -16,7 +16,7 @@ interface Project {
 
 const MyProjects = () => {
   const [projects, setProjects] = useState<Project[]>([]);
-  const router = useRouter()
+  const router = useRouter();
 
   useEffect(() => {
     const fetchProjects = async () => {
@@ -40,15 +40,24 @@ const MyProjects = () => {
   }, []);
 
   return (
-    <div
-      data-aos="fade-up"
-      data-aos-duration="1500"
-      className="container mx-auto"
-    >
+    <div className="container mx-auto">
       <div className="mb-8">
-        <h2 className="text-2xl sm:text-4xl text-center">My Projects</h2>
+        <h2
+          data-aos="fade-down"
+          data-aos-delay="100"
+          data-aos-easing="ease-out"
+          data-aos-duration="800"
+          className="text-2xl sm:text-4xl text-center"
+        >
+          My Projects
+        </h2>
       </div>
-      <div className="flex justify-center items-center">
+      <div
+        data-aos="fade-up"
+        data-aos-easing="ease-out"
+        data-aos-duration="800"
+        className="flex justify-center items-center"
+      >
         <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 xl:grid-cols-3">
           {projects.map((project) => (
             <div key={project.project_id}>
@@ -74,8 +83,12 @@ const MyProjects = () => {
                       </div>
                     ))}
                   </div>
-                  <h2 className="card-title text-base sm:text-xl capitalize line-clamp-1 cursor-pointer hover:text-blue-500 transition" 
-                  onClick={() => router.push(`/project?project_id=${project.project_id}`)}>
+                  <h2
+                    className="card-title text-base sm:text-xl capitalize line-clamp-1 cursor-pointer hover:text-blue-500 transition"
+                    onClick={() =>
+                      router.push(`/project?project_id=${project.project_id}`)
+                    }
+                  >
                     {project.project_name}
                   </h2>
                 </div>
