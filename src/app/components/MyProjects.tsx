@@ -36,7 +36,7 @@ const MyProjects = () => {
     };
 
     fetchProjects();
-    AOS.init();
+    AOS.init({disable: window.innerWidth < 1024});
   }, []);
 
   return (

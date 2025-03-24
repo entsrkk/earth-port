@@ -16,7 +16,7 @@ import { TypeAnimation } from "react-type-animation";
 
 const Contactpage: React.FC = () => {
   useEffect(() => {
-    AOS.init({ duration: 1000, easing: "ease-out" });
+    AOS.init({ duration: 1000, easing: "ease-out", disable: window.innerWidth < 1024});
   }, []);
   return (
     <div className="container mx-auto py-20 sm:py-10 sm:h-screen flex justify-center items-center">
@@ -29,7 +29,7 @@ const Contactpage: React.FC = () => {
             className="text-4xl sm:text-5xl font-bold sm:font-black uppercase text-center lg:text-start text-gradient"
           />
           <div className="space-y-3 sm:space-y-4">
-            <div data-aos="fade-left" data-aos-delay="700" className="flex items-center gap-2 sm:gap-3">
+            <div data-aos="fade-left" data-aos-anchor-placement="top-center" data-aos-delay="700" className="flex items-center gap-2 sm:gap-3">
               <FaFacebook className="w-12 h-12 fill-blue-500 " /> :{" "}
               <Link
                 href="https://www.facebook.com/niti.surakongka"
@@ -38,7 +38,7 @@ const Contactpage: React.FC = () => {
                 Niti Surakongka
               </Link>
             </div>
-            <div data-aos="fade-left" data-aos-delay="900" className="flex items-center gap-2 sm:gap-3">
+            <div data-aos="fade-left" data-aos-anchor-placement="top-center" data-aos-delay="900" className="flex items-center gap-2 sm:gap-3">
               <FaInstagram className="w-12 h-12 fill-blue-500" /> :{" "}
               <Link
                 href="https://www.instagram.com/eearth_nt/"
@@ -47,7 +47,7 @@ const Contactpage: React.FC = () => {
                 eearth_nt
               </Link>
             </div>
-            <div data-aos="fade-left" data-aos-delay="1100" className="flex items-center gap-2 sm:gap-3">
+            <div data-aos="fade-left" data-aos-anchor-placement="top-center" data-aos-delay="1100" className="flex items-center gap-2 sm:gap-3">
               <FaLine className="w-12 h-12 fill-blue-500" /> :{" "}
               <Link
                 href="https://line.me/ti/p/8XgcLYn8Cg"
@@ -56,7 +56,7 @@ const Contactpage: React.FC = () => {
                 091-758-2874
               </Link>
             </div>
-            <div data-aos="fade-left" data-aos-delay="1300" className="flex items-center gap-2 sm:gap-3">
+            <div data-aos="fade-left" data-aos-anchor-placement="top-center" data-aos-delay="1300" className="flex items-center gap-2 sm:gap-3">
               <FaPhone className="w-12 h-12 fill-blue-500" /> :{" "}
               <Link
                 href="tel:0917582874"
@@ -65,7 +65,7 @@ const Contactpage: React.FC = () => {
                 091-758-2874
               </Link>
             </div>
-            <div data-aos="fade-left" data-aos-delay="1500" className="flex items-center gap-2 sm:gap-3">
+            <div data-aos="fade-left" data-aos-anchor-placement="top-center" data-aos-delay="1500" className="flex items-center gap-2 sm:gap-3">
               <FaGithub className="w-12 h-12 fill-blue-500" /> :{" "}
               <Link
                 href="https://github.com/entsrkk"
@@ -74,7 +74,7 @@ const Contactpage: React.FC = () => {
                 entsrkk
               </Link>
             </div>
-            <div data-aos="fade-left" data-aos-delay="1700" className="flex items-center gap-2 sm:gap-3">
+            <div data-aos="fade-left" data-aos-anchor-placement="top-center" data-aos-delay="1700" className="flex items-center gap-2 sm:gap-3">
               <FaLinkedin className="w-12 h-12 fill-blue-500" /> :{" "}
               <Link
                 href="https://www.linkedin.com/in/nitisurakongka/"
@@ -83,7 +83,7 @@ const Contactpage: React.FC = () => {
                 Niti Surakongka
               </Link>
             </div>
-            <div data-aos="fade-left" data-aos-delay="1900" className="flex items-center gap-2 sm:gap-3">
+            <div data-aos="fade-left" data-aos-anchor-placement="top-center" data-aos-delay="1900" className="flex items-center gap-2 sm:gap-3">
               <FaMedium className="w-12 h-12 fill-blue-500" /> :{" "}
               <Link
                 href="https://medium.com/@niti2003s"

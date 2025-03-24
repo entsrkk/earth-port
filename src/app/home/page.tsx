@@ -10,7 +10,7 @@ import "aos/dist/aos.css";
 
 const Homepage = () => {
   useEffect(() => {
-    AOS.init();
+    AOS.init({disable: window.innerWidth < 1024});
   }, []);
   return (
     <>
@@ -27,7 +27,7 @@ const Homepage = () => {
             height={450}
             loading="lazy"
             loader={({ src }) => src}
-            className="w-[500px] h-[330px] sm:h-[440px] object-cover mask-image-gradient"
+            className="w-[500px] h-[340px] sm:h-[440px] object-cover mask-image-gradient"
           />
           <div className="space-y-2 sm:space-y-6 text-center lg:text-left">
             <TypeAnimation
@@ -41,6 +41,7 @@ const Homepage = () => {
               data-aos-delay="200"
               data-aos-duration="1000"
               data-aos-easing="ease-out"
+              
               className="mx-auto text-base text-balance md:text-xl lg:text-2xl lg:w-[740px] "
             >
               Hello! I&apos;m Earth, also known as Mr. Niti Surakongka, a Junior
