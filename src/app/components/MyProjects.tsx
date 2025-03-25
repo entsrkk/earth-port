@@ -41,7 +41,7 @@ const MyProjects = () => {
 
   return (
     <div className="container mx-auto">
-      <div className="mb-8">
+      <div className="mb-4 sm:mb-8">
         <h2
           data-aos="fade-down"
           data-aos-delay="100"

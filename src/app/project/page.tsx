@@ -55,7 +55,8 @@ const AllProjectpage = () => {
             </p>
             <div>
               <Link
-                href={"/"}
+                href={"https://github.com/msssrp/tech-vibe.git"}
+                target="_blank"
                 className="btn cursor-pointer text-white font-semibold bg-gradient-to-r from-gray-800 to-black lg:px-7 lg:py-3 rounded-full border border-gray-600 hover:scale-105 duration-200 hover:text-gray-300 hover:border-gray-800 hover:from-black hover:to-gray-900"
               >
                 <svg
@@ -97,8 +98,9 @@ const AllProjectpage = () => {
             </p>
             <div className="space-x-1 flex">
               <Link
-                href={"/"}
-                className="btn cursor-pointer text-white font-semibold bg-gradient-to-r from-blue-600 to-sky-600 lg:px-7 lg:py-3 rounded-full hover:scale-105 duration-200 hover:text-gray-300 "
+                href={"https://blockchain-beige.vercel.app/"}
+                target="_blank"
+                className="btn cursor-pointer text-white font-semibold bg-gradient-to-r from-blue-600 to-sky-600 lg:px-7 lg:py-3 rounded-full hover:scale-105 duration-200 hover:text-gray-300 hidden sm:flex"
               >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -121,7 +123,8 @@ const AllProjectpage = () => {
                 Live pervirew
               </Link>
               <Link
-                href={"/"}
+                href={"https://github.com/entsrkk/blockchain"}
+                target="_blank"
                 className="btn cursor-pointer text-white font-semibold bg-gradient-to-r from-gray-800 to-black lg:px-7 lg:py-3 rounded-full border border-gray-600 hover:scale-105 duration-200 hover:text-gray-300 hover:border-gray-800 hover:from-black hover:to-gray-900"
               >
                 <svg
@@ -169,7 +172,8 @@ const AllProjectpage = () => {
             </p>
             <div>
               <Link
-                href={"/"}
+                href={"https://github.com/entsrkk/ShoppingCartRedux.git"}
+                target="_blank"
                 className="btn cursor-pointer text-white font-semibold bg-gradient-to-r from-gray-800 to-black lg:px-7 lg:py-3 rounded-full border border-gray-600 hover:scale-105 duration-200 hover:text-gray-300 hover:border-gray-800 hover:from-black hover:to-gray-900"
               >
                 <svg
@@ -217,7 +221,8 @@ const AllProjectpage = () => {
             </p>
             <div>
               <Link
-                href={"/"}
+                href={"https://github.com/entsrkk/MERN_Chat.git"}
+                target="_blank"
                 className="btn cursor-pointer text-white font-semibold bg-gradient-to-r from-gray-800 to-black lg:px-7 lg:py-3 rounded-full border border-gray-600 hover:scale-105 duration-200 hover:text-gray-300 hover:border-gray-800 hover:from-black hover:to-gray-900"
               >
                 <svg
@@ -269,7 +274,8 @@ const AllProjectpage = () => {
             </p>
             <div>
               <Link
-                href={"/"}
+                href={"https://github.com/entsrkk/MERN_SeShop.git"}
+                target="_blank"
                 className="btn cursor-pointer text-white font-semibold bg-gradient-to-r from-gray-800 to-black lg:px-7 lg:py-3 rounded-full border border-gray-600 hover:scale-105 duration-200 hover:text-gray-300 hover:border-gray-800 hover:from-black hover:to-gray-900"
               >
                 <svg

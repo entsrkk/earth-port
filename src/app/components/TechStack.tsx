@@ -10,56 +10,73 @@ import {
   SiPostgresql,
   SiMongodb,
 } from "react-icons/si";
-import Image from "next/image";
-
+import { RiNextjsFill } from "react-icons/ri";
 
 const TechStackCarousel: React.FC = () => {
   return (
     <div className="bg-gradient-to-r from-blue-600 to-sky-600 ">
-      <div  className="container mx-auto flex flex-col justify-center items-center py-8 sm:py-12">
-        <h2 data-aos="zoom-out-up" data-aos-duration="1000" data-aos-easing="ease-out" className="text-2xl sm:text-3xl text-white text-center">Technologies I use</h2>
-        <div data-aos="zoom-in-up" data-aos-duration="1000" data-aos-easing="ease-out" className="flex flex-wrap justify-center items-center gap-4 sm:gap-8 lg:px-28 xl:px-40 sm:mt-2 ">
-          <div>
-            <FaReact className="text-3xl sm:text-5xl text-white hover:scale-[1.4] lg:hover-drop-shadow duration-300 " />
+      <div className="container mx-auto flex flex-col justify-center items-center py-8 sm:py-12">
+        <h2
+          data-aos="zoom-out-up"
+          data-aos-duration="1000"
+          data-aos-easing="ease-out"
+          className="text-2xl sm:text-base text-white text-center"
+        >
+          Technologies I use
+        </h2>
+        <div
+          data-aos="zoom-in-up"
+          data-aos-duration="1000"
+          data-aos-easing="ease-out"
+          className="flex flex-wrap justify-center items-center gap-2 sm:gap-4 px-2 lg:px-28 xl:px-40 mt-4"
+        >
+          <div className="flex justify-center items-center text-white space-x-2 border border-white rounded-2xl px-5 py-1 hover:scale-110 lg:hover-drop-shadow duration-300">
+            <FaReact className="text-base sm:text-2xl text-white " />
+            <p className="text-sm sm:text-lg">React</p>
           </div>
-          <div>
-            <SiVite className="text-3xl sm:text-5xl text-white hover:scale-[1.4] lg:hover-drop-shadow duration-300" />
+          <div className="flex justify-center items-center text-white space-x-2 border border-white rounded-2xl px-5 py-1 hover:scale-110 lg:hover-drop-shadow duration-300">
+            <SiVite className="text-base sm:text-2xl text-white" />
+            <p className="text-sm sm:text-lg">Vite</p>
           </div>
-          <div>
-            <Image
-              src="/nextjs-logotype-dark-background.svg"
-              alt="Next.js"
-              width={96}
-              height={96}
-              className="w-20 h-20 sm:w-24 sm:h-24 select-none hover:scale-[1.4] lg:hover-drop-shadow duration-300"
-            />
+          <div className="flex justify-center items-center text-white space-x-2 border border-white rounded-2xl px-5 py-1 hover:scale-110 lg:hover-drop-shadow duration-300">
+            <RiNextjsFill className="text-base sm:text-2xl text-white" />
+            <p className="text-sm sm:text-lg">Next.js</p>
           </div>
-          <div>
-            <FaWordpress className="text-3xl sm:text-5xl text-white hover:scale-[1.4] lg:hover-drop-shadow duration-300" />
+          <div className="flex justify-center items-center text-white space-x-2 border border-white rounded-2xl px-5 py-1 hover:scale-110 lg:hover-drop-shadow duration-300">
+            <FaWordpress className="text-base sm:text-2xl text-white" />
+            <p className="text-sm sm:text-lg">Wordpress</p>
           </div>
-          <div>
-            <SiTailwindcss className="text-3xl sm:text-5xl text-white hover:scale-[1.4] lg:hover-drop-shadow duration-300" />
+          <div className="flex justify-center items-center text-white space-x-2 border border-white rounded-2xl px-5 py-1 hover:scale-110 lg:hover-drop-shadow duration-300">
+            <SiTailwindcss className="text-base sm:text-2xl text-white" />
+            <p className="text-sm sm:text-lg">TailwindCSS</p>
           </div>
-          <div>
-            <SiMantine className="text-3xl sm:text-5xl text-white hover:scale-[1.4] lg:hover-drop-shadow duration-300" />
+          <div className="flex justify-center items-center text-white space-x-2 border border-white rounded-2xl px-5 py-1 hover:scale-110 lg:hover-drop-shadow duration-300">
+            <SiMantine className="text-base sm:text-2xl text-white" />
+            <p className="text-sm sm:text-lg">Mantine</p>
           </div>
-          <div>
-            <SiNextui className="text-3xl sm:text-5xl text-white hover:scale-[1.4] lg:hover-drop-shadow duration-300" />
+          <div className="flex justify-center items-center text-white space-x-2 border border-white rounded-2xl px-5 py-1 hover:scale-110 lg:hover-drop-shadow duration-300">
+            <SiNextui className="text-base sm:text-2xl text-white" />
+            <p className="text-sm sm:text-lg">Nextui</p>
           </div>
-          <div>
-            <SiRedux className="text-3xl sm:text-5xl text-white hover:scale-[1.4] lg:hover-drop-shadow duration-300" />
+          <div className="flex justify-center items-center text-white space-x-2 border border-white rounded-2xl px-5 py-1 hover:scale-110 lg:hover-drop-shadow duration-300">
+            <SiRedux className="text-base sm:text-2xl text-white" />
+            <p className="text-sm sm:text-lg">Redux</p>
           </div>
-          <div>
-            <SiTypescript className="text-3xl sm:text-5xl text-white hover:scale-[1.4] lg:hover-drop-shadow duration-300" />
+          <div className="flex justify-center items-center text-white space-x-2 border border-white rounded-2xl px-5 py-1 hover:scale-110 lg:hover-drop-shadow duration-300">
+            <SiTypescript className="text-base sm:text-2xl text-white" />
+            <p className="text-sm sm:text-lg">TypeScript</p>
           </div>
-          <div>
-            <SiMysql className="text-3xl sm:text-5xl text-white hover:scale-[1.4] lg:hover-drop-shadow duration-300" />
+          <div className="flex justify-center items-center text-white space-x-2 border border-white rounded-2xl px-5 py-1 hover:scale-110 lg:hover-drop-shadow duration-300">
+            <SiMysql className="text-base sm:text-2xl text-white" />
+            <p className="text-sm sm:text-lg">MySQL</p>
           </div>
-          <div>
-            <SiPostgresql className="text-3xl sm:text-5xl text-white hover:scale-[1.4] lg:hover-drop-shadow duration-300" />
+          <div className="flex justify-center items-center text-white space-x-2 border border-white rounded-2xl px-5 py-1 hover:scale-110 lg:hover-drop-shadow duration-300">
+            <SiPostgresql className="text-base sm:text-2xl text-white" />
+            <p className="text-sm sm:text-lg">PostgreSQL</p>
           </div>
-          <div>
-            <SiMongodb className="text-3xl sm:text-5xl text-white hover:scale-[1.4] lg:hover-drop-shadow duration-300" />
+          <div className="flex justify-center items-center text-white space-x-2 border border-white rounded-2xl px-5 py-1 hover:scale-110 lg:hover-drop-shadow duration-300">
+            <SiMongodb className="text-base sm:text-2xl text-white" />
+            <p className="text-sm sm:text-lg">MongoDB</p>
           </div>
         </div>
       </div>
