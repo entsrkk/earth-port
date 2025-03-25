@@ -10,6 +10,9 @@ const Navbar: React.FC = () => {
             <Link href="/" className="sm:px-4 lg:animated-underline">
               Home
             </Link>
+            <Link href="/project" className="sm:px-4 lg:animated-underline">
+              Project
+            </Link>
             <Link href="https://drive.google.com/file/d/1F0OMptXmxmqkTgqKjJGaN85mDWKroW6T/view?usp=sharing" target="_blank" className="sm:px-4 lg:animated-underline">Resume</Link>
             <Link href="/contact" className="sm:px-4 lg:animated-underline">Contact Us</Link>
           </div>

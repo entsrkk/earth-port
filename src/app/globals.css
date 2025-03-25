@@ -45,6 +45,10 @@
   @apply bg-gradient-to-r from-blue-600 to-sky-600 text-transparent bg-clip-text;
 }
 
+.tetech-stack{
+  @apply flex items-center space-x-2;
+}
+
 .m_5df29311 {
   padding: 0 !important;
 }
