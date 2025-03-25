@@ -20,7 +20,7 @@ const TechStackCarousel: React.FC = () => {
           data-aos="zoom-out-up"
           data-aos-duration="1000"
           data-aos-easing="ease-out"
-          className="text-2xl sm:text-base text-white text-center"
+          className="text-2xl sm:text-text-3xl text-white text-center"
         >
           Technologies I use
         </h2>
