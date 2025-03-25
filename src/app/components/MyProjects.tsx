@@ -22,21 +22,15 @@ const MyProjects = () => {
     const fetchProjects = async () => {
       try {
         const response = await axios.get("/data/project.json");
-        const normalizedData = response.data.map((project: Project) => ({
-          ...project,
-          project_tag: Array.isArray(project.project_tag)
-            ? project.project_tag
-            : [project.project_tag],
-        }));
-
-        setProjects((prev) => (prev.length === 0 ? normalizedData : prev)); // ป้องกันการโหลดซ้ำ
+        const { data } = response;
+        setProjects(data);
       } catch (error) {
         console.error("Error fetching the projects data", error);
       }
     };
 
     fetchProjects();
-    AOS.init({disable: window.innerWidth < 1024});
+    AOS.init({ disable: window.innerWidth < 1024 });
   }, []);
 
   return (
@@ -47,21 +41,21 @@ const MyProjects = () => {
           data-aos-delay="100"
           data-aos-easing="ease-out"
           data-aos-duration="800"
-          className="text-2xl sm:text-4xl text-center"
+          className="text-4xl text-center font-medium"
         >
-          My Projects
+          Curated <span className="text-gradient font-extrabold">Works</span>
         </h2>
       </div>
       <div
         data-aos="fade-up"
         data-aos-easing="ease-out"
         data-aos-duration="800"
-        className="flex justify-center items-center"
+        className="flex justify-center items-center "
       >
-        <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 xl:grid-cols-3">
+        <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 xl:grid-cols-3 ">
           {projects.map((project) => (
             <div key={project.project_id}>
-              <div className="card bg-base-200 w-80 lg:w-96 shadow-xl border hover:scale-[1.02] duration-300">
+              <div className="card bg-base-200 w-72 sm:w-80 lg:w-96 shadow-xl border hover:scale-[1.02] duration-300">
                 <figure>
                   <Image
                     width={450}
@@ -72,19 +66,9 @@ const MyProjects = () => {
                     loading="lazy"
                   />
                 </figure>
-                <div className="card-body p-6 lg:p-8">
-                  <div className="space-x-1 flex flex-wrap">
-                    {project.project_tag.map((tag) => (
-                      <div
-                        key={tag}
-                        className="badge bg-base-300 text-xs sm:text-sm py-2 sm:py-3 capitalize opacity-70"
-                      >
-                        {tag}
-                      </div>
-                    ))}
-                  </div>
+                <div className="card-body p-5 lg:p-8">
                   <h2
-                    className="card-title text-base sm:text-xl capitalize line-clamp-1 cursor-pointer hover:text-blue-500 transition"
+                    className="card-title text-base sm:text-xl font-medium capitalize line-clamp-1 cursor-pointer hover:text-blue-500 transition"
                     onClick={() =>
                       router.push(`/project?project_id=${project.project_id}`)
                     }

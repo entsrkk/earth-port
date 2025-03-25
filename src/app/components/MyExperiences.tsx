@@ -17,12 +17,12 @@ const MyExperiences = () => {
           data-aos-delay="300"
           data-aos-duration="1000"
           data-aos-easing="ease-out"
-          className="text-2xl sm:text-4xl text-center"
+          className="text-4xl text-center font-medium"
         >
           My Experiences
         </h2>
         <div className="my-6 sm:my-10">
-          <ul className="timeline timeline-vertical xl:timeline-horizontal px-2 sm:px-0 text-sm">
+          <ul className="timeline timeline-vertical xl:timeline-horizontal px-2 sm:px-0 text-sm ">
             <li>
               <div
                 data-aos="fade-right"
@@ -56,7 +56,7 @@ const MyExperiences = () => {
                 data-aos-anchor-placement="top-center"
                 className="timeline-end"
               >
-                <p className="">5 July 2021</p>
+                <p className="font-light">5 July 2021</p>
               </div>
               <hr className="bg-blue-600" />
             </li>
@@ -70,7 +70,7 @@ const MyExperiences = () => {
                 data-aos-anchor-placement="top-center"
                 className="timeline-start"
               >
-                <p className="">21 June 2023</p>
+                <p className="font-light">21 June 2023</p>
               </div>
               <div className="timeline-middle">
                 <svg
@@ -132,7 +132,7 @@ const MyExperiences = () => {
                 data-aos-anchor-placement="top-center"
                 className="timeline-end"
               >
-                <p className="">21 October 2023</p>
+                <p className="font-light">21 October 2023</p>
               </div>
               <hr className="bg-blue-600" />
             </li>
@@ -146,7 +146,7 @@ const MyExperiences = () => {
                 data-aos-anchor-placement="top-center"
                 className="timeline-start"
               >
-                <p className="">4 November 2023</p>
+                <p className="font-light">4 November 2023</p>
               </div>
               <div className="timeline-middle">
                 <svg
@@ -209,7 +209,7 @@ const MyExperiences = () => {
                 data-aos-anchor-placement="top-center"
                 className="timeline-end"
               >
-                <p className="">21 December 2023</p>
+                <p className="font-light">21 December 2023</p>
               </div>
               <hr className="bg-blue-600" />
             </li>
@@ -223,7 +223,7 @@ const MyExperiences = () => {
                 data-aos-anchor-placement="top-center"
                 className="timeline-start"
               >
-                <p className="">2 December 2024</p>
+                <p className="font-light">2 December 2024</p>
               </div>
               <div className="timeline-middle">
                 <svg
@@ -287,10 +287,10 @@ const MyExperiences = () => {
             data-aos-anchor-placement="top-center"
             className="bg-white w-full flex flex-col justify-center items-center rounded-2xl py-4"
           >
-            <p className="text-xl font-semibold mb-4 sm:mb-4 sm:mt-2">
+            <p className="text-xl font-medium mb-4 sm:mb-4 sm:mt-2">
               Work with Eventtech.ai
             </p>
-            <ul className="list-disc list-inside px-4 sm:px-16 lg:px-36 text-balance space-y-4 sm:space-y-0 text-center sm:text-left">
+            <ul className="list-disc list-inside px-4 sm:px-16 lg:px-36 space-y-4 sm:space-y-0 text-center sm:text-left text-balance">
               <li>wordpress for Koh Mak</li>
               <li>bepeerapat 20th</li>
               <li>
@@ -353,7 +353,7 @@ const MyExperiences = () => {
             data-aos-anchor-placement="top-center"
             className="bg-white w-full flex flex-col justify-center items-center rounded-2xl py-4"
           >
-            <p className="text-xl font-semibold px-4 text-center mb-4 sm:mb-4 sm:mt-2">
+            <p className="text-xl font-medium px-4 text-center mb-4 sm:mb-4 sm:mt-2">
               Previously developed projects
             </p>
             <ul className="list-disc list-inside px-4 sm:px-16 lg:px-36 text-balance space-y-4 sm:space-y-0 text-center sm:text-left">

@@ -1,16 +1,4 @@
-import { FaReact, FaWordpress } from "react-icons/fa";
-import {
-  SiVite,
-  SiTypescript,
-  SiTailwindcss,
-  SiMantine,
-  SiNextui,
-  SiRedux,
-  SiMysql,
-  SiPostgresql,
-  SiMongodb,
-} from "react-icons/si";
-import { RiNextjsFill } from "react-icons/ri";
+import React from "react";
 
 const TechStackCarousel: React.FC = () => {
   return (
@@ -20,7 +8,7 @@ const TechStackCarousel: React.FC = () => {
           data-aos="zoom-out-up"
           data-aos-duration="1000"
           data-aos-easing="ease-out"
-          className="text-2xl sm:text-3xl text-white text-center"
+          className="text-4xl text-white text-center font-medium"
         >
           Technologies I use
         </h2>
@@ -28,55 +16,243 @@ const TechStackCarousel: React.FC = () => {
           data-aos="zoom-in-up"
           data-aos-duration="1000"
           data-aos-easing="ease-out"
-          className="flex flex-wrap justify-center items-center gap-2 sm:gap-4 px-2 lg:px-28 xl:px-40 mt-4"
+          className="flex flex-wrap justify-center items-center gap-2 px-2 mt-4 md:mt-8 max-w-7xl"
         >
-          <div className="flex justify-center items-center text-white space-x-2 border border-white rounded-2xl px-5 py-1 hover:scale-110 lg:hover-drop-shadow duration-300">
-            <FaReact className="text-base sm:text-2xl text-white " />
-            <p className="text-sm sm:text-lg">React</p>
+          <div className="flex justify-center items-center text-black space-x-2 border border-white bg-white rounded-xl px-4 py-[6px] hover:scale-105 lg:hover-drop-shadow duration-300">
+            <img
+              height="24"
+              width="24"
+              src="https://cdn.simpleicons.org/html5"
+              className="w-4 lg:w-6"
+            />
+            <p className="text-sm sm:text-base">HTML</p>
           </div>
-          <div className="flex justify-center items-center text-white space-x-2 border border-white rounded-2xl px-5 py-1 hover:scale-110 lg:hover-drop-shadow duration-300">
-            <SiVite className="text-base sm:text-2xl text-white" />
-            <p className="text-sm sm:text-lg">Vite</p>
+          <div className="flex justify-center items-center text-black space-x-2 border border-white bg-white rounded-xl px-4 py-[6px] hover:scale-105 lg:hover-drop-shadow duration-300">
+            <img
+              height="24"
+              width="24"
+              src="https://cdn.simpleicons.org/css3"
+              className="w-4 lg:w-6"
+            />
+            <p className="text-sm sm:text-base">CSS</p>
           </div>
-          <div className="flex justify-center items-center text-white space-x-2 border border-white rounded-2xl px-5 py-1 hover:scale-110 lg:hover-drop-shadow duration-300">
-            <RiNextjsFill className="text-base sm:text-2xl text-white" />
-            <p className="text-sm sm:text-lg">Next.js</p>
+          <div className="flex justify-center items-center text-black space-x-2 border border-white bg-white rounded-xl px-4 py-[6px] hover:scale-105 lg:hover-drop-shadow duration-300">
+            <img
+              height="24"
+              width="24"
+              src="https://cdn.simpleicons.org/javascript"
+              className="w-4 lg:w-6"
+            />
+            <p className="text-sm sm:text-base">JavaScript</p>
           </div>
-          <div className="flex justify-center items-center text-white space-x-2 border border-white rounded-2xl px-5 py-1 hover:scale-110 lg:hover-drop-shadow duration-300">
-            <FaWordpress className="text-base sm:text-2xl text-white" />
-            <p className="text-sm sm:text-lg">Wordpress</p>
+          <div className="flex justify-center items-center text-black space-x-2 border border-white bg-white rounded-xl px-4 py-[6px] hover:scale-105 lg:hover-drop-shadow duration-300">
+            <img
+              height="24"
+              width="24"
+              src="https://cdn.simpleicons.org/typescript"
+              className="w-4 lg:w-6"
+            />
+            <p className="text-sm sm:text-base">TypeScript</p>
           </div>
-          <div className="flex justify-center items-center text-white space-x-2 border border-white rounded-2xl px-5 py-1 hover:scale-110 lg:hover-drop-shadow duration-300">
-            <SiTailwindcss className="text-base sm:text-2xl text-white" />
-            <p className="text-sm sm:text-lg">TailwindCSS</p>
+          <div className="flex justify-center items-center text-black space-x-2 border border-white bg-white rounded-xl px-4 py-[6px] hover:scale-105 lg:hover-drop-shadow duration-300">
+            <img
+              height="24"
+              width="24"
+              src="https://cdn.simpleicons.org/react"
+              className="w-4 lg:w-6"
+            />
+            <p className="text-sm sm:text-base">React</p>
           </div>
-          <div className="flex justify-center items-center text-white space-x-2 border border-white rounded-2xl px-5 py-1 hover:scale-110 lg:hover-drop-shadow duration-300">
-            <SiMantine className="text-base sm:text-2xl text-white" />
-            <p className="text-sm sm:text-lg">Mantine</p>
+          <div className="flex justify-center items-center text-black space-x-2 border border-white bg-white rounded-xl px-4 py-[6px] hover:scale-105 lg:hover-drop-shadow duration-300">
+            <img
+              height="24"
+              width="24"
+              src="https://cdn.simpleicons.org/nextdotjs"
+              className="w-4 lg:w-6"
+            />
+            <p className="text-sm sm:text-base">Next.js</p>
           </div>
-          <div className="flex justify-center items-center text-white space-x-2 border border-white rounded-2xl px-5 py-1 hover:scale-110 lg:hover-drop-shadow duration-300">
-            <SiNextui className="text-base sm:text-2xl text-white" />
-            <p className="text-sm sm:text-lg">Nextui</p>
+          <div className="flex justify-center items-center text-black space-x-2 border border-white bg-white rounded-xl px-4 py-[6px] hover:scale-105 lg:hover-drop-shadow duration-300">
+            <img
+              height="24"
+              width="24"
+              src="https://cdn.simpleicons.org/tailwindcss"
+              className="w-4 lg:w-6"
+            />
+            <p className="text-sm sm:text-base">TailwindCSS</p>
           </div>
-          <div className="flex justify-center items-center text-white space-x-2 border border-white rounded-2xl px-5 py-1 hover:scale-110 lg:hover-drop-shadow duration-300">
-            <SiRedux className="text-base sm:text-2xl text-white" />
-            <p className="text-sm sm:text-lg">Redux</p>
+          <div className="flex justify-center items-center text-black space-x-2 border border-white bg-white rounded-xl px-4 py-[6px] hover:scale-105 lg:hover-drop-shadow duration-300">
+            <img
+              height="24"
+              width="24"
+              src="https://cdn.simpleicons.org/daisyui"
+              className="w-4 lg:w-6"
+            />
+            <p className="text-sm sm:text-base">daisyUI</p>
           </div>
-          <div className="flex justify-center items-center text-white space-x-2 border border-white rounded-2xl px-5 py-1 hover:scale-110 lg:hover-drop-shadow duration-300">
-            <SiTypescript className="text-base sm:text-2xl text-white" />
-            <p className="text-sm sm:text-lg">TypeScript</p>
+          <div className="flex justify-center items-center text-black space-x-2 border border-white bg-white rounded-xl px-4 py-[6px] hover:scale-105 lg:hover-drop-shadow duration-300">
+            <img
+              height="24"
+              width="24"
+              src="https://cdn.simpleicons.org/mui"
+              className="w-4 lg:w-6"
+            />
+            <p className="text-sm sm:text-base">Material UI</p>
           </div>
-          <div className="flex justify-center items-center text-white space-x-2 border border-white rounded-2xl px-5 py-1 hover:scale-110 lg:hover-drop-shadow duration-300">
-            <SiMysql className="text-base sm:text-2xl text-white" />
-            <p className="text-sm sm:text-lg">MySQL</p>
+          <div className="flex justify-center items-center text-black space-x-2 border border-white bg-white rounded-xl px-4 py-[6px] hover:scale-105 lg:hover-drop-shadow duration-300">
+            <img
+              height="24"
+              width="24"
+              src="https://cdn.simpleicons.org/Mantine"
+              className="w-4 lg:w-6"
+            />
+            <p className="text-sm sm:text-base">Mantine</p>
           </div>
-          <div className="flex justify-center items-center text-white space-x-2 border border-white rounded-2xl px-5 py-1 hover:scale-110 lg:hover-drop-shadow duration-300">
-            <SiPostgresql className="text-base sm:text-2xl text-white" />
-            <p className="text-sm sm:text-lg">PostgreSQL</p>
+          <div className="flex justify-center items-center text-black space-x-2 border border-white bg-white rounded-xl px-4 py-[6px] hover:scale-105 lg:hover-drop-shadow duration-300">
+            <img
+              height="24"
+              width="24"
+              src="https://cdn.simpleicons.org/nextui"
+              className="w-4 lg:w-6"
+            />
+            <p className="text-sm sm:text-base">NextUI</p>
           </div>
-          <div className="flex justify-center items-center text-white space-x-2 border border-white rounded-2xl px-5 py-1 hover:scale-110 lg:hover-drop-shadow duration-300">
-            <SiMongodb className="text-base sm:text-2xl text-white" />
-            <p className="text-sm sm:text-lg">MongoDB</p>
+
+          <div className="flex justify-center items-center text-black space-x-2 border border-white bg-white rounded-xl px-4 py-[6px] hover:scale-105 lg:hover-drop-shadow duration-300">
+            <img
+              height="24"
+              width="24"
+              src="https://cdn.simpleicons.org/redux"
+              className="w-4 lg:w-6"
+            />
+            <p className="text-sm sm:text-base">Redux</p>
+          </div>
+          <div className="flex justify-center items-center text-black space-x-2 border border-white bg-white rounded-xl px-4 py-[6px] hover:scale-105 lg:hover-drop-shadow duration-300">
+            <img
+              height="24"
+              width="24"
+              src="https://cdn.simpleicons.org/nodedotjs"
+              className="w-4 lg:w-6"
+            />
+            <p className="text-sm sm:text-base">Node.Js</p>
+          </div>
+          <div className="flex justify-center items-center text-black space-x-2 border border-white bg-white rounded-xl px-4 py-[6px] hover:scale-105 lg:hover-drop-shadow duration-300">
+            <img
+              height="24"
+              width="24"
+              src="https://cdn.simpleicons.org/express"
+              className="w-4 lg:w-6"
+            />
+            <p className="text-sm sm:text-base">ExpressJS</p>
+          </div>
+          <div className="flex justify-center items-center text-black space-x-2 border border-white bg-white rounded-xl px-4 py-[6px] hover:scale-105 lg:hover-drop-shadow duration-300">
+            <img
+              height="24"
+              width="24"
+              src="https://cdn.simpleicons.org/firebase"
+              className="w-4 lg:w-6"
+            />
+            <p className="text-sm sm:text-base">Firebase</p>
+          </div>
+          <div className="flex justify-center items-center text-black space-x-2 border border-white bg-white rounded-xl px-4 py-[6px] hover:scale-105 lg:hover-drop-shadow duration-300">
+            <img
+              height="24"
+              width="24"
+              src="https://cdn.simpleicons.org/axios"
+              className="w-4 lg:w-6"
+            />
+            <p className="text-sm sm:text-base">Axios</p>
+          </div>
+          <div className="flex justify-center items-center text-black space-x-2 border border-white bg-white rounded-xl px-4 py-[6px] hover:scale-105 lg:hover-drop-shadow duration-300">
+            <img
+              height="24"
+              width="24"
+              src="https://cdn.simpleicons.org/mysql"
+              className="w-4 lg:w-6"
+            />
+            <p className="text-sm sm:text-base">MySQL</p>
+          </div>
+          <div className="flex justify-center items-center text-black space-x-2 border border-white bg-white rounded-xl px-4 py-[6px] hover:scale-105 lg:hover-drop-shadow duration-300">
+            <img
+              height="24"
+              width="24"
+              src="https://cdn.simpleicons.org/PostgreSQL"
+              className="w-4 lg:w-6"
+            />
+            <p className="text-sm sm:text-base">PostgreSQL</p>
+          </div>
+          <div className="flex justify-center items-center text-black space-x-2 border border-white bg-white rounded-xl px-4 py-[6px] hover:scale-105 lg:hover-drop-shadow duration-300">
+            <img
+              height="24"
+              width="24"
+              src="https://cdn.simpleicons.org/mongodb"
+              className="w-4 lg:w-6"
+            />
+            <p className="text-sm sm:text-base">MongoDB</p>
+          </div>
+          <div className="flex justify-center items-center text-black space-x-2 border border-white bg-white rounded-xl px-4 py-[6px] hover:scale-105 lg:hover-drop-shadow duration-300">
+            <img
+              height="24"
+              width="24"
+              src="https://cdn.simpleicons.org/swagger"
+              className="w-4 lg:w-6"
+            />
+            <p className="text-sm sm:text-base">Swagger</p>
+          </div>
+          <div className="flex justify-center items-center text-black space-x-2 border border-white bg-white rounded-xl px-4 py-[6px] hover:scale-105 lg:hover-drop-shadow duration-300">
+            <img
+              height="24"
+              width="24"
+              src="https://cdn.simpleicons.org/postman"
+              className="w-4 lg:w-6"
+            />
+            <p className="text-sm sm:text-base">Postman</p>
+          </div>
+
+          <div className="flex justify-center items-center text-black space-x-2 border border-white bg-white rounded-xl px-4 py-[6px] hover:scale-105 lg:hover-drop-shadow duration-300">
+            <img
+              height="24"
+              width="24"
+              src="https://cdn.simpleicons.org/git"
+              className="w-4 lg:w-6"
+            />
+            <p className="text-sm sm:text-base">Git</p>
+          </div>
+          <div className="flex justify-center items-center text-black space-x-2 border border-white bg-white rounded-xl px-4 py-[6px] hover:scale-105 lg:hover-drop-shadow duration-300">
+            <img
+              height="24"
+              width="24"
+              src="https://cdn.simpleicons.org/github"
+              className="w-4 lg:w-6"
+            />
+            <p className="text-sm sm:text-base">Github</p>
+          </div>
+          <div className="flex justify-center items-center text-black space-x-2 border border-white bg-white rounded-xl px-4 py-[6px] hover:scale-105 lg:hover-drop-shadow duration-300">
+            <img
+              height="24"
+              width="24"
+              src="https://cdn.simpleicons.org/gitlab"
+              className="w-4 lg:w-6"
+            />
+            <p className="text-sm sm:text-base">Gitlab</p>
+          </div>
+          <div className="flex justify-center items-center text-black space-x-2 border border-white bg-white rounded-xl px-4 py-[6px] hover:scale-105 lg:hover-drop-shadow duration-300">
+            <img
+              height="24"
+              width="24"
+              src="https://cdn.simpleicons.org/vercel"
+              className="w-4 lg:w-6"
+            />
+            <p className="text-sm sm:text-base">Vercel</p>
+          </div>
+          <div className="flex justify-center items-center text-black space-x-2 border border-white bg-white rounded-xl px-4 py-[6px] hover:scale-105 lg:hover-drop-shadow duration-300">
+            <img
+              height="24"
+              width="24"
+              src="https://cdn.simpleicons.org/netlify"
+              className="w-4 lg:w-6"
+            />
+            <p className="text-sm sm:text-base">Netlify</p>
           </div>
         </div>
       </div>

@@ -10,7 +10,7 @@ import "aos/dist/aos.css";
 
 const Homepage = () => {
   useEffect(() => {
-    AOS.init({disable: window.innerWidth < 1024});
+    AOS.init({ disable: window.innerWidth < 1024 });
   }, []);
   return (
     <>
@@ -34,15 +34,14 @@ const Homepage = () => {
               sequence={["Niti Surakongka"]}
               wrapper="h1"
               speed={40}
-              className="text-3xl sm:text-6xl font-extrabold tracking-wide uppercase text-gradient "
+              className="text-3xl sm:text-6xl font-black tracking-wide uppercase text-gradient "
             />
             <p
               data-aos="fade-up"
               data-aos-delay="200"
               data-aos-duration="1000"
               data-aos-easing="ease-out"
-              
-              className="mx-auto text-base text-balance md:text-xl lg:text-2xl lg:w-[740px] "
+              className="mx-auto text-base text-balance md:text-xl lg:text-2xl lg:w-[740px] font-light"
             >
               Hello! I&apos;m Earth, also known as Mr. Niti Surakongka, a Junior
               Frontend Developer. I have a strong foundation in web development,

@@ -1,27 +1,10 @@
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
-import {
-  RiNextjsFill,
-  RiTailwindCssFill,
-  RiSupabaseFill,
-} from "react-icons/ri";
-import {
-  SiTypescript,
-  SiMantine,
-  SiVite,
-  SiRedux,
-  SiReacthookform,
-  SiFirebase,
-  SiLodash,
-  SiAxios,
-  SiMongodb,
-} from "react-icons/si";
-import { FaReact } from "react-icons/fa";
 
 const AllProjectpage = () => {
   return (
-    <div className="container mx-auto py-10 px-4 md:px-10 sm:py-20">
+    <div className="container mx-auto py-10 px-2 md:px-10 sm:py-20">
       <div className="mb-6 sm:mb-10">
         <h2 className="text-3xl sm:text-4xl font-bold">All Projects</h2>
       </div>
@@ -33,18 +16,58 @@ const AllProjectpage = () => {
             width={450}
             height={450}
             loading="lazy"
-            className="h-auto sm:w-72 md:w-80 xl:w-[28rem] aspect-[16/9] object-cover object-top border rounded-t-xl sm:rounded-xl"
+            className="h-auto sm:w-72 md:w-80 xl:w-[28rem] aspect-[16/9] object-cover object-top border rounded-t-2xl sm:rounded-s-2xl sm:rounded-e-none"
           />
           <div className="card-body p-4 md:space-y-1">
             <h2 className="card-title">
               TechVibe: An Academic Weblog Platform
             </h2>
             <div className="tetech-stack">
-              <RiNextjsFill className="text-2xl sm:text-3xl text-black" />
-              <RiTailwindCssFill className="text-2xl sm:text-3xl text-black" />
-              <SiTypescript className="text-2xl sm:text-3xl text-black" />
-              <SiMantine className="text-2xl sm:text-3xl text-black" />
-              <RiSupabaseFill className="text-2xl sm:text-3xl text-black" />
+              <div className="flex justify-center items-center text-black space-x-2 border bg-white rounded-xl px-2 py-[4px] hover:scale-105 duration-300">
+                <img
+                  height="24"
+                  width="24"
+                  src="https://cdn.simpleicons.org/nextdotjs"
+                  className="w-4 "
+                />
+                <p className="text-sm">Next.js</p>
+              </div>
+              <div className="flex justify-center items-center text-black space-x-2 border bg-white rounded-xl px-2 py-[4px] hover:scale-105 duration-300">
+                <img
+                  height="24"
+                  width="24"
+                  src="https://cdn.simpleicons.org/tailwindcss"
+                  className="w-4 "
+                />
+                <p className="text-sm">TailwindCSS</p>
+              </div>
+              <div className="flex justify-center items-center text-black space-x-2 border bg-white rounded-xl px-2 py-[4px] hover:scale-105 duration-300">
+                <img
+                  height="24"
+                  width="24"
+                  src="https://cdn.simpleicons.org/typescript"
+                  className="w-4 "
+                />
+                <p className="text-sm">TypeScript</p>
+              </div>
+              <div className="flex justify-center items-center text-black space-x-2 border bg-white rounded-xl px-2 py-[4px] hover:scale-105 duration-300">
+                <img
+                  height="24"
+                  width="24"
+                  src="https://cdn.simpleicons.org/mantine"
+                  className="w-4"
+                />
+                <p className="text-sm">Mantine</p>
+              </div>
+              <div className="flex justify-center items-center text-black space-x-2 border bg-white rounded-xl px-2 py-[4px] hover:scale-105 duration-300">
+                <img
+                  height="24"
+                  width="24"
+                  src="https://cdn.simpleicons.org/supabase"
+                  className="w-4"
+                />
+                <p className="text-sm">Supabase</p>
+              </div>
             </div>
             <p className="description">
               โปรเจคนี้เป็นโปรเจคจบ ที่พัฒนาโดยทีม 3 คน
@@ -82,14 +105,30 @@ const AllProjectpage = () => {
             width={450}
             height={450}
             loading="lazy"
-            className="h-auto sm:w-72 md:w-80 xl:w-[28rem] aspect-[16/9] object-cover object-top border rounded-t-xl sm:rounded-xl"
+            className="h-auto sm:w-72 md:w-80 xl:w-[28rem] aspect-[16/9] object-cover object-top border rounded-t-2xl sm:rounded-s-2xl sm:rounded-e-none"
           />
 
           <div className="card-body p-4 space-y-1">
             <h2 className="card-title">Blockchain for Buying Pokémon</h2>
             <div className="tetech-stack">
-              <RiNextjsFill className="text-2xl sm:text-3xl text-black" />
-              <RiTailwindCssFill className="text-2xl sm:text-3xl text-black" />
+              <div className="flex justify-center items-center text-black space-x-2 border bg-white rounded-xl px-2 py-[4px] hover:scale-105 duration-300">
+                <img
+                  height="24"
+                  width="24"
+                  src="https://cdn.simpleicons.org/nextdotjs"
+                  className="w-4 "
+                />
+                <p className="text-sm">Next.js</p>
+              </div>
+              <div className="flex justify-center items-center text-black space-x-2 border bg-white rounded-xl px-2 py-[4px] hover:scale-105 duration-300">
+                <img
+                  height="24"
+                  width="24"
+                  src="https://cdn.simpleicons.org/tailwindcss"
+                  className="w-4 "
+                />
+                <p className="text-sm">TailwindCSS</p>
+              </div>
             </div>
             <p className="description">
               โปรเจคนี้เป็นโปรเจคในรายวิชา Blockchain จะการผสมผสาน 2
@@ -150,17 +189,57 @@ const AllProjectpage = () => {
             width={450}
             height={450}
             loading="lazy"
-            className="h-auto sm:w-72 md:w-80 xl:w-[28rem] aspect-[16/9] object-cover object-top border rounded-t-xl sm:rounded-xl"
+            className="h-auto sm:w-72 md:w-80 xl:w-[28rem] aspect-[16/9] object-cover object-top border rounded-t-2xl sm:rounded-s-2xl sm:rounded-e-none"
           />
 
           <div className="card-body p-4 space-y-1">
             <h2 className="card-title">Shopping Cart with Redux</h2>
             <div className="tetech-stack">
-              <FaReact className="text-2xl sm:text-3xl text-black" />
-              <SiVite className="text-2xl sm:text-3xl text-black" />
-              <RiTailwindCssFill className="text-2xl sm:text-3xl text-black" />
-              <SiRedux className="text-2xl sm:text-3xl text-black" />
-              <SiReacthookform className="text-2xl sm:text-3xl text-black" />
+              <div className="flex justify-center items-center text-black space-x-2 border bg-white rounded-xl px-2 py-[4px] hover:scale-105 duration-300">
+                <img
+                  height="24"
+                  width="24"
+                  src="https://cdn.simpleicons.org/react"
+                  className="w-4 "
+                />
+                <p className="text-sm">React</p>
+              </div>
+              <div className="flex justify-center items-center text-black space-x-2 border bg-white rounded-xl px-2 py-[4px] hover:scale-105 duration-300">
+                <img
+                  height="24"
+                  width="24"
+                  src="https://cdn.simpleicons.org/vite"
+                  className="w-4 "
+                />
+                <p className="text-sm">Vite</p>
+              </div>
+              <div className="flex justify-center items-center text-black space-x-2 border bg-white rounded-xl px-2 py-[4px] hover:scale-105 duration-300">
+                <img
+                  height="24"
+                  width="24"
+                  src="https://cdn.simpleicons.org/tailwindcss"
+                  className="w-4 "
+                />
+                <p className="text-sm">TailwindCSS</p>
+              </div>
+              <div className="flex justify-center items-center text-black space-x-2 border bg-white rounded-xl px-2 py-[4px] hover:scale-105 duration-300">
+                <img
+                  height="24"
+                  width="24"
+                  src="https://cdn.simpleicons.org/redux"
+                  className="w-4 "
+                />
+                <p className="text-sm">Redux</p>
+              </div>
+              <div className="flex justify-center items-center text-black space-x-2 border bg-white rounded-xl px-2 py-[4px] hover:scale-105 duration-300">
+                <img
+                  height="24"
+                  width="24"
+                  src="https://cdn.simpleicons.org/reacthookform"
+                  className="w-4 "
+                />
+                <p className="text-sm">React Hook Form</p>
+              </div>
             </div>
             <p className="description">
               โปรเจคนี้เป็น Workshop ในรายวิชา Component-based & Mobile
@@ -199,18 +278,66 @@ const AllProjectpage = () => {
             width={450}
             height={450}
             loading="lazy"
-            className="h-auto sm:w-72 md:w-80 xl:w-[28rem] aspect-[16/9] object-cover object-top border rounded-t-xl sm:rounded-xl"
+            className="h-auto sm:w-72 md:w-80 xl:w-[28rem] aspect-[16/9] object-cover object-top border rounded-t-2xl sm:rounded-s-2xl sm:rounded-e-none"
           />
 
           <div className="card-body p-4 space-y-1">
             <h2 className="card-title">Chat Application with MERN Stack</h2>
             <div className="tetech-stack">
-              <FaReact className="text-2xl sm:text-3xl text-black" />
-              <SiVite className="text-2xl sm:text-3xl text-black" />
-              <RiTailwindCssFill className="text-2xl sm:text-3xl text-black" />
-              <SiLodash className="text-2xl sm:text-3xl text-black" />
-              <SiAxios className="text-2xl sm:text-3xl text-black" />
-              <SiMongodb className="text-2xl sm:text-3xl text-black" />
+              <div className="flex justify-center items-center text-black space-x-2 border bg-white rounded-xl px-2 py-[4px] hover:scale-105 duration-300">
+                <img
+                  height="24"
+                  width="24"
+                  src="https://cdn.simpleicons.org/react"
+                  className="w-4 "
+                />
+                <p className="text-sm">React</p>
+              </div>
+              <div className="flex justify-center items-center text-black space-x-2 border bg-white rounded-xl px-2 py-[4px] hover:scale-105 duration-300">
+                <img
+                  height="24"
+                  width="24"
+                  src="https://cdn.simpleicons.org/vite"
+                  className="w-4 "
+                />
+                <p className="text-sm">Vite</p>
+              </div>
+              <div className="flex justify-center items-center text-black space-x-2 border bg-white rounded-xl px-2 py-[4px] hover:scale-105 duration-300">
+                <img
+                  height="24"
+                  width="24"
+                  src="https://cdn.simpleicons.org/tailwindcss"
+                  className="w-4 "
+                />
+                <p className="text-sm">TailwindCSS</p>
+              </div>
+              <div className="flex justify-center items-center text-black space-x-2 border bg-white rounded-xl px-2 py-[4px] hover:scale-105 duration-300">
+                <img
+                  height="24"
+                  width="24"
+                  src="https://cdn.simpleicons.org/lodash"
+                  className="w-4 "
+                />
+                <p className="text-sm">Lodash</p>
+              </div>
+              <div className="flex justify-center items-center text-black space-x-2 border bg-white rounded-xl px-2 py-[4px] hover:scale-105 duration-300">
+                <img
+                  height="24"
+                  width="24"
+                  src="https://cdn.simpleicons.org/axios"
+                  className="w-4 "
+                />
+                <p className="text-sm">Axios</p>
+              </div>
+              <div className="flex justify-center items-center text-black space-x-2 border bg-white rounded-xl px-2 py-[4px] hover:scale-105 duration-300">
+                <img
+                  height="24"
+                  width="24"
+                  src="https://cdn.simpleicons.org/mongoDB"
+                  className="w-4 "
+                />
+                <p className="text-sm">MongoDB</p>
+              </div>
             </div>
             <p className="description">
               โปรเจคนี้เป็น Workshop ในรายวิชา Component-based & Mobile
@@ -248,18 +375,66 @@ const AllProjectpage = () => {
             width={450}
             height={450}
             loading="lazy"
-            className="h-auto sm:w-72 md:w-80 xl:w-[28rem] aspect-[16/9] object-cover object-top border rounded-t-xl sm:rounded-xl"
+            className="h-auto sm:w-72 md:w-80 xl:w-[28rem] aspect-[16/9] object-cover object-top border rounded-t-2xl sm:rounded-s-2xl sm:rounded-e-none"
           />
 
           <div className="card-body p-4 space-y-1">
             <h2 className="card-title">E-commerce website with MERN Stack</h2>
             <div className="tetech-stack">
-              <FaReact className="text-2xl sm:text-3xl text-black" />
-              <SiVite className="text-2xl sm:text-3xl text-black" />
-              <RiTailwindCssFill className="text-2xl sm:text-3xl text-black" />
-              <SiFirebase className="text-2xl sm:text-3xl text-black" />
-              <SiAxios className="text-2xl sm:text-3xl text-black" />
-              <SiMongodb className="text-2xl sm:text-3xl text-black" />
+              <div className="flex justify-center items-center text-black space-x-2 border bg-white rounded-xl px-2 py-[4px] hover:scale-105 duration-300">
+                <img
+                  height="24"
+                  width="24"
+                  src="https://cdn.simpleicons.org/react"
+                  className="w-4 "
+                />
+                <p className="text-sm">React</p>
+              </div>
+              <div className="flex justify-center items-center text-black space-x-2 border bg-white rounded-xl px-2 py-[4px] hover:scale-105 duration-300">
+                <img
+                  height="24"
+                  width="24"
+                  src="https://cdn.simpleicons.org/vite"
+                  className="w-4 "
+                />
+                <p className="text-sm">Vite</p>
+              </div>
+              <div className="flex justify-center items-center text-black space-x-2 border bg-white rounded-xl px-2 py-[4px] hover:scale-105 duration-300">
+                <img
+                  height="24"
+                  width="24"
+                  src="https://cdn.simpleicons.org/tailwindcss"
+                  className="w-4 "
+                />
+                <p className="text-sm">TailwindCSS</p>
+              </div>
+              <div className="flex justify-center items-center text-black space-x-2 border bg-white rounded-xl px-2 py-[4px] hover:scale-105 duration-300">
+                <img
+                  height="24"
+                  width="24"
+                  src="https://cdn.simpleicons.org/firebase"
+                  className="w-4 "
+                />
+                <p className="text-sm">Firebase</p>
+              </div>
+              <div className="flex justify-center items-center text-black space-x-2 border bg-white rounded-xl px-2 py-[4px] hover:scale-105 duration-300">
+                <img
+                  height="24"
+                  width="24"
+                  src="https://cdn.simpleicons.org/axios"
+                  className="w-4 "
+                />
+                <p className="text-sm">Axios</p>
+              </div>
+              <div className="flex justify-center items-center text-black space-x-2 border bg-white rounded-xl px-2 py-[4px] hover:scale-105 duration-300">
+                <img
+                  height="24"
+                  width="24"
+                  src="https://cdn.simpleicons.org/mongoDB"
+                  className="w-4 "
+                />
+                <p className="text-sm">MongoDB</p>
+              </div>
             </div>
             <p className="description">
               โปรเจคนี้เป็น Workshop ในรายวิชา Component-based & Mobile

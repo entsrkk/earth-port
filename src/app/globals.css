@@ -13,7 +13,7 @@
     scrollbar-width: none; /* Firefox */
   }
   .hover-drop-shadow {
-    @apply hover:drop-shadow-[0px_0px_4px_rgba(255,255,255,0.75)];
+    @apply hover:drop-shadow-[0px_0px_5px_rgba(255,255,255,0.75)];
   }
   .animated-underline {
     position: relative;
@@ -45,8 +45,8 @@
   @apply bg-gradient-to-r from-blue-600 to-sky-600 text-transparent bg-clip-text;
 }
 
-.tetech-stack{
-  @apply flex items-center space-x-2;
+.tetech-stack {
+  @apply flex flex-wrap items-center gap-1 sm:gap-2;
 }
 
 .m_5df29311 {

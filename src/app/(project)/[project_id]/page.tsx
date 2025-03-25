@@ -3,7 +3,7 @@ import React, { useEffect, useState } from "react";
 import axios from "axios";
 import Image from "next/image";
 import { useSearchParams } from "next/navigation";
-import { Modal  } from "@mantine/core";
+import { Modal } from "@mantine/core";
 import { useDisclosure } from "@mantine/hooks";
 
 interface Project {
@@ -61,7 +61,6 @@ const ProjectDetailPage = () => {
     return <p className="text-center text-red-500">Project not found</p>;
   }
 
-
   return (
     <div className="container mx-auto py-10 lg:py-14">
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-10">
@@ -97,14 +96,14 @@ const ProjectDetailPage = () => {
         </div>
         <div className="px-4 lg:px-0 space-y-3 md:space-y-6 order-1 lg:order-2">
           <div className="space-y-1 sm:space-y-3">
-            <p className="text-2xl md:text-4xl capitalize font-semibold ">
+            <p className="text-2xl md:text-4xl capitalize font-medium">
               {project.project_name}
             </p>
             <div className="flex space-x-2">
               {project.project_tag.map((tag) => (
                 <span
                   key={tag}
-                  className="badge bg-base-300 text-xs sm:text-sm py-2 sm:py-3 capitalize opacity-60"
+                  className="badge bg-base-300 text-xs sm:text-sm font-light py-2 sm:py-3 capitalize opacity-60"
                 >
                   {tag}
                 </span>
@@ -112,15 +111,19 @@ const ProjectDetailPage = () => {
             </div>
           </div>
           <div>
-            <p className="md:text-lg">{project.project_description}</p>
+            <p className="md:text-lg font-light">
+              {project.project_description}
+            </p>
           </div>
           <div>
-            <p className="text-lg font-semibold">
+            <p className="text-lg font-medium">
               {project.project_responsibilities}
             </p>
             <ul className="list-disc list-inside indent-3 sm:indent-5 text-sm sm:text-base">
               {project.keyResponsibilities.map((keyResponsibility) => (
-                <li key={keyResponsibility}>{keyResponsibility}</li>
+                <li className="font-light" key={keyResponsibility}>
+                  {keyResponsibility}
+                </li>
               ))}
             </ul>
           </div>
@@ -128,7 +131,9 @@ const ProjectDetailPage = () => {
             <p className="text-lg font-semibold ">Technologies Used</p>
             <ul className="list-disc list-inside indent-3 sm:indent-5 text-sm sm:text-base">
               {project.technologies_used.map((technology) => (
-                <li key={technology}>{technology}</li>
+                <li className="font-light" key={technology}>
+                  {technology}
+                </li>
               ))}
             </ul>
           </div>
