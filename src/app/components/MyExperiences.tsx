@@ -9,294 +9,67 @@ const MyExperiences = () => {
     AOS.init();
   }, []);
   return (
-    <div className="bg-base-200">
-      <div className="container mx-auto flex flex-col justify-center items-center py-10 sm:py-20">
-        <h2
-          data-aos="fade-up"
-          data-aos-anchor-placement="top-center"
-          data-aos-delay="300"
-          data-aos-duration="1000"
-          data-aos-easing="ease-out"
-          className="text-4xl text-center font-medium"
-        >
-          My Experiences
-        </h2>
-        <div className="my-6 sm:my-10">
-          <ul className="timeline timeline-vertical xl:timeline-horizontal px-2 sm:px-0 text-sm ">
-            <li>
-              <div
-                data-aos="fade-right"
-                data-aos-delay="300"
-                data-aos-duration="1000"
-                data-aos-easing="ease-out"
-                data-aos-anchor-placement="top-center"
-                className="timeline-start timeline-box text-balance"
-              >
-                Start studying <br /> software engineering
-              </div>
-              <div className="timeline-middle">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  viewBox="0 0 20 20"
-                  fill="currentColor"
-                  className="text-blue-600 h-5 w-5"
-                >
-                  <path
-                    fillRule="evenodd"
-                    d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z"
-                    clipRule="evenodd"
-                  />
-                </svg>
-              </div>
-              <div
-                data-aos="fade-left"
-                data-aos-delay="300"
-                data-aos-duration="1000"
-                data-aos-easing="ease-out"
-                data-aos-anchor-placement="top-center"
-                className="timeline-end"
-              >
-                <p className="font-light">5 July 2021</p>
-              </div>
-              <hr className="bg-blue-600" />
-            </li>
-            <li>
-              <hr className="bg-blue-600" />
-              <div
-                data-aos="fade-left"
-                data-aos-delay="500"
-                data-aos-duration="1000"
-                data-aos-easing="ease-out"
-                data-aos-anchor-placement="top-center"
-                className="timeline-start"
-              >
-                <p className="font-light">21 June 2023</p>
-              </div>
-              <div className="timeline-middle">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  viewBox="0 0 20 20"
-                  fill="currentColor"
-                  className="text-blue-600 h-5 w-5"
-                >
-                  <path
-                    fillRule="evenodd"
-                    d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z"
-                    clipRule="evenodd"
-                  />
-                </svg>
-              </div>
-              <div
-                data-aos="fade-right"
-                data-aos-delay="500"
-                data-aos-duration="1000"
-                data-aos-easing="ease-out"
-                data-aos-anchor-placement="top-center"
-                className="timeline-end timeline-box text-balance"
-              >
-                Practice ReactJS <br /> on my own using ViteJS
-              </div>
-              <hr className="bg-blue-600" />
-            </li>
-            <li>
-              <hr className="bg-blue-600" />
-              <div
-                data-aos="fade-right"
-                data-aos-delay="700"
-                data-aos-duration="1000"
-                data-aos-easing="ease-out"
-                data-aos-anchor-placement="top-center"
-                className="timeline-start timeline-box text-balance"
-              >
-                Learn Tailwind CSS Framework <br /> on my own
-              </div>
-              <div className="timeline-middle">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  viewBox="0 0 20 20"
-                  fill="currentColor"
-                  className="text-blue-600 h-5 w-5"
-                >
-                  <path
-                    fillRule="evenodd"
-                    d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z"
-                    clipRule="evenodd"
-                  />
-                </svg>
-              </div>
-              <div
-                data-aos="fade-left"
-                data-aos-delay="700"
-                data-aos-duration="1000"
-                data-aos-easing="ease-out"
-                data-aos-anchor-placement="top-center"
-                className="timeline-end"
-              >
-                <p className="font-light">21 October 2023</p>
-              </div>
-              <hr className="bg-blue-600" />
-            </li>
-            <li>
-              <hr className="bg-blue-600" />
-              <div
-                data-aos="fade-left"
-                data-aos-delay="900"
-                data-aos-duration="1000"
-                data-aos-easing="ease-out"
-                data-aos-anchor-placement="top-center"
-                className="timeline-start"
-              >
-                <p className="font-light">4 November 2023</p>
-              </div>
-              <div className="timeline-middle">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  viewBox="0 0 20 20"
-                  fill="currentColor"
-                  className="text-blue-600 h-5 w-5"
-                >
-                  <path
-                    fillRule="evenodd"
-                    d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z"
-                    clipRule="evenodd"
-                  />
-                </svg>
-              </div>
-              <div
-                data-aos="fade-right"
-                data-aos-delay="900"
-                data-aos-duration="1000"
-                data-aos-easing="ease-out"
-                data-aos-anchor-placement="top-center"
-                className="timeline-end timeline-box text-balance"
-              >
-                Learn MongoDB on my own
-              </div>
-              <hr className="bg-blue-600" />
-            </li>
-            <li>
-              <hr className="bg-blue-600" />
-              <div
-                data-aos="fade-right"
-                data-aos-delay="1100"
-                data-aos-duration="1000"
-                data-aos-easing="ease-out"
-                data-aos-anchor-placement="top-center"
-                className="timeline-start timeline-box text-balance"
-              >
-                Doing Senior Project
-                <br /> as a Front-end Developer
-              </div>
-              <div className="timeline-middle">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  viewBox="0 0 20 20"
-                  fill="currentColor"
-                  className="text-blue-600 h-5 w-5"
-                >
-                  <path
-                    fillRule="evenodd"
-                    d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z"
-                    clipRule="evenodd"
-                  />
-                </svg>
-              </div>
-              <div
-                data-aos="fade-left"
-                data-aos-delay="1100"
-                data-aos-duration="1000"
-                data-aos-easing="ease-out"
-                data-aos-anchor-placement="top-center"
-                className="timeline-end"
-              >
-                <p className="font-light">21 December 2023</p>
-              </div>
-              <hr className="bg-blue-600" />
-            </li>
-            <li>
-              <hr className="bg-blue-600" />
-              <div
-                data-aos="fade-left"
-                data-aos-delay="1300"
-                data-aos-duration="1000"
-                data-aos-easing="ease-out"
-                data-aos-anchor-placement="top-center"
-                className="timeline-start"
-              >
-                <p className="font-light">2 December 2024</p>
-              </div>
-              <div className="timeline-middle">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  viewBox="0 0 20 20"
-                  fill="currentColor"
-                  className="text-blue-600 h-5 w-5"
-                >
-                  <path
-                    fillRule="evenodd"
-                    d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z"
-                    clipRule="evenodd"
-                  />
-                </svg>
-              </div>
-              <div
-                data-aos="fade-right"
-                data-aos-delay="1300"
-                data-aos-duration="1000"
-                data-aos-easing="ease-out"
-                data-aos-anchor-placement="top-center"
-                className="timeline-end timeline-box text-balance"
-              >
-                Internship at Eventtech.ai
-              </div>
-              <hr className="bg-gradient-to-b xl:bg-gradient-to-r from-blue-600 to-oklch(92.4169% .00108 197.138 / 1)" />
-            </li>
-            <li>
-              <hr />
-              <div
-                data-aos="fade-right"
-                data-aos-delay="1500"
-                data-aos-duration="1000"
-                data-aos-easing="ease-out"
-                data-aos-anchor-placement="top-center"
-                className="timeline-start timeline-box text-balance"
-              >
-                Start working
-              </div>
-              <div className="timeline-middle">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  viewBox="0 0 20 20"
-                  className="h-5 w-5 fill-[#aaaaaa]"
-                >
-                  <path
-                    fillRule="evenodd"
-                    d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z"
-                    clipRule="evenodd"
-                  />
-                </svg>
-              </div>
-            </li>
-          </ul>
-        </div>
-        <div className="capitalize space-y-6 px-4">
-          <div
-            data-aos="fade-right"
-            data-aos-delay="400"
-            data-aos-duration="1500"
-            data-aos-anchor-placement="top-center"
-            className="bg-white w-full flex flex-col justify-center items-center rounded-2xl py-4"
-          >
-            <p className="text-xl font-medium mb-4 sm:mb-4 sm:mt-2">
-              Work with Eventtech.ai
+    <div className="container mx-auto max-w-8xl flex flex-col justify-center items-center py-10 sm:py-20 px-4">
+      <h2 className="text-4xl sm:text-5xl text-center font-medium">
+        My Experiences
+      </h2>
+      <div className="mt-8 sm:mt-14 space-y-4">
+        <div className="flex flex-col sm:flex-row justify-center w-full bg-white shadow-sm rounded-2xl px-4 sm:px-8 py-6 sm:py-10 ">
+          <div className="space-y-0 sm:space-y-1 mb-2 sm:mb-0">
+            <span className="text-sm font-light tracking-wide uppercase">
+              Dec 2024 - Mar 2025
+            </span>
+            <p className="text-2xl font-semibold text-nowrap w-full sm:w-80 lg:w-96">
+              Frontend Developer Intern
             </p>
-            <ul className="list-disc list-inside px-4 sm:px-16 lg:px-36 space-y-4 sm:space-y-0 text-center sm:text-left text-balance">
-              <li>wordpress for Koh Mak</li>
+            <div className="flex gap-1 text-sm font-light ">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                strokeWidth="1"
+                stroke="currentColor"
+                className="size-4"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  d="M15 10.5a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z"
+                />
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1 1 15 0Z"
+                />
+              </svg>
+              <span>
+                EventTech.ai, Bangkok
+                <span className="status bg-neutral w-1 h-1 box-shadow: 0 0 #0000; ml-2 mr-1"></span>
+                Hybrid
+              </span>
+            </div>
+          </div>
+          <div>
+            <ul className="list-disc list-inside text-base capitalize font-light space-y-1">
+              <p>
+                During my Frontend Developer internship, I worked on real-world
+                web projects, collaborated with a team, and used modern
+                technologies to enhance user experience. Additionally, I had the
+                opportunity to work with WordPress, which was a new experience,
+                and I also learned more about SEO. This included optimizing
+                website performance by improving First Contentful Paint (FCP),
+                Largest Contentful Paint (LCP), and Cumulative Layout Shift
+                (CLS) to ensure a smoother and more efficient user experience.
+                Furthermore, I worked on making URLs more user-friendly, adding
+                Meta Titles and Tags, and optimizing Images SEO to improve
+                search engine rankings.
+              </p>
+              <li>Koh Mak</li>
               <li>bepeerapat 20th</li>
               <li>
                 SEO for Whiteroom.ai :{" "}
                 <Link
-                  className="text-blue-600"
+                  className="text-blue-600 hover:font-medium duration-300 ease-in-out"
                   href={"https://whiteroom.ai/"}
                   target="_blank"
                 >
@@ -304,40 +77,40 @@ const MyExperiences = () => {
                 </Link>
               </li>
               <li>
-                wordpress for eventtech contact form :{" "}
+                eventtech contact form :{" "}
                 <Link
-                  className="text-blue-600"
+                  className="text-blue-600 hover:font-medium duration-300 ease-in-out"
                   href={"https://inquiry.eventtech.ai/"}
                   target="_blank"
                 >
-                  contact form - eventtech.ai
+                  contact form
                 </Link>
               </li>
 
               <li>
-                wordpress for ticket protect :{" "}
+                ticket protect :{" "}
                 <Link
-                  className="text-blue-600"
+                  className="text-blue-600 hover:font-medium duration-300 ease-in-out"
                   href={"https://ticketprotect.eventtech.ai/"}
                   target="_blank"
                 >
-                  ticket protect.ai
+                  ticket protect
                 </Link>
               </li>
               <li>
-                wordpress for shop eventtech :{" "}
+                shop eventtech :{" "}
                 <Link
-                  className="text-blue-600"
+                  className="text-blue-600 hover:font-medium duration-300 ease-in-out"
                   href={"https://shop.eventtech.ai/"}
                   target="_blank"
                 >
-                  shop eventtech.ai
+                  shop eventtech
                 </Link>
               </li>
               <li>
                 touchpoint groups :{" "}
                 <Link
-                  className="text-blue-600"
+                  className="text-blue-600 hover:font-medium duration-300 ease-in-out"
                   href={"https://touchpointgroups.com/"}
                   target="_blank"
                 >
@@ -346,89 +119,118 @@ const MyExperiences = () => {
               </li>
             </ul>
           </div>
-          <div
-            data-aos="fade-left"
-            data-aos-delay="400"
-            data-aos-duration="1500"
-            data-aos-anchor-placement="top-center"
-            className="bg-white w-full flex flex-col justify-center items-center rounded-2xl py-4"
-          >
-            <p className="text-xl font-medium px-4 text-center mb-4 sm:mb-4 sm:mt-2">
-              Previously developed projects
+        </div>
+        <div className="flex flex-col sm:flex-row justify-center w-full bg-white shadow-sm rounded-2xl px-4 sm:px-8 py-6 sm:py-10 ">
+          <div className="space-y-0 sm:space-y-1 mb-2 sm:mb-0">
+            <span className="text-sm font-light tracking-wide uppercase">
+              Jul 2021 - Apr 2025
+            </span>
+            <p className="text-2xl font-semibold text-nowrap w-full sm:w-80 lg:w-96">
+              Undergraduate Student
             </p>
-            <ul className="list-disc list-inside px-4 sm:px-16 lg:px-36 text-balance space-y-4 sm:space-y-0 text-center sm:text-left">
-              <li>
-                TechVibe: an Academic Weblog Platform :{" "}
-                <Link
-                  className="text-blue-600"
-                  href={"https://github.com/msssrp/tech-vibe.git"}
-                  target="_blank"
-                >
-                  Github
-                </Link>
-              </li>
-              <li>
-                Web application for Purchasing Music Equipment :{" "}
-                <Link
-                  className="text-blue-600"
-                  href={"https://github.com/entsrkk/Mini-Project.git"}
-                  target="_blank"
-                >
-                  Github
-                </Link>
-              </li>
-              <li>
-                MERN E-commerce :{" "}
-                <Link
-                  className="text-blue-600"
-                  href={"https://github.com/entsrkk/MERN_SeShop.git"}
-                  target="_blank"
-                >
-                  github
-                </Link>
-              </li>
-              <li>
-                MERN Blog :{" "}
-                <Link
-                  className="text-blue-600"
-                  href={"https://github.com/entsrkk/MERNBlog.git"}
-                  target="_blank"
-                >
-                  github
-                </Link>
-              </li>
-              <li>
-                MERN Chat :{" "}
-                <Link
-                  className="text-blue-600"
-                  href={"https://github.com/entsrkk/MERN_Chat.git"}
-                  target="_blank"
-                >
-                  github
-                </Link>
-              </li>
-              <li>
-                Blockchain for buy Pokemon :{" "}
-                <Link
-                  className="text-blue-600"
-                  href={"https://blockchain-beige.vercel.app/"}
-                  target="_blank"
-                >
-                  blockchain
-                </Link>
-              </li>
-              <li>
-                Web application for product location search :{" "}
-                <Link
-                  className="text-blue-600"
-                  href={"https://project-phi-red.vercel.app/"}
-                  target="_blank"
-                >
-                  product location search
-                </Link>
-              </li>
-            </ul>
+            <div className="flex gap-1 text-sm font-light ">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                strokeWidth="1"
+                stroke="currentColor"
+                className="size-4"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  d="M15 10.5a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z"
+                />
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1 1 15 0Z"
+                />
+              </svg>
+              <span>Nakhon Pathom Rajabhat University</span>
+            </div>
           </div>
+          <ul className="list-disc list-inside text-base capitalize font-light space-y-1">
+            <p>
+              During my studies, I learned the basics of web development, from
+              UX/UI design, building academic platforms, to automating tests.
+              These projects gave me the opportunity to work with new
+              technologies and frameworks, such as React, Next.js, TailwindCSS,
+              MUI, Typescript, Redux, RESTful API, MERN Stack, and Firebase,
+              among others.
+            </p>
+            <li>
+              TechVibe: an Academic Weblog Platform :{" "}
+              <Link
+                className="text-blue-600 hover:font-medium duration-300 ease-in-out"
+                href={"https://github.com/msssrp/tech-vibe.git"}
+                target="_blank"
+              >
+                Github
+              </Link>
+            </li>
+            <li>
+              Web application for Purchasing Music Equipment :{" "}
+              <Link
+                className="text-blue-600 hover:font-medium duration-300 ease-in-out"
+                href={"https://github.com/entsrkk/Mini-Project.git"}
+                target="_blank"
+              >
+                Github
+              </Link>
+            </li>
+            <li>
+              MERN E-commerce :{" "}
+              <Link
+                className="text-blue-600 hover:font-medium duration-300 ease-in-out"
+                href={"https://github.com/entsrkk/MERN_SeShop.git"}
+                target="_blank"
+              >
+                github
+              </Link>
+            </li>
+            <li>
+              MERN Blog :{" "}
+              <Link
+                className="text-blue-600 hover:font-medium duration-300 ease-in-out"
+                href={"https://github.com/entsrkk/MERNBlog.git"}
+                target="_blank"
+              >
+                github
+              </Link>
+            </li>
+            <li>
+              MERN Chat :{" "}
+              <Link
+                className="text-blue-600 hover:font-medium duration-300 ease-in-out"
+                href={"https://github.com/entsrkk/MERN_Chat.git"}
+                target="_blank"
+              >
+                github
+              </Link>
+            </li>
+            <li>
+              Blockchain for buy Pokemon :{" "}
+              <Link
+                className="text-blue-600 hover:font-medium duration-300 ease-in-out"
+                href={"https://blockchain-beige.vercel.app/"}
+                target="_blank"
+              >
+                blockchain
+              </Link>
+            </li>
+            <li>
+              Web application for product location search :{" "}
+              <Link
+                className="text-blue-600 hover:font-medium duration-300 ease-in-out"
+                href={"https://project-phi-red.vercel.app/"}
+                target="_blank"
+              >
+                product location search
+              </Link>
+            </li>
+          </ul>
         </div>
       </div>
     </div>

@@ -5,50 +5,63 @@ import React from "react";
 const AllProjectpage = () => {
   return (
     <div className="container mx-auto py-10 px-2 md:px-10 sm:py-20">
-      <div className="mb-6 sm:mb-10">
-        <h2 className="text-3xl sm:text-4xl font-bold">All Projects</h2>
+      <div
+        data-aos="fade-up"
+        data-aos-duration="1000"
+        data-aos-anchor="ease-in-back"
+        data-aos-offset="100"
+        className="mb-6 sm:mb-14"
+      >
+        <h2 className="text-3xl sm:text-5xl font-medium text-center">
+          All Projects
+        </h2>
       </div>
-      <div className="flex flex-col gap-6 sm:gap-4 px-4 sm:px-6 md:px-8 lg:px-10 xl:px-12">
-        <div className="card md:card-side border bg-base-100 hover:bg-base-200 duration-500 ease-out">
+      <div
+        data-aos="zoom-in"
+        data-aos-duration="1000"
+        data-aos-easing="ease-out"
+        className="flex flex-col gap-6 sm:gap-4 px-4 sm:px-6 md:px-8 lg:px-10 xl:px-12"
+      >
+        <div className="card md:card-side rounded-2xl border bg-white hover:bg-zinc-100 duration-500 ease-out">
           <Image
             src="/img/TechVibe.png"
             alt="project cover"
             width={450}
             height={450}
             loading="lazy"
-            className="h-auto sm:w-72 md:w-80 xl:w-[28rem] aspect-[16/9] object-cover object-top border rounded-t-2xl sm:rounded-s-2xl sm:rounded-e-none"
+            className="h-auto sm:w-72 md:w-80 xl:w-[28rem] aspect-[16/9] object-cover object-top border rounded-t-xl sm:rounded-s-xl sm:rounded-e-none"
           />
-          <div className="card-body p-4 md:space-y-1">
-            <h2 className="card-title">
+          <div className="card-body p-4 md">
+            <h2 className="card-title text-xl">
               TechVibe: An Academic Weblog Platform
             </h2>
-            <div className="tetech-stack">
+            <div className="tech-stack-2">
               <div className="flex justify-center items-center text-black space-x-2 border bg-white rounded-xl px-2 py-[4px] hover:scale-105 duration-300">
                 <img
                   height="24"
                   width="24"
                   src="https://cdn.simpleicons.org/nextdotjs"
-                  className="w-4 "
+                  className="w-4 lg:w-5"
                 />
-                <p className="text-sm">Next.js</p>
+                <p>Next.js</p>
               </div>
               <div className="flex justify-center items-center text-black space-x-2 border bg-white rounded-xl px-2 py-[4px] hover:scale-105 duration-300">
                 <img
                   height="24"
                   width="24"
                   src="https://cdn.simpleicons.org/tailwindcss"
-                  className="w-4 "
+                  className="w-4 lg:w-5"
                 />
-                <p className="text-sm">TailwindCSS</p>
+                <p>TailwindCSS</p>
               </div>
               <div className="flex justify-center items-center text-black space-x-2 border bg-white rounded-xl px-2 py-[4px] hover:scale-105 duration-300">
                 <img
                   height="24"
                   width="24"
                   src="https://cdn.simpleicons.org/typescript"
-                  className="w-4 "
+                  className="w-4 lg:w-5"
                 />
-                <p className="text-sm">TypeScript</p>
+                <p>TypeScript</p>
               </div>
               <div className="flex justify-center items-center text-black space-x-2 border bg-white rounded-xl px-2 py-[4px] hover:scale-105 duration-300">
                 <img
@@ -57,7 +70,7 @@ const AllProjectpage = () => {
                   src="https://cdn.simpleicons.org/mantine"
                   className="w-4"
                 />
-                <p className="text-sm">Mantine</p>
+                <p>Mantine</p>
               </div>
               <div className="flex justify-center items-center text-black space-x-2 border bg-white rounded-xl px-2 py-[4px] hover:scale-105 duration-300">
                 <img
@@ -66,7 +79,7 @@ const AllProjectpage = () => {
                   src="https://cdn.simpleicons.org/supabase"
                   className="w-4"
                 />
-                <p className="text-sm">Supabase</p>
+                <p>Supabase</p>
               </div>
             </div>
             <p className="description">
@@ -80,7 +93,7 @@ const AllProjectpage = () => {
               <Link
                 href={"https://github.com/msssrp/tech-vibe.git"}
                 target="_blank"
-                className="btn cursor-pointer text-white font-semibold bg-gradient-to-r from-gray-800 to-black lg:px-7 lg:py-3 rounded-full border border-gray-600 hover:scale-105 duration-200 hover:text-gray-300 hover:border-gray-800 hover:from-black hover:to-gray-900"
+                className="btn cursor-pointer text-white font-semibold bg-gradient-to-r from-gray-800 to-black lg:px-7 lg:py-3 rounded-full border border-gray-600 hover:scale-105 hover:text-gray-300 hover:border-gray-800 hover:from-black hover:to-gray-900 transition duration-300 ease-in-out"
               >
                 <svg
                   viewBox="0 0 24 24"
@@ -98,36 +111,36 @@ const AllProjectpage = () => {
             </div>
           </div>
         </div>
-        <div className="card md:card-side border bg-base-100 hover:bg-base-200 duration-500 ease-out">
+        <div className="card md:card-side rounded-2xl border bg-white hover:bg-zinc-100 duration-500 ease-out">
           <Image
             src="/img/blockchain-beige.png"
             alt="project cover"
             width={450}
             height={450}
             loading="lazy"
-            className="h-auto sm:w-72 md:w-80 xl:w-[28rem] aspect-[16/9] object-cover object-top border rounded-t-2xl sm:rounded-s-2xl sm:rounded-e-none"
+            className="h-auto sm:w-72 md:w-80 xl:w-[28rem] aspect-[16/9] object-cover object-top border rounded-t-xl sm:rounded-s-xl sm:rounded-e-none"
           />
 
-          <div className="card-body p-4 space-y-1">
-            <h2 className="card-title">Blockchain for Buying Pokémon</h2>
-            <div className="tetech-stack">
+          <div className="card-body p-4">
+            <h2 className="card-title text-xl">Blockchain for Buying Pokémon</h2>
+            <div className="tech-stack-2">
               <div className="flex justify-center items-center text-black space-x-2 border bg-white rounded-xl px-2 py-[4px] hover:scale-105 duration-300">
                 <img
                   height="24"
                   width="24"
                   src="https://cdn.simpleicons.org/nextdotjs"
-                  className="w-4 "
+                  className="w-4 lg:w-5"
                 />
-                <p className="text-sm">Next.js</p>
+                <p>Next.js</p>
               </div>
               <div className="flex justify-center items-center text-black space-x-2 border bg-white rounded-xl px-2 py-[4px] hover:scale-105 duration-300">
                 <img
                   height="24"
                   width="24"
                   src="https://cdn.simpleicons.org/tailwindcss"
-                  className="w-4 "
+                  className="w-4 lg:w-5"
                 />
-                <p className="text-sm">TailwindCSS</p>
+                <p>TailwindCSS</p>
               </div>
             </div>
             <p className="description">
@@ -135,11 +148,11 @@ const AllProjectpage = () => {
               งานเข้าด้วยกัน คือ โปรเจคการเรียนรู้ API ของ Pokémon API และ
               การใช้ Blockchain ในการซื้อขาย โดยใช้ Next.js และ TailwindCSS
             </p>
-            <div className="space-x-1 flex">
+            <div className="space-x-2 flex">
               <Link
                 href={"https://blockchain-beige.vercel.app/"}
                 target="_blank"
-                className="btn cursor-pointer text-white font-semibold bg-gradient-to-r from-blue-600 to-sky-600 lg:px-7 lg:py-3 rounded-full hover:scale-105 duration-200 hover:text-gray-300 hidden sm:flex"
+                className="btn border-none cursor-pointer text-white font-semibold bg-gradient-to-r from-blue-600 to-sky-600 lg:px-7 lg:py-3 rounded-full hover:scale-105 transition duration-300 ease-in-out hover:text-gray-300 hidden sm:flex"
               >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -164,7 +177,7 @@ const AllProjectpage = () => {
               <Link
                 href={"https://github.com/entsrkk/blockchain"}
                 target="_blank"
-                className="btn cursor-pointer text-white font-semibold bg-gradient-to-r from-gray-800 to-black lg:px-7 lg:py-3 rounded-full border border-gray-600 hover:scale-105 duration-200 hover:text-gray-300 hover:border-gray-800 hover:from-black hover:to-gray-900"
+                className="btn cursor-pointer text-white font-semibold bg-gradient-to-r from-gray-800 to-black lg:px-7 lg:py-3 rounded-full border border-gray-600 hover:scale-105 hover:text-gray-300 hover:border-gray-800 hover:from-black hover:to-gray-900 transition duration-300 ease-in-out"
               >
                 <svg
                   viewBox="0 0 24 24"
@@ -182,63 +195,63 @@ const AllProjectpage = () => {
             </div>
           </div>
         </div>
-        <div className="card md:card-side border bg-base-100 hover:bg-base-200 duration-500 ease-out">
+        <div className="card md:card-side rounded-2xl border bg-white hover:bg-zinc-100 duration-500 ease-out">
           <Image
             src="/img/ShoppingCartRedux.png"
             alt="project cover"
             width={450}
             height={450}
             loading="lazy"
-            className="h-auto sm:w-72 md:w-80 xl:w-[28rem] aspect-[16/9] object-cover object-top border rounded-t-2xl sm:rounded-s-2xl sm:rounded-e-none"
+            className="h-auto sm:w-72 md:w-80 xl:w-[28rem] aspect-[16/9] object-cover object-top border rounded-t-xl sm:rounded-s-xl sm:rounded-e-none"
           />
 
-          <div className="card-body p-4 space-y-1">
-            <h2 className="card-title">Shopping Cart with Redux</h2>
-            <div className="tetech-stack">
+          <div className="card-body p-4">
+            <h2 className="card-title text-xl">Shopping Cart with Redux</h2>
+            <div className="tech-stack-2">
               <div className="flex justify-center items-center text-black space-x-2 border bg-white rounded-xl px-2 py-[4px] hover:scale-105 duration-300">
                 <img
                   height="24"
                   width="24"
                   src="https://cdn.simpleicons.org/react"
-                  className="w-4 "
+                  className="w-4 lg:w-5"
                 />
-                <p className="text-sm">React</p>
+                <p>React</p>
               </div>
               <div className="flex justify-center items-center text-black space-x-2 border bg-white rounded-xl px-2 py-[4px] hover:scale-105 duration-300">
                 <img
                   height="24"
                   width="24"
                   src="https://cdn.simpleicons.org/vite"
-                  className="w-4 "
+                  className="w-4 lg:w-5"
                 />
-                <p className="text-sm">Vite</p>
+                <p>Vite</p>
               </div>
               <div className="flex justify-center items-center text-black space-x-2 border bg-white rounded-xl px-2 py-[4px] hover:scale-105 duration-300">
                 <img
                   height="24"
                   width="24"
                   src="https://cdn.simpleicons.org/tailwindcss"
-                  className="w-4 "
+                  className="w-4 lg:w-5"
                 />
-                <p className="text-sm">TailwindCSS</p>
+                <p>TailwindCSS</p>
               </div>
               <div className="flex justify-center items-center text-black space-x-2 border bg-white rounded-xl px-2 py-[4px] hover:scale-105 duration-300">
                 <img
                   height="24"
                   width="24"
                   src="https://cdn.simpleicons.org/redux"
-                  className="w-4 "
+                  className="w-4 lg:w-5"
                 />
-                <p className="text-sm">Redux</p>
+                <p>Redux</p>
               </div>
               <div className="flex justify-center items-center text-black space-x-2 border bg-white rounded-xl px-2 py-[4px] hover:scale-105 duration-300">
                 <img
                   height="24"
                   width="24"
                   src="https://cdn.simpleicons.org/reacthookform"
-                  className="w-4 "
+                  className="w-4 lg:w-5"
                 />
-                <p className="text-sm">React Hook Form</p>
+                <p>React Hook Form</p>
               </div>
             </div>
             <p className="description">
@@ -253,7 +266,7 @@ const AllProjectpage = () => {
               <Link
                 href={"https://github.com/entsrkk/ShoppingCartRedux.git"}
                 target="_blank"
-                className="btn cursor-pointer text-white font-semibold bg-gradient-to-r from-gray-800 to-black lg:px-7 lg:py-3 rounded-full border border-gray-600 hover:scale-105 duration-200 hover:text-gray-300 hover:border-gray-800 hover:from-black hover:to-gray-900"
+                className="btn cursor-pointer text-white font-semibold bg-gradient-to-r from-gray-800 to-black lg:px-7 lg:py-3 rounded-full border border-gray-600 hover:scale-105 hover:text-gray-300 hover:border-gray-800 hover:from-black hover:to-gray-900 transition duration-300 ease-in-out"
               >
                 <svg
                   viewBox="0 0 24 24"
@@ -271,72 +284,72 @@ const AllProjectpage = () => {
             </div>
           </div>
         </div>
-        <div className="card md:card-side border bg-base-100 hover:bg-base-200 duration-500 ease-out">
+        <div className="card md:card-side rounded-2xl border bg-white hover:bg-zinc-100 duration-500 ease-out">
           <Image
             src="/img/mern-chat.png"
             alt="project cover"
             width={450}
             height={450}
             loading="lazy"
-            className="h-auto sm:w-72 md:w-80 xl:w-[28rem] aspect-[16/9] object-cover object-top border rounded-t-2xl sm:rounded-s-2xl sm:rounded-e-none"
+            className="h-auto sm:w-72 md:w-80 xl:w-[28rem] aspect-[16/9] object-cover object-top border rounded-t-xl sm:rounded-s-xl sm:rounded-e-none"
           />
 
-          <div className="card-body p-4 space-y-1">
-            <h2 className="card-title">Chat Application with MERN Stack</h2>
-            <div className="tetech-stack">
+          <div className="card-body p-4">
+            <h2 className="card-title text-xl">Chat Application with MERN Stack</h2>
+            <div className="tech-stack-2">
               <div className="flex justify-center items-center text-black space-x-2 border bg-white rounded-xl px-2 py-[4px] hover:scale-105 duration-300">
                 <img
                   height="24"
                   width="24"
                   src="https://cdn.simpleicons.org/react"
-                  className="w-4 "
+                  className="w-4 lg:w-5"
                 />
-                <p className="text-sm">React</p>
+                <p>React</p>
               </div>
               <div className="flex justify-center items-center text-black space-x-2 border bg-white rounded-xl px-2 py-[4px] hover:scale-105 duration-300">
                 <img
                   height="24"
                   width="24"
                   src="https://cdn.simpleicons.org/vite"
-                  className="w-4 "
+                  className="w-4 lg:w-5"
                 />
-                <p className="text-sm">Vite</p>
+                <p>Vite</p>
               </div>
               <div className="flex justify-center items-center text-black space-x-2 border bg-white rounded-xl px-2 py-[4px] hover:scale-105 duration-300">
                 <img
                   height="24"
                   width="24"
                   src="https://cdn.simpleicons.org/tailwindcss"
-                  className="w-4 "
+                  className="w-4 lg:w-5"
                 />
-                <p className="text-sm">TailwindCSS</p>
+                <p>TailwindCSS</p>
               </div>
               <div className="flex justify-center items-center text-black space-x-2 border bg-white rounded-xl px-2 py-[4px] hover:scale-105 duration-300">
                 <img
                   height="24"
                   width="24"
                   src="https://cdn.simpleicons.org/lodash"
-                  className="w-4 "
+                  className="w-4 lg:w-5"
                 />
-                <p className="text-sm">Lodash</p>
+                <p>Lodash</p>
               </div>
               <div className="flex justify-center items-center text-black space-x-2 border bg-white rounded-xl px-2 py-[4px] hover:scale-105 duration-300">
                 <img
                   height="24"
                   width="24"
                   src="https://cdn.simpleicons.org/axios"
-                  className="w-4 "
+                  className="w-4 lg:w-5"
                 />
-                <p className="text-sm">Axios</p>
+                <p>Axios</p>
               </div>
               <div className="flex justify-center items-center text-black space-x-2 border bg-white rounded-xl px-2 py-[4px] hover:scale-105 duration-300">
                 <img
                   height="24"
                   width="24"
                   src="https://cdn.simpleicons.org/mongoDB"
-                  className="w-4 "
+                  className="w-4 lg:w-5"
                 />
-                <p className="text-sm">MongoDB</p>
+                <p>MongoDB</p>
               </div>
             </div>
             <p className="description">
@@ -350,7 +363,7 @@ const AllProjectpage = () => {
               <Link
                 href={"https://github.com/entsrkk/MERN_Chat.git"}
                 target="_blank"
-                className="btn cursor-pointer text-white font-semibold bg-gradient-to-r from-gray-800 to-black lg:px-7 lg:py-3 rounded-full border border-gray-600 hover:scale-105 duration-200 hover:text-gray-300 hover:border-gray-800 hover:from-black hover:to-gray-900"
+                className="btn cursor-pointer text-white font-semibold bg-gradient-to-r from-gray-800 to-black lg:px-7 lg:py-3 rounded-full border border-gray-600 hover:scale-105 hover:text-gray-300 hover:border-gray-800 hover:from-black hover:to-gray-900 transition duration-300 ease-in-out"
               >
                 <svg
                   viewBox="0 0 24 24"
@@ -368,72 +381,72 @@ const AllProjectpage = () => {
             </div>
           </div>
         </div>
-        <div className="card md:card-side border bg-base-100 hover:bg-base-200 duration-500 ease-out">
+        <div className="card md:card-side rounded-2xl border bg-white hover:bg-zinc-100 duration-500 ease-out">
           <Image
             src="/img/mern-e-commerce.png"
             alt="project cover"
             width={450}
             height={450}
             loading="lazy"
-            className="h-auto sm:w-72 md:w-80 xl:w-[28rem] aspect-[16/9] object-cover object-top border rounded-t-2xl sm:rounded-s-2xl sm:rounded-e-none"
+            className="h-auto sm:w-72 md:w-80 xl:w-[28rem] aspect-[16/9] object-cover object-top border rounded-t-xl sm:rounded-s-xl sm:rounded-e-none"
           />
 
-          <div className="card-body p-4 space-y-1">
-            <h2 className="card-title">E-commerce website with MERN Stack</h2>
-            <div className="tetech-stack">
+          <div className="card-body p-4">
+            <h2 className="card-title text-xl">E-commerce website with MERN Stack</h2>
+            <div className="tech-stack-2">
               <div className="flex justify-center items-center text-black space-x-2 border bg-white rounded-xl px-2 py-[4px] hover:scale-105 duration-300">
                 <img
                   height="24"
                   width="24"
                   src="https://cdn.simpleicons.org/react"
-                  className="w-4 "
+                  className="w-4 lg:w-5"
                 />
-                <p className="text-sm">React</p>
+                <p>React</p>
               </div>
               <div className="flex justify-center items-center text-black space-x-2 border bg-white rounded-xl px-2 py-[4px] hover:scale-105 duration-300">
                 <img
                   height="24"
                   width="24"
                   src="https://cdn.simpleicons.org/vite"
-                  className="w-4 "
+                  className="w-4 lg:w-5"
                 />
-                <p className="text-sm">Vite</p>
+                <p>Vite</p>
               </div>
               <div className="flex justify-center items-center text-black space-x-2 border bg-white rounded-xl px-2 py-[4px] hover:scale-105 duration-300">
                 <img
                   height="24"
                   width="24"
                   src="https://cdn.simpleicons.org/tailwindcss"
-                  className="w-4 "
+                  className="w-4 lg:w-5"
                 />
-                <p className="text-sm">TailwindCSS</p>
+                <p>TailwindCSS</p>
               </div>
               <div className="flex justify-center items-center text-black space-x-2 border bg-white rounded-xl px-2 py-[4px] hover:scale-105 duration-300">
                 <img
                   height="24"
                   width="24"
                   src="https://cdn.simpleicons.org/firebase"
-                  className="w-4 "
+                  className="w-4 lg:w-5"
                 />
-                <p className="text-sm">Firebase</p>
+                <p>Firebase</p>
               </div>
               <div className="flex justify-center items-center text-black space-x-2 border bg-white rounded-xl px-2 py-[4px] hover:scale-105 duration-300">
                 <img
                   height="24"
                   width="24"
                   src="https://cdn.simpleicons.org/axios"
-                  className="w-4 "
+                  className="w-4 lg:w-5"
                 />
-                <p className="text-sm">Axios</p>
+                <p>Axios</p>
               </div>
               <div className="flex justify-center items-center text-black space-x-2 border bg-white rounded-xl px-2 py-[4px] hover:scale-105 duration-300">
                 <img
                   height="24"
                   width="24"
                   src="https://cdn.simpleicons.org/mongoDB"
-                  className="w-4 "
+                  className="w-4 lg:w-5"
                 />
-                <p className="text-sm">MongoDB</p>
+                <p>MongoDB</p>
               </div>
             </div>
             <p className="description">
@@ -451,7 +464,7 @@ const AllProjectpage = () => {
               <Link
                 href={"https://github.com/entsrkk/MERN_SeShop.git"}
                 target="_blank"
-                className="btn cursor-pointer text-white font-semibold bg-gradient-to-r from-gray-800 to-black lg:px-7 lg:py-3 rounded-full border border-gray-600 hover:scale-105 duration-200 hover:text-gray-300 hover:border-gray-800 hover:from-black hover:to-gray-900"
+                className="btn cursor-pointer text-white font-semibold bg-gradient-to-r from-gray-800 to-black lg:px-7 lg:py-3 rounded-full border border-gray-600 hover:scale-105 hover:text-gray-300 hover:border-gray-800 hover:from-black hover:to-gray-900 transition duration-300 ease-in-out"
               >
                 <svg
                   viewBox="0 0 24 24"

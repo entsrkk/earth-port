@@ -26,8 +26,7 @@ const Homepage = () => {
             width={450}
             height={450}
             loading="lazy"
-            loader={({ src }) => src}
-            className="w-[500px] h-[340px] sm:h-[440px] object-cover mask-image-gradient"
+            className="w-[400px] h-[380px] sm:h-[440px] object-cover mask-image-gradient"
           />
           <div className="space-y-2 sm:space-y-6 text-center lg:text-left">
             <TypeAnimation
@@ -57,7 +56,7 @@ const Homepage = () => {
       <div className="container mx-auto my-10 sm:my-20">
         <MyProjects />
       </div>
-      <div>
+      <div className="bg-[#FAFAFA]">
         <MyExperiences />
       </div>
     </>

@@ -50,25 +50,25 @@ const MyProjects = () => {
         data-aos="fade-up"
         data-aos-easing="ease-out"
         data-aos-duration="800"
-        className="flex justify-center items-center "
+        className="flex justify-center items-center"
       >
-        <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 xl:grid-cols-3 ">
+        <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 xl:grid-cols-3">
           {projects.map((project) => (
             <div key={project.project_id}>
-              <div className="card bg-base-200 w-72 sm:w-80 lg:w-96 shadow-xl border hover:scale-[1.02] duration-300">
+              <div className="card bg-zinc-100 w-72 sm:w-80 lg:w-96 shadow-md border hover:scale-[1.02] transition duration-300 ease-in-out ">
                 <figure>
                   <Image
                     width={450}
                     height={450}
                     src={project.project_image}
                     alt={project.project_name}
-                    className="w-full h-96 object-cover object-top"
+                    className="w-full h-96 object-cover object-top relative"
                     loading="lazy"
                   />
                 </figure>
-                <div className="card-body p-5 lg:p-8">
+                <div className="card-body p-5 lg:py-6">
                   <h2
-                    className="card-title text-base sm:text-xl font-medium capitalize line-clamp-1 cursor-pointer hover:text-blue-500 transition"
+                    className="card-title text-base sm:text-xl font-medium capitalize line-clamp-1 cursor-pointer hover:text-blue-500 transition duration-300 ease-in-out"
                     onClick={() =>
                       router.push(`/project?project_id=${project.project_id}`)
                     }

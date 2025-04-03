@@ -8,7 +8,7 @@ const TechStackCarousel: React.FC = () => {
           data-aos="zoom-out-up"
           data-aos-duration="1000"
           data-aos-easing="ease-out"
-          className="text-4xl text-white text-center font-medium"
+          className="text-3xl sm:text-4xl text-white text-center font-medium"
         >
           Technologies I use
         </h2>
@@ -16,243 +16,243 @@ const TechStackCarousel: React.FC = () => {
           data-aos="zoom-in-up"
           data-aos-duration="1000"
           data-aos-easing="ease-out"
-          className="flex flex-wrap justify-center items-center gap-2 px-2 mt-4 md:mt-8 max-w-7xl"
+          data-aos-anchor-placement="top-bottom"
+          className="tech-stack flex flex-wrap justify-center items-center gap-1 px-4 sm:px-2 mt-4 md:mt-6 max-w-5xl"
         >
-          <div className="flex justify-center items-center text-black space-x-2 border border-white bg-white rounded-xl px-4 py-[6px] hover:scale-105 lg:hover-drop-shadow duration-300">
+          <div className="flex justify-center items-center text-black space-x-2 border border-white bg-white rounded-xl px-3 py-[4px] sm:px-4 sm:py-[6px]  hover:scale-105 lg:hover-drop-shadow duration-300">
             <img
               height="24"
               width="24"
               src="https://cdn.simpleicons.org/html5"
               className="w-4 lg:w-6"
             />
-            <p className="text-sm sm:text-base">HTML</p>
+            <p>HTML</p>
           </div>
-          <div className="flex justify-center items-center text-black space-x-2 border border-white bg-white rounded-xl px-4 py-[6px] hover:scale-105 lg:hover-drop-shadow duration-300">
+          <div className="flex justify-center items-center text-black space-x-2 border border-white bg-white rounded-xl px-3 py-[4px] sm:px-4 sm:py-[6px]  hover:scale-105 lg:hover-drop-shadow duration-300">
             <img
               height="24"
               width="24"
               src="https://cdn.simpleicons.org/css3"
               className="w-4 lg:w-6"
             />
-            <p className="text-sm sm:text-base">CSS</p>
+            <p>CSS</p>
           </div>
-          <div className="flex justify-center items-center text-black space-x-2 border border-white bg-white rounded-xl px-4 py-[6px] hover:scale-105 lg:hover-drop-shadow duration-300">
+          <div className="flex justify-center items-center text-black space-x-2 border border-white bg-white rounded-xl px-3 py-[4px] sm:px-4 sm:py-[6px]  hover:scale-105 lg:hover-drop-shadow duration-300">
             <img
               height="24"
               width="24"
               src="https://cdn.simpleicons.org/javascript"
               className="w-4 lg:w-6"
             />
-            <p className="text-sm sm:text-base">JavaScript</p>
+            <p>JavaScript</p>
           </div>
-          <div className="flex justify-center items-center text-black space-x-2 border border-white bg-white rounded-xl px-4 py-[6px] hover:scale-105 lg:hover-drop-shadow duration-300">
+          <div className="flex justify-center items-center text-black space-x-2 border border-white bg-white rounded-xl px-3 py-[4px] sm:px-4 sm:py-[6px]  hover:scale-105 lg:hover-drop-shadow duration-300">
             <img
               height="24"
               width="24"
               src="https://cdn.simpleicons.org/typescript"
               className="w-4 lg:w-6"
             />
-            <p className="text-sm sm:text-base">TypeScript</p>
+            <p>TypeScript</p>
           </div>
-          <div className="flex justify-center items-center text-black space-x-2 border border-white bg-white rounded-xl px-4 py-[6px] hover:scale-105 lg:hover-drop-shadow duration-300">
+          <div className="flex justify-center items-center text-black space-x-2 border border-white bg-white rounded-xl px-3 py-[4px] sm:px-4 sm:py-[6px]  hover:scale-105 lg:hover-drop-shadow duration-300">
             <img
               height="24"
               width="24"
               src="https://cdn.simpleicons.org/react"
               className="w-4 lg:w-6"
             />
-            <p className="text-sm sm:text-base">React</p>
+            <p>React</p>
           </div>
-          <div className="flex justify-center items-center text-black space-x-2 border border-white bg-white rounded-xl px-4 py-[6px] hover:scale-105 lg:hover-drop-shadow duration-300">
+          <div className="flex justify-center items-center text-black space-x-2 border border-white bg-white rounded-xl px-3 py-[4px] sm:px-4 sm:py-[6px]  hover:scale-105 lg:hover-drop-shadow duration-300">
             <img
               height="24"
               width="24"
               src="https://cdn.simpleicons.org/nextdotjs"
               className="w-4 lg:w-6"
             />
-            <p className="text-sm sm:text-base">Next.js</p>
+            <p>Next.js</p>
           </div>
-          <div className="flex justify-center items-center text-black space-x-2 border border-white bg-white rounded-xl px-4 py-[6px] hover:scale-105 lg:hover-drop-shadow duration-300">
+          <div className="flex justify-center items-center text-black space-x-2 border border-white bg-white rounded-xl px-3 py-[4px] sm:px-4 sm:py-[6px]  hover:scale-105 lg:hover-drop-shadow duration-300">
             <img
               height="24"
               width="24"
               src="https://cdn.simpleicons.org/tailwindcss"
               className="w-4 lg:w-6"
             />
-            <p className="text-sm sm:text-base">TailwindCSS</p>
+            <p>TailwindCSS</p>
           </div>
-          <div className="flex justify-center items-center text-black space-x-2 border border-white bg-white rounded-xl px-4 py-[6px] hover:scale-105 lg:hover-drop-shadow duration-300">
+          <div className="flex justify-center items-center text-black space-x-2 border border-white bg-white rounded-xl px-3 py-[4px] sm:px-4 sm:py-[6px]  hover:scale-105 lg:hover-drop-shadow duration-300">
             <img
               height="24"
               width="24"
               src="https://cdn.simpleicons.org/daisyui"
               className="w-4 lg:w-6"
             />
-            <p className="text-sm sm:text-base">daisyUI</p>
+            <p>daisyUI</p>
           </div>
-          <div className="flex justify-center items-center text-black space-x-2 border border-white bg-white rounded-xl px-4 py-[6px] hover:scale-105 lg:hover-drop-shadow duration-300">
+          <div className="flex justify-center items-center text-black space-x-2 border border-white bg-white rounded-xl px-3 py-[4px] sm:px-4 sm:py-[6px]  hover:scale-105 lg:hover-drop-shadow duration-300">
             <img
               height="24"
               width="24"
               src="https://cdn.simpleicons.org/mui"
               className="w-4 lg:w-6"
             />
-            <p className="text-sm sm:text-base">Material UI</p>
+            <p>Material UI</p>
           </div>
-          <div className="flex justify-center items-center text-black space-x-2 border border-white bg-white rounded-xl px-4 py-[6px] hover:scale-105 lg:hover-drop-shadow duration-300">
+          <div className="flex justify-center items-center text-black space-x-2 border border-white bg-white rounded-xl px-3 py-[4px] sm:px-4 sm:py-[6px]  hover:scale-105 lg:hover-drop-shadow duration-300">
             <img
               height="24"
               width="24"
               src="https://cdn.simpleicons.org/Mantine"
               className="w-4 lg:w-6"
             />
-            <p className="text-sm sm:text-base">Mantine</p>
+            <p>Mantine</p>
           </div>
-          <div className="flex justify-center items-center text-black space-x-2 border border-white bg-white rounded-xl px-4 py-[6px] hover:scale-105 lg:hover-drop-shadow duration-300">
+          <div className="flex justify-center items-center text-black space-x-2 border border-white bg-white rounded-xl px-3 py-[4px] sm:px-4 sm:py-[6px]  hover:scale-105 lg:hover-drop-shadow duration-300">
             <img
               height="24"
               width="24"
               src="https://cdn.simpleicons.org/nextui"
               className="w-4 lg:w-6"
             />
-            <p className="text-sm sm:text-base">NextUI</p>
+            <p>NextUI</p>
           </div>
 
-          <div className="flex justify-center items-center text-black space-x-2 border border-white bg-white rounded-xl px-4 py-[6px] hover:scale-105 lg:hover-drop-shadow duration-300">
+          <div className="flex justify-center items-center text-black space-x-2 border border-white bg-white rounded-xl px-3 py-[4px] sm:px-4 sm:py-[6px]  hover:scale-105 lg:hover-drop-shadow duration-300">
             <img
               height="24"
               width="24"
               src="https://cdn.simpleicons.org/redux"
               className="w-4 lg:w-6"
             />
-            <p className="text-sm sm:text-base">Redux</p>
+            <p>Redux</p>
           </div>
-          <div className="flex justify-center items-center text-black space-x-2 border border-white bg-white rounded-xl px-4 py-[6px] hover:scale-105 lg:hover-drop-shadow duration-300">
+          <div className="flex justify-center items-center text-black space-x-2 border border-white bg-white rounded-xl px-3 py-[4px] sm:px-4 sm:py-[6px]  hover:scale-105 lg:hover-drop-shadow duration-300">
             <img
               height="24"
               width="24"
               src="https://cdn.simpleicons.org/nodedotjs"
               className="w-4 lg:w-6"
             />
-            <p className="text-sm sm:text-base">Node.Js</p>
+            <p>Node.Js</p>
           </div>
-          <div className="flex justify-center items-center text-black space-x-2 border border-white bg-white rounded-xl px-4 py-[6px] hover:scale-105 lg:hover-drop-shadow duration-300">
+          <div className="flex justify-center items-center text-black space-x-2 border border-white bg-white rounded-xl px-3 py-[4px] sm:px-4 sm:py-[6px]  hover:scale-105 lg:hover-drop-shadow duration-300">
             <img
               height="24"
               width="24"
               src="https://cdn.simpleicons.org/express"
               className="w-4 lg:w-6"
             />
-            <p className="text-sm sm:text-base">ExpressJS</p>
+            <p>ExpressJS</p>
           </div>
-          <div className="flex justify-center items-center text-black space-x-2 border border-white bg-white rounded-xl px-4 py-[6px] hover:scale-105 lg:hover-drop-shadow duration-300">
+          <div className="flex justify-center items-center text-black space-x-2 border border-white bg-white rounded-xl px-3 py-[4px] sm:px-4 sm:py-[6px]  hover:scale-105 lg:hover-drop-shadow duration-300">
             <img
               height="24"
               width="24"
               src="https://cdn.simpleicons.org/firebase"
               className="w-4 lg:w-6"
             />
-            <p className="text-sm sm:text-base">Firebase</p>
+            <p>Firebase</p>
           </div>
-          <div className="flex justify-center items-center text-black space-x-2 border border-white bg-white rounded-xl px-4 py-[6px] hover:scale-105 lg:hover-drop-shadow duration-300">
+          <div className="flex justify-center items-center text-black space-x-2 border border-white bg-white rounded-xl px-3 py-[4px] sm:px-4 sm:py-[6px]  hover:scale-105 lg:hover-drop-shadow duration-300">
             <img
               height="24"
               width="24"
               src="https://cdn.simpleicons.org/axios"
               className="w-4 lg:w-6"
             />
-            <p className="text-sm sm:text-base">Axios</p>
+            <p>Axios</p>
           </div>
-          <div className="flex justify-center items-center text-black space-x-2 border border-white bg-white rounded-xl px-4 py-[6px] hover:scale-105 lg:hover-drop-shadow duration-300">
+          <div className="flex justify-center items-center text-black space-x-2 border border-white bg-white rounded-xl px-3 py-[4px] sm:px-4 sm:py-[6px]  hover:scale-105 lg:hover-drop-shadow duration-300">
             <img
               height="24"
               width="24"
               src="https://cdn.simpleicons.org/mysql"
               className="w-4 lg:w-6"
             />
-            <p className="text-sm sm:text-base">MySQL</p>
+            <p>MySQL</p>
           </div>
-          <div className="flex justify-center items-center text-black space-x-2 border border-white bg-white rounded-xl px-4 py-[6px] hover:scale-105 lg:hover-drop-shadow duration-300">
+          <div className="flex justify-center items-center text-black space-x-2 border border-white bg-white rounded-xl px-3 py-[4px] sm:px-4 sm:py-[6px]  hover:scale-105 lg:hover-drop-shadow duration-300">
             <img
               height="24"
               width="24"
               src="https://cdn.simpleicons.org/PostgreSQL"
               className="w-4 lg:w-6"
             />
-            <p className="text-sm sm:text-base">PostgreSQL</p>
+            <p>PostgreSQL</p>
           </div>
-          <div className="flex justify-center items-center text-black space-x-2 border border-white bg-white rounded-xl px-4 py-[6px] hover:scale-105 lg:hover-drop-shadow duration-300">
+          <div className="flex justify-center items-center text-black space-x-2 border border-white bg-white rounded-xl px-3 py-[4px] sm:px-4 sm:py-[6px]  hover:scale-105 lg:hover-drop-shadow duration-300">
             <img
               height="24"
               width="24"
               src="https://cdn.simpleicons.org/mongodb"
               className="w-4 lg:w-6"
             />
-            <p className="text-sm sm:text-base">MongoDB</p>
+            <p>MongoDB</p>
           </div>
-          <div className="flex justify-center items-center text-black space-x-2 border border-white bg-white rounded-xl px-4 py-[6px] hover:scale-105 lg:hover-drop-shadow duration-300">
+          <div className="flex justify-center items-center text-black space-x-2 border border-white bg-white rounded-xl px-3 py-[4px] sm:px-4 sm:py-[6px]  hover:scale-105 lg:hover-drop-shadow duration-300">
             <img
               height="24"
               width="24"
               src="https://cdn.simpleicons.org/swagger"
               className="w-4 lg:w-6"
             />
-            <p className="text-sm sm:text-base">Swagger</p>
+            <p>Swagger</p>
           </div>
-          <div className="flex justify-center items-center text-black space-x-2 border border-white bg-white rounded-xl px-4 py-[6px] hover:scale-105 lg:hover-drop-shadow duration-300">
+          <div className="flex justify-center items-center text-black space-x-2 border border-white bg-white rounded-xl px-3 py-[4px] sm:px-4 sm:py-[6px]  hover:scale-105 lg:hover-drop-shadow duration-300">
             <img
               height="24"
               width="24"
               src="https://cdn.simpleicons.org/postman"
               className="w-4 lg:w-6"
             />
-            <p className="text-sm sm:text-base">Postman</p>
+            <p>Postman</p>
           </div>
-
-          <div className="flex justify-center items-center text-black space-x-2 border border-white bg-white rounded-xl px-4 py-[6px] hover:scale-105 lg:hover-drop-shadow duration-300">
+          <div className="flex justify-center items-center text-black space-x-2 border border-white bg-white rounded-xl px-3 py-[4px] sm:px-4 sm:py-[6px]  hover:scale-105 lg:hover-drop-shadow duration-300">
             <img
               height="24"
               width="24"
               src="https://cdn.simpleicons.org/git"
               className="w-4 lg:w-6"
             />
-            <p className="text-sm sm:text-base">Git</p>
+            <p>Git</p>
           </div>
-          <div className="flex justify-center items-center text-black space-x-2 border border-white bg-white rounded-xl px-4 py-[6px] hover:scale-105 lg:hover-drop-shadow duration-300">
+          <div className="flex justify-center items-center text-black space-x-2 border border-white bg-white rounded-xl px-3 py-[4px] sm:px-4 sm:py-[6px]  hover:scale-105 lg:hover-drop-shadow duration-300">
             <img
               height="24"
               width="24"
               src="https://cdn.simpleicons.org/github"
               className="w-4 lg:w-6"
             />
-            <p className="text-sm sm:text-base">Github</p>
+            <p>Github</p>
           </div>
-          <div className="flex justify-center items-center text-black space-x-2 border border-white bg-white rounded-xl px-4 py-[6px] hover:scale-105 lg:hover-drop-shadow duration-300">
+          <div className="flex justify-center items-center text-black space-x-2 border border-white bg-white rounded-xl px-3 py-[4px] sm:px-4 sm:py-[6px]  hover:scale-105 lg:hover-drop-shadow duration-300">
             <img
               height="24"
               width="24"
               src="https://cdn.simpleicons.org/gitlab"
               className="w-4 lg:w-6"
             />
-            <p className="text-sm sm:text-base">Gitlab</p>
+            <p>Gitlab</p>
           </div>
-          <div className="flex justify-center items-center text-black space-x-2 border border-white bg-white rounded-xl px-4 py-[6px] hover:scale-105 lg:hover-drop-shadow duration-300">
+          <div className="flex justify-center items-center text-black space-x-2 border border-white bg-white rounded-xl px-3 py-[4px] sm:px-4 sm:py-[6px]  hover:scale-105 lg:hover-drop-shadow duration-300">
             <img
               height="24"
               width="24"
               src="https://cdn.simpleicons.org/vercel"
               className="w-4 lg:w-6"
             />
-            <p className="text-sm sm:text-base">Vercel</p>
+            <p>Vercel</p>
           </div>
-          <div className="flex justify-center items-center text-black space-x-2 border border-white bg-white rounded-xl px-4 py-[6px] hover:scale-105 lg:hover-drop-shadow duration-300">
+          <div className="flex justify-center items-center text-black space-x-2 border border-white bg-white rounded-xl px-3 py-[4px] sm:px-4 sm:py-[6px]  hover:scale-105 lg:hover-drop-shadow duration-300">
             <img
               height="24"
               width="24"
               src="https://cdn.simpleicons.org/netlify"
               className="w-4 lg:w-6"
             />
-            <p className="text-sm sm:text-base">Netlify</p>
+            <p>Netlify</p>
           </div>
         </div>
       </div>
