@@ -1,9 +1,9 @@
-"use client";
+"use client"
 import React, { useEffect, useState } from "react";
 import axios from "axios";
 import Image from "next/image";
 import { useSearchParams } from "next/navigation";
-import { Modal } from "@mantine/core";
+import { Modal, Pill } from "@mantine/core";
 import { useDisclosure } from "@mantine/hooks";
 
 interface Project {
@@ -99,14 +99,14 @@ const ProjectDetailPage = () => {
             <p className="text-2xl md:text-4xl capitalize font-medium">
               {project.project_name}
             </p>
-            <div className="flex space-x-2">
+            <div className="flex space-x-1">
               {project.project_tag.map((tag) => (
-                <span
+                <Pill
                   key={tag}
-                  className="badge bg-base-300 text-xs sm:text-sm font-light py-2 sm:py-3 capitalize opacity-60"
+                  className="opacity-70"
                 >
                   {tag}
-                </span>
+                </Pill>
               ))}
             </div>
           </div>

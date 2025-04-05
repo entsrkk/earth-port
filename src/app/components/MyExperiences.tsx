@@ -9,7 +9,7 @@ const MyExperiences = () => {
     AOS.init();
   }, []);
   return (
-    <div className="container mx-auto max-w-8xl flex flex-col justify-center items-center py-10 sm:py-20 px-4">
+    <div className="container mx-auto max-w-8xl flex flex-col justify-center items-center py-10 sm:py-20 px-6">
       <h2 className="text-4xl sm:text-5xl text-center font-medium">
         My Experiences
       </h2>
