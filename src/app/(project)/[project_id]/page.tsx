@@ -62,7 +62,7 @@ const ProjectDetailPage = () => {
   }
 
   return (
-    <div className="container mx-auto py-10 lg:py-14">
+    <div className="container mx-auto py-6 sm:py-10 lg:py-14">
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-10">
         <div className="flex justify-center items-center order-2 lg:order-1 px-4 lg:px-0 ">
           <Image

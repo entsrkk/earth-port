@@ -9,20 +9,20 @@ const MyExperiences = () => {
     AOS.init();
   }, []);
   return (
-    <div className="container mx-auto max-w-8xl flex flex-col justify-center items-center py-10 sm:py-20 px-6">
+    <div className="container mx-auto max-w-8xl flex flex-col justify-center items-center py-10 sm:py-20 px-4">
       <h2 className="text-4xl sm:text-5xl text-center font-medium">
         My Experiences
       </h2>
       <div className="mt-8 sm:mt-14 space-y-4">
         <div className="flex flex-col sm:flex-row justify-center w-full bg-white shadow-sm rounded-2xl px-4 sm:px-8 py-6 sm:py-10 ">
           <div className="space-y-0 sm:space-y-1 mb-2 sm:mb-0">
-            <span className="text-sm font-light tracking-wide uppercase">
+            <span className="text-xs sm:text-sm font-light tracking-wide uppercase">
               Dec 2024 - Mar 2025
             </span>
-            <p className="text-2xl font-semibold text-nowrap w-full sm:w-80 lg:w-96">
+            <p className="text-xl sm:text-2xl font-semibold text-nowrap w-full sm:w-80 lg:w-96">
               Frontend Developer Intern
             </p>
-            <div className="flex gap-1 text-sm font-light ">
+            <div className="flex gap-1 text-xs sm:text-sm font-light ">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 fill="none"
@@ -50,7 +50,7 @@ const MyExperiences = () => {
             </div>
           </div>
           <div>
-            <ul className="list-disc list-inside text-base capitalize font-light space-y-1">
+            <ul className="list-disc list-inside text-sm sm:text-base capitalize font-light space-y-1">
               <p className="font-Kanit">
                 ในการเป็นนักศึกษาฝึกงานตำแหน่ง Frontend Developer
                 ผมได้มีโอกาสร่วมทำโปรเจกต์เว็บไซต์จริง ร่วมงานกับทีม
@@ -124,13 +124,13 @@ const MyExperiences = () => {
         </div>
         <div className="flex flex-col sm:flex-row justify-center w-full bg-white shadow-sm rounded-2xl px-4 sm:px-8 py-6 sm:py-10 ">
           <div className="space-y-0 sm:space-y-1 mb-2 sm:mb-0">
-            <span className="text-sm font-light tracking-wide uppercase">
+            <span className="text-xs sm:text-sm font-light tracking-wide uppercase">
               Jul 2021 - Apr 2025
             </span>
-            <p className="text-2xl font-semibold text-nowrap w-full sm:w-80 lg:w-96">
+            <p className="text-xl sm:text-2xl font-semibold text-nowrap w-full sm:w-80 lg:w-96">
               Undergraduate Student
             </p>
-            <div className="flex gap-1 text-sm font-light ">
+            <div className="flex gap-1 text-xs sm:text-sm font-light ">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 fill="none"
@@ -153,7 +153,7 @@ const MyExperiences = () => {
               <span>Nakhon Pathom Rajabhat University</span>
             </div>
           </div>
-          <ul className="list-disc list-inside text-base capitalize font-light space-y-1">
+          <ul className="list-disc list-inside text-sm sm:text-base capitalize font-light space-y-1">
             <p className="font-Kanit">
               ในการเป็นนักศึกษาอยู่ ผมได้เรียนรู้พื้นฐานของการพัฒนาเว็บไซต์
               ตั้งแต่การออกแบบ UX/UI การสร้างแพลตฟอร์มเพื่อการศึกษา
