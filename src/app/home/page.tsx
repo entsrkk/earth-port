@@ -36,16 +36,17 @@ const Homepage = () => {
               className="text-3xl sm:text-6xl font-black tracking-wide uppercase text-gradient "
             />
             <p
-              data-aos="fade-up"
-              data-aos-delay="200"
-              data-aos-duration="1000"
-              data-aos-easing="ease-out"
-              className="mx-auto text-base text-balance md:text-xl lg:text-2xl lg:w-[740px] font-light"
+              // data-aos="fade-up"
+              // data-aos-delay="200"
+              // data-aos-duration="1000"
+              // data-aos-easing="ease-out"
+              className="mx-auto text-base md:text-balance md:text-xl lg:text-2xl lg:w-[780px] font-Kanit font-light"
             >
-              Hello! I&apos;m Earth, also known as Mr. Niti Surakongka, a Junior
-              Frontend Developer. I have a strong foundation in web development,
-              with expertise in modern front-end technologies and a growing
-              interest in Full Stack Development.
+              สวัสดีครับ! ผมชื่อเอิร์ธ หรือ นายนิติ สุระคงคา
+              เป็น Junior Frontend Developer 
+              มีทักษะพื้นฐานในด้านการพัฒนาเว็บไซต์
+              ด้วยความเชี่ยวชาญในเทคโนโลยีฝั่ง Front-end สมัยใหม่
+              และอยากพัฒนาตนเองไปเป็น Full Stack Developer
             </p>
           </div>
         </div>

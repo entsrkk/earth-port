@@ -482,6 +482,9 @@ const AllProjectpage = () => {
             </div>
           </div>
         </div>
+        <div className="text-center mt-4 md:mt-10 lg:mt-14 text-lg md:text-2xl font-medium">
+          <p>Information is being updated regularly, please wait...</p>
+        </div>
       </div>
     </div>
   );

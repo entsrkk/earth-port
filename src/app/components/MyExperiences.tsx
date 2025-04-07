@@ -51,18 +51,20 @@ const MyExperiences = () => {
           </div>
           <div>
             <ul className="list-disc list-inside text-base capitalize font-light space-y-1">
-              <p>
-                During my Frontend Developer internship, I worked on real-world
-                web projects, collaborated with a team, and used modern
-                technologies to enhance user experience. Additionally, I had the
-                opportunity to work with WordPress, which was a new experience,
-                and I also learned more about SEO. This included optimizing
-                website performance by improving First Contentful Paint (FCP),
-                Largest Contentful Paint (LCP), and Cumulative Layout Shift
-                (CLS) to ensure a smoother and more efficient user experience.
-                Furthermore, I worked on making URLs more user-friendly, adding
-                Meta Titles and Tags, and optimizing Images SEO to improve
-                search engine rankings.
+              <p className="font-Kanit">
+                ในการเป็นนักศึกษาฝึกงานตำแหน่ง Frontend Developer
+                ผมได้มีโอกาสร่วมทำโปรเจกต์เว็บไซต์จริง ร่วมงานกับทีม
+                และใช้เทคโนโลยีสมัยใหม่เพื่อยกระดับประสบการณ์ของผู้ใช้งาน
+                นอกจากนี้ยังได้เรียนรู้และทำงานกับ WordPress
+                ซึ่งเป็นประสบการณ์ใหม่สำหรับผม
+                พร้อมทั้งได้ศึกษาเพิ่มเติมเกี่ยวกับ SEO
+                ผมได้มีส่วนร่วมในการปรับปรุงประสิทธิภาพของเว็บไซต์
+                โดยเน้นไปที่การพัฒนา First Contentful Paint (FCP), Largest
+                Contentful Paint (LCP) และ Cumulative Layout Shift (CLS)
+                เพื่อให้เว็บไซต์ทำงานได้ราบรื่นและมีประสิทธิภาพมากยิ่งขึ้น
+                นอกจากนี้ ยังได้ปรับแต่ง URL ให้อ่านง่าย เป็นมิตรกับผู้ใช้งาน
+                เพิ่ม Meta Titles, Meta Tags และปรับปรุง Images SEO
+                เพื่อช่วยเพิ่มอันดับในการค้นหาบน Search Engine
               </p>
               <li>Koh Mak</li>
               <li>bepeerapat 20th</li>
@@ -152,13 +154,13 @@ const MyExperiences = () => {
             </div>
           </div>
           <ul className="list-disc list-inside text-base capitalize font-light space-y-1">
-            <p>
-              During my studies, I learned the basics of web development, from
-              UX/UI design, building academic platforms, to automating tests.
-              These projects gave me the opportunity to work with new
-              technologies and frameworks, such as React, Next.js, TailwindCSS,
-              MUI, Typescript, Redux, RESTful API, MERN Stack, and Firebase,
-              among others.
+            <p className="font-Kanit">
+              ในการเป็นนักศึกษาอยู่ ผมได้เรียนรู้พื้นฐานของการพัฒนาเว็บไซต์
+              ตั้งแต่การออกแบบ UX/UI การสร้างแพลตฟอร์มเพื่อการศึกษา
+              ไปจนถึงการทำระบบทดสอบอัตโนมัติ
+              โดยโปรเจกต์เหล่านี้ทำให้ผมมีโอกาสได้ลองใช้เทคโนโลยีและเฟรมเวิร์กใหม่
+              ๆ เช่น React, Next.js, TailwindCSS, MUI, Typescript, Redux,
+              RESTful API, MERN Stack และ Firebase เป็นต้น
             </p>
             <li>
               TechVibe: an Academic Weblog Platform :{" "}

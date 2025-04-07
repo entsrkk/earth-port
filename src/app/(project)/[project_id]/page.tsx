@@ -111,17 +111,17 @@ const ProjectDetailPage = () => {
             </div>
           </div>
           <div>
-            <p className="md:text-lg font-light">
+            <p className="md:text-lg font-light font-Kanit">
               {project.project_description}
             </p>
           </div>
           <div>
-            <p className="text-lg font-medium">
+            <p className="text-lg font-medium ">
               {project.project_responsibilities}
             </p>
             <ul className="list-disc list-inside indent-3 sm:indent-5 text-sm sm:text-base">
               {project.keyResponsibilities.map((keyResponsibility) => (
-                <li className="font-light" key={keyResponsibility}>
+                <li className="font-light font-Kanit" key={keyResponsibility}>
                   {keyResponsibility}
                 </li>
               ))}

@@ -13,7 +13,8 @@ export default {
         foreground: "var(--foreground)",
       },
       fontFamily: {
-        'Outfit': ['Outfit', 'sans-serif']
+        'Outfit': ['Outfit', 'sans-serif'],
+        'Kanit': ['Kanit', 'sans-serif'],
       }
     },
   },
