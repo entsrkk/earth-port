@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Outfit&display=swap");
-@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Kanit:wght@100;200;300;400;500;600;700;800;900&display=swap");
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -7,7 +7,6 @@
   themes: light --default;
 }
 @layer utilities {
-
   .outfit-font {
     font-family: "Outfit", sans-serif;
   }
@@ -21,7 +20,7 @@
   }
 
   .tech-stack-2 {
-    @apply flex flex-wrap items-center gap-1 sm:gap-2 outfit-font text-sm cursor-pointer; 
+    @apply flex flex-wrap items-center gap-1 sm:gap-2 outfit-font text-sm cursor-pointer;
   }
   .description {
     @apply text-base font-Kanit font-light;

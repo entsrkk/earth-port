@@ -19,7 +19,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className="bg-white">
+    <html lang="en" data-theme="light">
       <link rel="icon" href="/favicon.ico" sizes="any" />
       <body className={inter.className}>
         <MantineProvider>
