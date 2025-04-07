@@ -36,10 +36,10 @@ const Homepage = () => {
               className="text-3xl sm:text-6xl font-black tracking-wide uppercase text-gradient "
             />
             <p
-              // data-aos="fade-up"
-              // data-aos-delay="200"
-              // data-aos-duration="1000"
-              // data-aos-easing="ease-out"
+              data-aos="fade-up"
+              data-aos-delay="200"
+              data-aos-duration="1000"
+              data-aos-easing="ease-out"
               className="mx-auto text-base md:text-balance md:text-xl lg:text-2xl lg:w-[780px] font-Kanit font-light"
             >
               สวัสดีครับ! ผมชื่อเอิร์ธ หรือ นายนิติ สุระคงคา

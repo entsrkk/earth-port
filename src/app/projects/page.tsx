@@ -1,8 +1,14 @@
+"use client";
+import React, { useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
 import Image from "next/image";
 import Link from "next/link";
-import React from "react";
 
 const AllProjectpage = () => {
+  useEffect(() => {
+      AOS.init({ disable: window.innerWidth < 1024 });
+    }, []);
   return (
     <div className="container mx-auto py-10 px-2 md:px-10 sm:py-20">
       <div
