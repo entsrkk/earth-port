@@ -42,10 +42,10 @@ const Homepage = () => {
               data-aos-easing="ease-out"
               className="mx-auto text-base md:text-balance md:text-xl lg:text-2xl lg:w-[780px] font-Kanit font-light"
             >
-              สวัสดีครับ! ผมชื่อเอิร์ธ หรือ นายนิติ สุระคงคา
-              เป็น Junior Frontend Developer 
-              มีทักษะพื้นฐานในด้านการพัฒนาเว็บไซต์
-              ด้วยความเชี่ยวชาญในเทคโนโลยีฝั่ง Front-end สมัยใหม่
+              สวัสดีครับ! ผมชื่อเอิร์ธ หรือ นายนิติ สุระคงคา เป็น Junior
+              Frontend Developer มีทักษะพื้นฐานในด้านการพัฒนาเว็บไซต์
+              มีความเชี่ยวชาญในเทคโนโลยีฝั่ง Front-end สมัยใหม่ ได้ฝึกฝน
+              และเรียนรู้ทักษะเพิ่มเติม พร้อมที่จะเรียนรู้สิ่งใหม่ๆ
               และอยากพัฒนาตนเองไปเป็น Full Stack Developer
             </p>
           </div>
