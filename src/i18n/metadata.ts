@@ -1,4 +1,6 @@
 import type { Metadata } from "next";
+import type { Locale } from "next-intl";
+import { getPathname } from "./navigation";
 
 interface SiteUrlEnvironment {
   SITE_URL?: string;
@@ -22,8 +24,28 @@ export const resolveSiteUrl = (environment: SiteUrlEnvironment): URL => {
 
 export const metadataBase = resolveSiteUrl(process.env);
 
-export const createCanonicalAlternates = (
-  pathname = "",
-): NonNullable<Metadata["alternates"]> => ({
-  canonical: pathname ? `/${pathname.replace(/^\/+/, "")}` : "/",
-});
+const normalizePathname = (pathname: string): string =>
+  pathname === "/" ? pathname : `/${pathname.replace(/^\/+/, "")}`;
+
+export const createLocalizedPathnames = (pathname: string) => {
+  const href = normalizePathname(pathname);
+  const englishPathname = getPathname({ href, locale: "en" });
+
+  return {
+    en: englishPathname,
+    th: getPathname({ href, locale: "th" }),
+    "x-default": englishPathname,
+  };
+};
+
+export const createLocalizedAlternates = (
+  pathname: string,
+  locale: Locale,
+): NonNullable<Metadata["alternates"]> => {
+  const href = normalizePathname(pathname);
+
+  return {
+    canonical: getPathname({ href, locale }),
+    languages: createLocalizedPathnames(href),
+  };
+};

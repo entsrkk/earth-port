@@ -1,32 +1,25 @@
+import type { Locale } from "next-intl";
+import { getTranslations } from "next-intl/server";
 import React from "react";
 import { getFeaturedProjects } from "@/lib/projects";
 import PageSection from "@/components/ui/PageSection";
 import ProjectCard from "@/components/ui/ProjectCard";
 import SectionHeading from "@/components/ui/SectionHeading";
-import type { Locale } from "@/i18n/config";
-import type { Dictionary } from "@/i18n/dictionaries/th";
 
 interface ProjectsGridProps {
   locale: Locale;
-  heading: string;
-  highlight: string;
-  cardCopy: Dictionary["projects"];
 }
 
-const ProjectsGrid = ({
-  locale,
-  heading,
-  highlight,
-  cardCopy,
-}: ProjectsGridProps) => {
+const ProjectsGrid = async ({ locale }: ProjectsGridProps) => {
+  const t = await getTranslations("Home");
   const projects = getFeaturedProjects(locale);
 
   return (
     <PageSection id="featured-projects" labelledBy="featured-projects-heading">
       <div className="mb-8 sm:mb-10">
         <SectionHeading
-          title={heading}
-          highlight={highlight}
+          title={t("projectsHeading")}
+          highlight={t("projectsHighlight")}
           id="featured-projects-heading"
           aosProps={{
             "data-aos": "fade-down",
@@ -46,7 +39,6 @@ const ProjectsGrid = ({
           <ProjectCard
             key={project.projectId}
             project={project}
-            copy={cardCopy}
             variant="grid"
             ctaVariant="soft"
             eagerImage={index === 0}

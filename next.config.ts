@@ -1,5 +1,7 @@
 import type { NextConfig } from "next";
-import { PROJECTS } from "./src/data/projects";
+import createNextIntlPlugin from "next-intl/plugin";
+
+const withNextIntl = createNextIntlPlugin("./src/i18n/request.ts");
 
 const nextConfig: NextConfig = {
   experimental: {
@@ -13,36 +15,6 @@ const nextConfig: NextConfig = {
       },
     ],
   },
-  async redirects() {
-    const legacyProjectRedirects = PROJECTS.flatMap(({ projectId, slug }) => [
-      {
-        source: `/projects/${projectId}`,
-        destination: `/projects/${slug}`,
-        permanent: true,
-      },
-      {
-        source: "/project",
-        has: [
-          {
-            type: "query" as const,
-            key: "project_id",
-            value: projectId,
-          },
-        ],
-        destination: `/projects/${slug}`,
-        permanent: true,
-      },
-    ]);
-
-    return [
-      {
-        source: "/home",
-        destination: "/",
-        permanent: true,
-      },
-      ...legacyProjectRedirects,
-    ];
-  },
 };
 
-export default nextConfig;
+export default withNextIntl(nextConfig);

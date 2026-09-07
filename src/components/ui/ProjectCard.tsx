@@ -1,15 +1,14 @@
 import Image from "next/image";
-import Link from "next/link";
+import { useTranslations } from "next-intl";
 import React from "react";
 import { FaStar } from "react-icons/fa";
 import { getProjectPath } from "@/lib/projects";
 import type { Project } from "@/types/project";
-import type { Dictionary } from "@/i18n/dictionaries/th";
+import { Link } from "@/i18n/navigation";
 import TechBadge from "./TechBadge";
 
 interface ProjectCardProps {
   project: Project;
-  copy: Dictionary["projects"];
   variant?: "grid" | "list";
   linkMode?: "button" | "card";
   ctaVariant?: "primary" | "soft";
@@ -23,12 +22,12 @@ const EXTRA_TAG_COUNT_BADGE_CLASS =
 
 const ProjectCard: React.FC<ProjectCardProps> = ({
   project,
-  copy,
   variant = "grid",
   linkMode = "button",
   ctaVariant = "primary",
   eagerImage = false,
 }) => {
+  const t = useTranslations("Projects");
   const summary = project.summary;
   const detailHref = getProjectPath(project);
   const ctaClassName =
@@ -49,7 +48,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
         <figure className="relative aspect-video w-full shrink-0 border-b border-base-300 md:aspect-4/3 md:w-80 md:border-r md:border-b-0 xl:w-96">
           <Image
             src={project.projectImage}
-            alt={`${copy.projectImageAlt}: ${project.projectName}`}
+            alt={t("projectImageAlt", { projectName: project.projectName })}
             width={450}
             height={450}
             loading={eagerImage ? "eager" : "lazy"}
@@ -75,11 +74,11 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
           <div className="mt-2">
             {linkMode === "card" ? (
               <span className={`${ctaClassName} pointer-events-none min-h-11 px-6`}>
-                {copy.viewProject}
+                {t("viewProject")}
               </span>
             ) : (
               <Link href={detailHref} className={`${ctaClassName} min-h-11 px-6`}>
-                {copy.viewProject}
+                {t("viewProject")}
               </Link>
             )}
           </div>
@@ -87,7 +86,9 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
         {linkMode === "card" && (
           <Link
             href={detailHref}
-            aria-label={`${copy.viewProject}: ${project.projectName}`}
+            aria-label={t("viewProjectLabel", {
+              projectName: project.projectName,
+            })}
             className="absolute inset-0 rounded-box focus-visible:outline-2 focus-visible:outline-primary"
           />
         )}
@@ -102,7 +103,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
           width={450}
           height={450}
           src={project.projectImage}
-          alt={`${copy.projectImageAlt}: ${project.projectName}`}
+          alt={t("projectImageAlt", { projectName: project.projectName })}
           className="h-full w-full object-cover object-top"
           loading={eagerImage ? "eager" : "lazy"}
           sizes="(max-width: 639px) calc(100vw - 2rem), (max-width: 1023px) calc(50vw - 2.25rem), 25rem"
@@ -133,7 +134,9 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
             </div>
             {extraMobileGridTagCount > 0 && (
               <span
-                aria-label={`${extraMobileGridTagCount} ${copy.moreTechnologies}`}
+                aria-label={t("moreTechnologies", {
+                  count: extraMobileGridTagCount,
+                })}
                 className={`${EXTRA_TAG_COUNT_BADGE_CLASS} lg:hidden`}
               >
                 +{extraMobileGridTagCount}
@@ -141,7 +144,9 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
             )}
             {extraDesktopGridTagCount > 0 && (
               <span
-                aria-label={`${extraDesktopGridTagCount} ${copy.moreTechnologies}`}
+                aria-label={t("moreTechnologies", {
+                  count: extraDesktopGridTagCount,
+                })}
                 className={`${EXTRA_TAG_COUNT_BADGE_CLASS} hidden lg:inline-flex`}
               >
                 +{extraDesktopGridTagCount}
@@ -154,7 +159,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
         </p>
         <div className="mt-2">
           <Link href={detailHref} className={`${ctaClassName} btn-block`}>
-            {copy.viewProject}
+            {t("viewProject")}
           </Link>
         </div>
       </div>

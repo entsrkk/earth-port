@@ -1,7 +1,7 @@
 "use client";
 
-import Link from "next/link";
-import { usePathname } from "next/navigation";
+import { useLocale, useTranslations, type Locale } from "next-intl";
+import { useSearchParams } from "next/navigation";
 import { FiCheck, FiChevronDown, FiGlobe } from "react-icons/fi";
 import React, {
   type KeyboardEvent,
@@ -11,15 +11,11 @@ import React, {
   useTransition,
 } from "react";
 import {
-  locales,
-  type Locale,
-} from "@/i18n/config";
-import type { Dictionary } from "@/i18n/dictionaries/th";
-
-interface NavbarProps {
-  locale: Locale;
-  copy: Pick<Dictionary, "navigation" | "language">;
-}
+  Link,
+  usePathname,
+  useRouter,
+} from "@/i18n/navigation";
+import { routing } from "@/i18n/routing";
 
 const isActive = (pathname: string, href: string, exact = false): boolean =>
   exact
@@ -48,19 +44,20 @@ const NavLink: React.FC<{
   );
 };
 
-const LanguageSwitcher: React.FC<{
-  locale: Locale;
-  copy: Dictionary["language"];
-}> = ({ locale, copy }) => {
+const LanguageSwitcher = () => {
+  const locale = useLocale();
+  const pathname = usePathname();
+  const router = useRouter();
+  const searchParams = useSearchParams();
+  const t = useTranslations("Language");
   const [isPending, startTransition] = useTransition();
   const [isOpen, setIsOpen] = useState(false);
-  const [errorMessage, setErrorMessage] = useState("");
   const containerRef = useRef<HTMLDetailsElement>(null);
   const triggerRef = useRef<HTMLElement>(null);
   const optionRefs = useRef<Array<HTMLButtonElement | null>>([]);
   const languageNames: Record<Locale, string> = {
-    th: copy.thai,
-    en: copy.english,
+    th: t("thai"),
+    en: t("english"),
   };
   const languageDisplayNames: Record<Locale, string> = {
     th: "ไทย",
@@ -128,28 +125,18 @@ const LanguageSwitcher: React.FC<{
   };
 
   const switchLocale = (nextLocale: Locale): void => {
-    setErrorMessage("");
     if (nextLocale === locale) {
       closeMenu(true);
       return;
     }
 
-    startTransition(async () => {
-      try {
-        const response = await fetch("/api/locale", {
-          method: "POST",
-          headers: { "content-type": "application/json" },
-          body: JSON.stringify({ locale: nextLocale }),
-        });
-        if (!response.ok) {
-          setErrorMessage(copy.changeError);
-          return;
-        }
+    const query = searchParams.toString();
+    const hash = window.location.hash;
+    const href = `${pathname}${query ? `?${query}` : ""}${hash}`;
 
-        window.location.reload();
-      } catch {
-        setErrorMessage(copy.changeError);
-      }
+    closeMenu();
+    startTransition(() => {
+      router.replace(href, { locale: nextLocale, scroll: false });
     });
   };
 
@@ -163,12 +150,17 @@ const LanguageSwitcher: React.FC<{
     >
       <summary
         ref={triggerRef}
-        aria-label={`${copy.label}: ${languageNames[locale]}`}
+        aria-label={`${t("label")}: ${languageNames[locale]}`}
         aria-haspopup="menu"
         aria-expanded={isOpen}
+        aria-busy={isPending}
         className="btn btn-ghost h-10 min-h-10 gap-1.5 border border-primary/20 bg-primary/5 px-2.5 font-display text-sm font-semibold text-base-content/80 marker:content-none hover:border-primary/40 hover:bg-primary/10 hover:text-primary [&::-webkit-details-marker]:hidden"
       >
-        <FiGlobe aria-hidden="true" className="size-4" />
+        {isPending ? (
+          <span aria-hidden="true" className="loading loading-spinner loading-xs" />
+        ) : (
+          <FiGlobe aria-hidden="true" className="size-4" />
+        )}
         <span lang={locale}>{locale.toUpperCase()}</span>
         <FiChevronDown
           aria-hidden="true"
@@ -178,10 +170,10 @@ const LanguageSwitcher: React.FC<{
 
       <ul
         role="menu"
-        aria-label={copy.label}
+        aria-label={t("label")}
         className="dropdown-content menu menu-sm z-50 mt-2.5 w-40 gap-1 rounded-xl border border-primary/15 bg-base-100 p-2 shadow-lg shadow-primary/5"
       >
-        {locales.map((option, index) => {
+        {routing.locales.map((option, index) => {
           const active = option === locale;
 
           return (
@@ -211,31 +203,22 @@ const LanguageSwitcher: React.FC<{
         })}
       </ul>
       <span className="sr-only" aria-live="polite">
-        {errorMessage}
+        {isPending ? t("changing") : ""}
       </span>
     </details>
   );
 };
 
-const Navbar: React.FC<NavbarProps> = ({ locale, copy }) => {
+const Navbar = () => {
   const pathname = usePathname();
+  const t = useTranslations("Navigation");
   const triggerRef = useRef<HTMLButtonElement>(null);
   const dialogRef = useRef<HTMLDialogElement>(null);
   const [isScrolled, setIsScrolled] = useState(false);
   const navLinks = [
-    {
-      href: "/",
-      label: copy.navigation.home,
-      exact: true,
-    },
-    {
-      href: "/projects",
-      label: copy.navigation.projects,
-    },
-    {
-      href: "/contact",
-      label: copy.navigation.contact,
-    },
+    { href: "/", label: t("home"), exact: true },
+    { href: "/projects", label: t("projects") },
+    { href: "/contact", label: t("contact") },
   ];
 
   useEffect(() => {
@@ -245,7 +228,6 @@ const Navbar: React.FC<NavbarProps> = ({ locale, copy }) => {
 
     handleScroll();
     window.addEventListener("scroll", handleScroll, { passive: true });
-
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
@@ -272,7 +254,7 @@ const Navbar: React.FC<NavbarProps> = ({ locale, copy }) => {
         </div>
 
         <div className="navbar-end gap-1.5 sm:gap-2">
-          <nav aria-label={copy.navigation.primaryLabel} className="hidden md:flex">
+          <nav aria-label={t("primaryLabel")} className="hidden md:flex">
             <ul className="menu menu-horizontal gap-1.5 p-0">
               {navLinks.map((link) => (
                 <li key={link.href}>
@@ -287,7 +269,7 @@ const Navbar: React.FC<NavbarProps> = ({ locale, copy }) => {
             type="button"
             className="btn btn-ghost btn-square min-h-11 min-w-11 md:hidden"
             onClick={openMenu}
-            aria-label={copy.navigation.openMenu}
+            aria-label={t("openMenu")}
           >
             <svg
               aria-hidden="true"
@@ -301,21 +283,18 @@ const Navbar: React.FC<NavbarProps> = ({ locale, copy }) => {
             </svg>
           </button>
 
-          <LanguageSwitcher
-            locale={locale}
-            copy={copy.language}
-          />
+          <LanguageSwitcher />
         </div>
       </div>
 
       <dialog
         ref={dialogRef}
-        aria-label={copy.navigation.mobileLabel}
+        aria-label={t("mobileLabel")}
         className="modal modal-top md:hidden"
         onClose={restoreTriggerFocus}
       >
         <div className="modal-box mt-20 rounded-box bg-base-100 p-4 shadow-xl">
-          <nav aria-label={copy.navigation.mobileLabel}>
+          <nav aria-label={t("mobileLabel")}>
             <ul className="menu w-full gap-1 p-0">
               {navLinks.map((link) => (
                 <li key={link.href}>
@@ -330,13 +309,13 @@ const Navbar: React.FC<NavbarProps> = ({ locale, copy }) => {
           </nav>
           <form method="dialog" className="mt-3">
             <button className="btn btn-ghost btn-block min-h-11">
-              {copy.navigation.closeMenu}
+              {t("closeMenu")}
             </button>
           </form>
         </div>
         <form method="dialog" className="modal-backdrop">
-          <button aria-label={copy.navigation.closeMenu}>
-            {copy.navigation.closeMenu}
+          <button aria-label={t("closeMenu")}>
+            {t("closeMenu")}
           </button>
         </form>
       </dialog>

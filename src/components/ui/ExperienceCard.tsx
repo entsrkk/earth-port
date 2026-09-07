@@ -1,19 +1,16 @@
 "use client";
 
-import Link from "next/link";
+import { useTranslations } from "next-intl";
 import { useId, useState } from "react";
 import type { Experience } from "@/types/experience";
 
 interface ExperienceCardProps {
   experience: Experience;
-  copy: {
-    showDetails: string;
-    hideDetails: string;
-    opensNewTab: string;
-  };
 }
 
-const ExperienceCard = ({ experience, copy }: ExperienceCardProps) => {
+const ExperienceCard = ({ experience }: ExperienceCardProps) => {
+  const home = useTranslations("Home");
+  const common = useTranslations("Common");
   const [expanded, setExpanded] = useState(false);
   const contentId = useId();
 
@@ -46,15 +43,15 @@ const ExperienceCard = ({ experience, copy }: ExperienceCardProps) => {
             {experience.links.map((link) => (
               <li key={link.id}>
                 {link.href ? (
-                  <Link
+                  <a
                     className="link link-primary no-underline hover:no-underline"
                     href={link.href}
                     target="_blank"
                     rel="noopener noreferrer"
                   >
                     {link.label}
-                    <span className="sr-only"> ({copy.opensNewTab})</span>
-                  </Link>
+                    <span className="sr-only"> ({common("opensNewTab")})</span>
+                  </a>
                 ) : (
                   link.label
                 )}
@@ -70,7 +67,7 @@ const ExperienceCard = ({ experience, copy }: ExperienceCardProps) => {
           aria-controls={contentId}
           onClick={() => setExpanded((current) => !current)}
         >
-          {expanded ? copy.hideDetails : copy.showDetails}
+          {expanded ? home("hideDetails") : home("showDetails")}
         </button>
       </div>
     </article>

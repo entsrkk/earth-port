@@ -1,24 +1,21 @@
 "use client";
 
 import AOS from "aos";
+import { useTranslations } from "next-intl";
 import React, { useEffect, useState } from "react";
 import { FiGrid, FiList } from "react-icons/fi";
 import type { Project } from "@/types/project";
 import ProjectCard from "@/components/ui/ProjectCard";
 import SectionHeading from "@/components/ui/SectionHeading";
-import type { Dictionary } from "@/i18n/dictionaries/th";
 
 interface ProjectsViewProps {
   projects: readonly Project[];
-  copy: Dictionary["projects"];
 }
 
 type ProjectsViewMode = "grid" | "list";
 
-const ProjectsView: React.FC<ProjectsViewProps> = ({
-  projects,
-  copy,
-}) => {
+const ProjectsView: React.FC<ProjectsViewProps> = ({ projects }) => {
+  const t = useTranslations("Projects");
   const [viewMode, setViewMode] = useState<ProjectsViewMode>("grid");
 
   useEffect(() => {
@@ -43,23 +40,23 @@ const ProjectsView: React.FC<ProjectsViewProps> = ({
           <SectionHeading
             id="projects-heading"
             as="h1"
-            title={copy.heading}
+            title={t("heading")}
             className="lg:text-left"
           />
           <p className="mt-2 text-balance text-center font-thai text-sm leading-6 text-base-content/65 sm:text-base lg:text-left">
-            {copy.subtitle}
+            {t("subtitle")}
           </p>
         </div>
         <div
           role="group"
-          aria-label={copy.viewGroup}
+          aria-label={t("viewGroup")}
           className="hidden shrink-0 items-center gap-1 rounded-field border border-base-300 bg-base-200 px-2 py-1 lg:flex"
         >
           <button
             type="button"
-            aria-label={copy.gridView}
+            aria-label={t("gridView")}
             aria-pressed={isGrid}
-            title={copy.gridView}
+            title={t("gridView")}
             className={`btn btn-sm size-9 p-0 ${isGrid ? "btn-primary" : "btn-ghost"}`}
             onClick={() => setViewMode("grid")}
           >
@@ -67,9 +64,9 @@ const ProjectsView: React.FC<ProjectsViewProps> = ({
           </button>
           <button
             type="button"
-            aria-label={copy.listView}
+            aria-label={t("listView")}
             aria-pressed={!isGrid}
-            title={copy.listView}
+            title={t("listView")}
             className={`btn btn-sm size-9 p-0 ${isGrid ? "btn-ghost" : "btn-primary"}`}
             onClick={() => setViewMode("list")}
           >
@@ -97,7 +94,6 @@ const ProjectsView: React.FC<ProjectsViewProps> = ({
           >
             <ProjectCard
               project={project}
-              copy={copy}
               variant={viewMode}
               linkMode={isGrid ? "button" : "card"}
               ctaVariant="soft"
