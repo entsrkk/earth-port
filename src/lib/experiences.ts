@@ -1,6 +1,6 @@
 import { EXPERIENCE_COPY } from "@/data/experience-copy";
 import { EXPERIENCES } from "@/data/experiences";
-import type { Locale } from "@/i18n/config";
+import type { Locale } from "next-intl";
 import type { Experience } from "@/types/experience";
 
 export const getExperiences = (locale: Locale): readonly Experience[] =>

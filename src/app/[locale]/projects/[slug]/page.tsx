@@ -1,12 +1,15 @@
 import Image from "next/image";
-import Link from "next/link";
-import { notFound, redirect } from "next/navigation";
+import { getLocale, getTranslations } from "next-intl/server";
+import { notFound } from "next/navigation";
 import { FiChevronLeft } from "react-icons/fi";
 import ProjectLinks from "@/components/ui/ProjectLinks";
 import TechBadge from "@/components/ui/TechBadge";
 import { PROJECTS } from "@/data/projects";
-import { getDictionary } from "@/i18n/dictionaries";
-import { getRequestLocale } from "@/i18n/server";
+import { Link, permanentRedirect } from "@/i18n/navigation";
+import {
+  preserveSearchParams,
+  type RouteSearchParams,
+} from "@/i18n/search-params";
 import {
   getProjectById,
   getProjectBySlug,
@@ -16,20 +19,35 @@ import { formatResponsibilities } from "@/types/project";
 
 interface ProjectDetailPageProps {
   params: Promise<{ slug: string }>;
+  searchParams: Promise<RouteSearchParams>;
 }
 
 export const generateStaticParams = () =>
   PROJECTS.map((project) => ({ slug: project.slug }));
 
-const ProjectDetailPage = async ({ params }: ProjectDetailPageProps) => {
+const ProjectDetailPage = async ({
+  params,
+  searchParams,
+}: ProjectDetailPageProps) => {
   const { slug } = await params;
-  const locale = await getRequestLocale();
-  const dictionary = await getDictionary(locale);
+  const [locale, query, t] = await Promise.all([
+    getLocale(),
+    searchParams,
+    getTranslations("ProjectDetail"),
+  ]);
   const projectBySlug = getProjectBySlug(slug, locale);
 
   if (!projectBySlug) {
     const projectById = getProjectById(slug, locale);
-    if (projectById) redirect(getProjectPath(projectById));
+    if (projectById) {
+      permanentRedirect({
+        href: {
+          pathname: getProjectPath(projectById),
+          query: preserveSearchParams(query),
+        },
+        locale,
+      });
+    }
     notFound();
   }
 
@@ -40,13 +58,13 @@ const ProjectDetailPage = async ({ params }: ProjectDetailPageProps) => {
 
   return (
     <div className="mx-auto w-full max-w-(--container-page) px-4 py-6 sm:px-6 sm:py-8 lg:px-8 lg:py-8">
-      <nav aria-label={dictionary.projectDetail.backLabel} className="mb-4 lg:mb-6">
+      <nav aria-label={t("backLabel")} className="mb-4 lg:mb-6">
         <Link
           href="/projects"
           className="btn btn-soft btn-primary btn-sm -ml-2 gap-1.5 rounded-field border-0 bg-transparent px-2 font-display text-sm font-medium text-base-content/70 hover:text-primary"
         >
           <FiChevronLeft aria-hidden="true" className="size-4" />
-          {dictionary.projectDetail.backToProjects}
+          {t("backToProjects")}
         </Link>
       </nav>
 
@@ -54,7 +72,7 @@ const ProjectDetailPage = async ({ params }: ProjectDetailPageProps) => {
         <div className="order-1 w-full lg:order-0 lg:col-start-1 lg:row-start-1 lg:max-w-md">
           <Image
             src={project.projectImage}
-            alt={`${dictionary.projectDetail.projectImageAlt}: ${project.projectName}`}
+            alt={t("projectImageAlt", { projectName: project.projectName })}
             width={1080}
             height={1080}
             loading="eager"
@@ -106,7 +124,7 @@ const ProjectDetailPage = async ({ params }: ProjectDetailPageProps) => {
               id="technologies-used-heading"
               className="mb-2 font-display text-lg font-semibold"
             >
-              {dictionary.projectDetail.technologiesUsed}
+              {t("technologiesUsed")}
             </h2>
             <ul className="list-outside list-disc space-y-2 ps-5 font-thai text-base leading-7 text-base-content/80">
               {project.technologiesUsed.map((technology) => (
@@ -118,7 +136,6 @@ const ProjectDetailPage = async ({ params }: ProjectDetailPageProps) => {
           <ProjectLinks
             liveUrl={project.liveUrl}
             githubUrl={project.githubUrl}
-            copy={dictionary.projectDetail}
           />
         </div>
       </div>

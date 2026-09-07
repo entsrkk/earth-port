@@ -1,6 +1,6 @@
 import { PROJECT_COPY } from "@/data/project-copy";
 import { PROJECTS } from "@/data/projects";
-import type { Locale } from "@/i18n/config";
+import type { Locale } from "next-intl";
 import type { Project } from "@/types/project";
 
 export const getProjects = (locale: Locale): readonly Project[] =>

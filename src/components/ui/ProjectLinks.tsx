@@ -1,3 +1,4 @@
+import { useTranslations } from "next-intl";
 import React from "react";
 import { hasLiveUrl } from "@/types/project";
 import Button from "./Button";
@@ -5,11 +6,6 @@ import Button from "./Button";
 interface ProjectLinksProps {
   liveUrl: string | null;
   githubUrl: string | null;
-  copy: {
-    livePreview: string;
-    githubRepository: string;
-    opensNewTab: string;
-  };
 }
 
 const LiveIcon = () => (
@@ -54,8 +50,8 @@ const GithubIcon = () => (
 const ProjectLinks: React.FC<ProjectLinksProps> = ({
   liveUrl,
   githubUrl,
-  copy,
 }) => {
+  const t = useTranslations("ProjectDetail");
   const showLive = hasLiveUrl(liveUrl);
   const showGithub = githubUrl !== null;
 
@@ -72,8 +68,8 @@ const ProjectLinks: React.FC<ProjectLinksProps> = ({
           className="w-full sm:w-auto"
         >
           <LiveIcon />
-          <span>{copy.livePreview}</span>
-          <span className="sr-only"> ({copy.opensNewTab})</span>
+          <span>{t("livePreview")}</span>
+          <span className="sr-only"> ({t("opensNewTab")})</span>
         </Button>
       )}
       {showGithub && githubUrl && (
@@ -85,8 +81,8 @@ const ProjectLinks: React.FC<ProjectLinksProps> = ({
           className="w-full sm:w-auto"
         >
           <GithubIcon />
-          <span>{copy.githubRepository}</span>
-          <span className="sr-only"> ({copy.opensNewTab})</span>
+          <span>{t("githubRepository")}</span>
+          <span className="sr-only"> ({t("opensNewTab")})</span>
         </Button>
       )}
     </div>

@@ -1,4 +1,4 @@
-import Link from "next/link";
+import { getTranslations } from "next-intl/server";
 import React from "react";
 import {
   FaFacebook,
@@ -7,7 +7,7 @@ import {
   FaLine,
   FaLinkedin,
 } from "react-icons/fa";
-import type { Dictionary } from "@/i18n/dictionaries/th";
+import { Link } from "@/i18n/navigation";
 
 const socialLinks = [
   {
@@ -37,21 +37,22 @@ const socialLinks = [
   },
 ] as const;
 
-interface FooterProps {
-  copy: Pick<Dictionary, "navigation" | "footer" | "common">;
-}
-
-const Footer: React.FC<FooterProps> = ({ copy }) => {
+const Footer = async () => {
+  const [navigation, footer, common] = await Promise.all([
+    getTranslations("Navigation"),
+    getTranslations("Footer"),
+    getTranslations("Common"),
+  ]);
   const year = new Date().getFullYear();
   const quickLinks = [
-    { href: "/", label: copy.navigation.home },
+    { href: "/", label: navigation("home") },
     {
       href: "/projects",
-      label: copy.navigation.projects,
+      label: navigation("projects"),
     },
     {
       href: "/contact",
-      label: copy.navigation.contact,
+      label: navigation("contact"),
     },
   ];
 
@@ -65,13 +66,13 @@ const Footer: React.FC<FooterProps> = ({ copy }) => {
               Niti Surakongka
             </p>
             <p className="font-thai text-sm font-normal text-base-content/70">
-              {copy.footer.description}
+              {footer("description")}
             </p>
           </aside>
 
-          <nav aria-label={copy.footer.navigationLabel}>
+          <nav aria-label={footer("navigationLabel")}>
             <h2 className="footer-title mb-1 text-base-content/80">
-              {copy.footer.quickLinks}
+              {footer("quickLinks")}
             </h2>
             {quickLinks.map((link) => (
               <Link
@@ -84,9 +85,9 @@ const Footer: React.FC<FooterProps> = ({ copy }) => {
             ))}
           </nav>
 
-          <nav aria-label={copy.footer.socialLabel}>
+          <nav aria-label={footer("socialLabel")}>
             <h2 className="footer-title mb-1 text-base-content/80">
-              {copy.footer.connect}
+              {footer("connect")}
             </h2>
             <div className="flex flex-wrap gap-3">
               {socialLinks.map(({ href, label, icon: Icon }) => (
@@ -95,7 +96,7 @@ const Footer: React.FC<FooterProps> = ({ copy }) => {
                   href={href}
                   target="_blank"
                   rel="noopener noreferrer"
-                  aria-label={`${label} (${copy.common.opensNewTab})`}
+                  aria-label={`${label} (${common("opensNewTab")})`}
                   className="btn btn-ghost btn-square text-primary transition-colors duration-fast hover:bg-primary/10"
                 >
                   <Icon aria-hidden="true" className="size-6" />
@@ -107,7 +108,7 @@ const Footer: React.FC<FooterProps> = ({ copy }) => {
       </div>
       <div className="border-t border-base-300">
         <p className="mx-auto w-full max-w-(--container-page) px-4 pt-6 pb-6 text-center text-xs text-base-content/60 sm:px-6 lg:px-8">
-          © {year} Niti Surakongka. {copy.footer.rights}
+          © {year} Niti Surakongka. {footer("rights")}
         </p>
       </div>
     </footer>

@@ -6,7 +6,7 @@ Personal portfolio website of **Niti Surakongka (Earth)**, a Junior Full Stack D
 
 | Category | Technologies |
 | --- | --- |
-| Framework | [Next.js 16](https://nextjs.org/) (App Router, Turbopack) |
+| Framework | [Next.js 16](https://nextjs.org/) (App Router, Turbopack), [next-intl](https://next-intl.dev/) |
 | Language | TypeScript, React 19 |
 | Styling / UI | Tailwind CSS 4, daisyUI 5, Mantine (`@mantine/core`, `@mantine/hooks`) |
 | Typography | Noto Sans Thai, Sarabun, Outfit |
@@ -25,28 +25,28 @@ Personal portfolio website of **Niti Surakongka (Earth)**, a Junior Full Stack D
 - **Project detail pages** — clean dynamic routes (`/projects/[slug]`) with an image preview modal
 - **Tech stack showcase** — visual grid of tools and languages used
 - **Contact page** — quick links to Facebook, Line, phone, GitHub, and LinkedIn
-- **Bilingual interface** — switch between Thai and English with locale-neutral URLs
-- **Locale behavior** — stores the selected language in `earthport-locale`; legacy `/th` and `/en` paths redirect to clean routes
+- **Bilingual interface** — English is the default at unprefixed URLs, while Thai uses the `/th` prefix
+- **Locale behavior** — locale routing is URL-driven with `next-intl`; `NEXT_LOCALE` is a session cookie and locale prefixes are added only when needed
 - Fully responsive interface with AOS scroll animations and optimized Thai/English typography using Noto Sans Thai, Sarabun, and Outfit
 
 ## Project Structure
 
 ```
+messages/                   # next-intl JSON message catalogs (en, th)
 src/
 ├── app/                    # Next.js App Router pages
-│   ├── api/locale/          # Locale preference endpoint
-│   ├── contact/             # Contact page
-│   ├── projects/            # Projects list + [slug] detail pages
-│   ├── sitemap.ts           # Sitemap metadata route
-│   ├── layout.tsx          # Root layout (fonts, providers, navbar/footer)
-│   └── page.tsx            # Home page
+│   ├── [locale]/            # Localized layout and application routes
+│   │   ├── contact/         # Contact page
+│   │   └── projects/        # Projects list + [slug] detail pages
+│   ├── global-not-found.tsx # English fallback for unmatched root routes
+│   └── sitemap.ts           # Localized sitemap metadata route
 ├── components/
 │   ├── layout/              # Navbar, Footer
 │   ├── providers/            # AOS provider
 │   ├── sections/              # Hero, MyExperiences, ProjectsGrid, TechStack
 │   └── ui/                    # Reusable UI: Button, ProjectCard, TechBadge, etc.
 ├── data/                   # Canonical portfolio data and localized content
-├── i18n/                   # Locale config, dictionaries, and metadata helpers
+├── i18n/                   # next-intl routing, navigation, request, and metadata helpers
 ├── lib/                    # Data accessors, tech icons, and theme utilities
 ├── proxy.ts                # Locale resolution and legacy route redirects
 └── types/                  # Shared TypeScript types (Project, etc.)
@@ -54,7 +54,7 @@ src/
 
 ## Content
 
-Canonical project and experience data live in [`src/data/projects.ts`](src/data/projects.ts) and [`src/data/experiences.ts`](src/data/experiences.ts). Localized project and experience copy lives in [`src/data/project-copy.ts`](src/data/project-copy.ts) and [`src/data/experience-copy.ts`](src/data/experience-copy.ts). Translation dictionaries live in [`src/i18n/dictionaries`](src/i18n/dictionaries).
+Canonical project and experience data live in [`src/data/projects.ts`](src/data/projects.ts) and [`src/data/experiences.ts`](src/data/experiences.ts). Localized structured copy lives in [`src/data/project-copy.ts`](src/data/project-copy.ts) and [`src/data/experience-copy.ts`](src/data/experience-copy.ts). Shared interface messages live in [`messages/en.json`](messages/en.json) and [`messages/th.json`](messages/th.json).
 
 ## Environment
 
