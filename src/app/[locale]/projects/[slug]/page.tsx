@@ -18,7 +18,7 @@ import {
 import { formatResponsibilities } from "@/types/project";
 
 interface ProjectDetailPageProps {
-  params: Promise<{ slug: string }>;
+  params: Promise<{ locale: string; slug: string }>;
   searchParams: Promise<RouteSearchParams>;
 }
 
