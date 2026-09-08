@@ -1,7 +1,5 @@
 import type { Metadata } from "next";
-import { hasLocale } from "next-intl";
 import { getTranslations } from "next-intl/server";
-import { notFound } from "next/navigation";
 import React from "react";
 import {
   FaFacebook,
@@ -12,8 +10,8 @@ import {
 } from "react-icons/fa";
 import PageSection from "@/components/ui/PageSection";
 import SectionHeading from "@/components/ui/SectionHeading";
+import { assertLocale } from "@/i18n/locale";
 import { createLocalizedAlternates } from "@/i18n/metadata";
-import { routing } from "@/i18n/routing";
 
 interface ContactPageProps {
   params: Promise<{ locale: string }>;
@@ -23,7 +21,7 @@ export const generateMetadata = async ({
   params,
 }: ContactPageProps): Promise<Metadata> => {
   const { locale } = await params;
-  if (!hasLocale(routing.locales, locale)) notFound();
+  assertLocale(locale);
 
   const t = await getTranslations({ locale, namespace: "Metadata" });
 

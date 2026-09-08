@@ -53,8 +53,7 @@
     "projectImageAlt": "ภาพตัวอย่างโปรเจกต์: {projectName}",
     "technologiesUsed": "Technologies Used",
     "livePreview": "ดูเว็บไซต์จริง",
-    "githubRepository": "ดู GitHub repository",
-    "opensNewTab": "เปิดในแท็บใหม่"
+    "githubRepository": "ดู GitHub repository"
   },
   "Contact": {
     "heading": "ติดต่อ",

@@ -1,11 +1,10 @@
 import type { Metadata } from "next";
-import { hasLocale, NextIntlClientProvider } from "next-intl";
+import { NextIntlClientProvider } from "next-intl";
 import { getLocale, getMessages, getTranslations } from "next-intl/server";
-import { notFound } from "next/navigation";
 import ProjectsView from "@/components/sections/ProjectsView";
 import PageSection from "@/components/ui/PageSection";
+import { assertLocale } from "@/i18n/locale";
 import { createLocalizedAlternates } from "@/i18n/metadata";
-import { routing } from "@/i18n/routing";
 import { getProjects } from "@/lib/projects";
 
 interface ProjectsPageProps {
@@ -16,7 +15,7 @@ export const generateMetadata = async ({
   params,
 }: ProjectsPageProps): Promise<Metadata> => {
   const { locale } = await params;
-  if (!hasLocale(routing.locales, locale)) notFound();
+  assertLocale(locale);
 
   const t = await getTranslations({ locale, namespace: "Metadata" });
 

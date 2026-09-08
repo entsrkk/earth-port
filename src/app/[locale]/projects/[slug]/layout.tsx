@@ -1,9 +1,7 @@
 import type { Metadata } from "next";
-import { hasLocale } from "next-intl";
 import { getTranslations } from "next-intl/server";
-import { notFound } from "next/navigation";
+import { assertLocale } from "@/i18n/locale";
 import { createLocalizedAlternates } from "@/i18n/metadata";
-import { routing } from "@/i18n/routing";
 import { getProjectById, getProjectBySlug } from "@/lib/projects";
 
 interface ProjectDetailLayoutProps {
@@ -15,7 +13,7 @@ export const generateMetadata = async ({
   params,
 }: ProjectDetailLayoutProps): Promise<Metadata> => {
   const { locale, slug } = await params;
-  if (!hasLocale(routing.locales, locale)) notFound();
+  assertLocale(locale);
 
   const [metadata, errors] = await Promise.all([
     getTranslations({ locale, namespace: "Metadata" }),

@@ -1,13 +1,13 @@
 import type { Metadata } from "next";
 import { MantineProvider } from "@mantine/core";
 import { SpeedInsights } from "@vercel/speed-insights/next";
-import { hasLocale, NextIntlClientProvider } from "next-intl";
+import { NextIntlClientProvider } from "next-intl";
 import { getMessages, getTranslations } from "next-intl/server";
-import { notFound } from "next/navigation";
 import { Suspense } from "react";
 import AosProvider from "@/components/providers/AosProvider";
 import Footer from "@/components/layout/Footer";
 import Navbar from "@/components/layout/Navbar";
+import { assertLocale } from "@/i18n/locale";
 import { createLocalizedAlternates, metadataBase } from "@/i18n/metadata";
 import { routing } from "@/i18n/routing";
 import { mantineTheme } from "@/lib/mantine-theme";
@@ -27,7 +27,7 @@ export const generateMetadata = async ({
   params,
 }: LocaleLayoutProps): Promise<Metadata> => {
   const { locale } = await params;
-  if (!hasLocale(routing.locales, locale)) notFound();
+  assertLocale(locale);
 
   const t = await getTranslations({ locale, namespace: "Metadata" });
 
@@ -41,7 +41,7 @@ export const generateMetadata = async ({
 
 const LocaleLayout = async ({ children, params }: LocaleLayoutProps) => {
   const { locale } = await params;
-  if (!hasLocale(routing.locales, locale)) notFound();
+  assertLocale(locale);
 
   const messages = await getMessages({ locale });
   const navigation = await getTranslations({ locale, namespace: "Navigation" });

@@ -52,6 +52,7 @@ const ProjectLinks: React.FC<ProjectLinksProps> = ({
   githubUrl,
 }) => {
   const t = useTranslations("ProjectDetail");
+  const common = useTranslations("Common");
   const showLive = hasLiveUrl(liveUrl);
   const showGithub = githubUrl !== null;
 
@@ -69,7 +70,7 @@ const ProjectLinks: React.FC<ProjectLinksProps> = ({
         >
           <LiveIcon />
           <span>{t("livePreview")}</span>
-          <span className="sr-only"> ({t("opensNewTab")})</span>
+          <span className="sr-only"> ({common("opensNewTab")})</span>
         </Button>
       )}
       {showGithub && githubUrl && (
@@ -82,7 +83,7 @@ const ProjectLinks: React.FC<ProjectLinksProps> = ({
         >
           <GithubIcon />
           <span>{t("githubRepository")}</span>
-          <span className="sr-only"> ({t("opensNewTab")})</span>
+          <span className="sr-only"> ({common("opensNewTab")})</span>
         </Button>
       )}
     </div>

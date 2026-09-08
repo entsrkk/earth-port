@@ -53,8 +53,7 @@
     "projectImageAlt": "Project preview: {projectName}",
     "technologiesUsed": "Technologies Used",
     "livePreview": "Live preview",
-    "githubRepository": "GitHub repository",
-    "opensNewTab": "opens in a new tab"
+    "githubRepository": "GitHub repository"
   },
   "Contact": {
     "heading": "Contact",
